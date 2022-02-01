@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "apiReferentielSelectionsObjetsRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "apiKey" : {
+      "type" : "string"
+    },
+    "projetId" : {
+      "type" : "integer"
+    },
+    "selectionIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "referenceIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    }
+  }
+}
