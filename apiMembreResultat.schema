@@ -179,5 +179,3 @@
     }
   } ]
 }
-GET | 302 | 249 ms | GitHub.com
-GET | 200 | 258 ms
