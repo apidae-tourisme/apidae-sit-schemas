@@ -1,0 +1,67 @@
+{
+  "type" : "object",
+  "id" : "apiMembreRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "apiKey" : {
+      "type" : "string"
+    },
+    "projetId" : {
+      "type" : "integer"
+    },
+    "responseFields" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string",
+        "enum" : [ "BASE_ONLY", "UTILISATEURS", "OBJETS_GERES", "PROJETS", "RELATIONS", "TRADUCTIONS", "TAGS", "COMMUNES" ]
+      }
+    },
+    "filter" : {
+      "type" : "object",
+      "id" : "filters",
+      "additionalProperties" : false,
+      "properties" : {
+        "nom" : {
+          "type" : "string"
+        },
+        "idParrain" : {
+          "type" : "integer"
+        },
+        "communeCode" : {
+          "type" : "string"
+        },
+        "communeCodePostal" : {
+          "type" : "string"
+        },
+        "types" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "idProjet" : {
+          "type" : "integer"
+        },
+        "typeProjet" : {
+          "type" : "string"
+        },
+        "statutProjet" : {
+          "type" : "string",
+          "enum" : [ "NON_DETERMINE", "DEMONSTRATION", "DEVELOPPEMENT", "PRODUCTION" ]
+        },
+        "idSecteur" : {
+          "type" : "integer"
+        },
+        "nomSecteur" : {
+          "type" : "string"
+        },
+        "userStatus" : {
+          "type" : "string",
+          "enum" : [ "TOUS", "ACTIFS", "INACTIFS" ]
+        }
+      }
+    }
+  }
+}
