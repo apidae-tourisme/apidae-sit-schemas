@@ -1,0 +1,21 @@
+{
+    "ActiviteSportivePrestation": "informationsStructure.activitesSportives",
+    "PatrimoineCulturelType": "informationsPatrimoineCulturel.patrimoineCulturelType",
+    "EquipementActivite": "informationsEquipement.activites",
+    "HotelleriePleinAirType": "informationsHotelleriePleinAir.hotelleriePleinAirType",
+    "FeteEtManifestationType": "informationsFeteEtManifestation.typesManifestation",
+    "ActiviteType": "informationsActivite.activiteType",
+    "CommerceEtServiceTypeDetaille": "informationsCommerceEtService.typesDetailles",
+    "DegustationTypeProduit": "informationsDegustation.typesProduit",
+    "HebergementCollectifType": "informationsHebergementCollectif.hebergementCollectifType",
+    "ActiviteCulturellePrestation": "informationsStructure.activitesCulturelles",
+    "FeteEtManifestationCategorie": "informationsFeteEtManifestation.categories",
+    "StructureType": "informationsStructure.structureType",
+    "PatrimoineNaturelCategorie": "informationsPatrimoineNaturel.categories",
+    "CommerceEtServiceType": "informationsCommerceEtService.commerceEtServiceType",
+    "HebergementLocatifType": "informationsHebergementLocatif.hebergementLocatifType",
+    "RestaurationType": "informationsRestauration.restaurationType",
+    "HotellerieType": "informationsHotellerie.hotellerieType",
+    "TerritoireType": "informationsTerritoire.territoireType",
+    "DomaineSkiableClassification": "informationsDomaineSkiable.classification"
+}
