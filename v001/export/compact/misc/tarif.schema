@@ -1,0 +1,21 @@
+{
+  "type" : "object",
+  "id" : "tarif",
+  "additionalProperties" : false,
+  "properties" : {
+    "minimum" : {
+      "type" : "number"
+    },
+    "maximum" : {
+      "type" : "number"
+    },
+    "precisionTarif" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "type" : {
+      "type" : "object",
+      "id" : "TarifTypeLink"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DEGUSTATIONLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "DEGUSTATION" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

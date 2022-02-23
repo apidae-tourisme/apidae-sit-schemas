@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "informations",
+  "additionalProperties" : false,
+  "properties" : {
+    "moyensCommunication" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "moyenCommunication"
+      }
+    },
+    "informationsLegales" : {
+      "type" : "object",
+      "id" : "informationsLegales"
+    },
+    "structureGestion" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink"
+    },
+    "structureInformation" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink"
+    }
+  }
+}

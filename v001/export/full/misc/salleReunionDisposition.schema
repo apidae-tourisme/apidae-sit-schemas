@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "salleReunionDisposition",
+  "additionalProperties" : false,
+  "properties" : {
+    "capacite" : {
+      "type" : "integer"
+    },
+    "disposition" : {
+      "type" : "object",
+      "id" : "SalleDispositionLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "SalleDisposition" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

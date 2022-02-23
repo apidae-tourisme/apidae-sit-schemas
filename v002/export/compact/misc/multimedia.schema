@@ -1,0 +1,62 @@
+{
+  "type" : "object",
+  "id" : "multimedia",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiant" : {
+      "type" : "integer"
+    },
+    "identifiantExterne" : {
+      "type" : "string"
+    },
+    "link" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "type" : {
+      "type" : "string",
+      "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "legende" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "copyright" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "observation" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "traductionFichiers" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "traductionFichierMultimedia"
+      }
+    },
+    "dateLimiteDePublication" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "locked" : {
+      "type" : "boolean"
+    },
+    "source" : {
+      "type" : "string"
+    },
+    "identifiantTemporaire" : {
+      "type" : "integer"
+    },
+    "modificationMode" : {
+      "type" : "string",
+      "enum" : [ "MODIFICATION_FICHIERS", "MODIFICATION_METADONNEES" ]
+    }
+  }
+}

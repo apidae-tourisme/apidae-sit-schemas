@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PrestationVisiteGroupeeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "PrestationVisiteGroupee" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

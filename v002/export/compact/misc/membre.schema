@@ -1,0 +1,31 @@
+{
+  "type" : "object",
+  "id" : "membre",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "object",
+      "id" : "MembreSitraTypeLink"
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "dateCreation" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dateModification" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "departement" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "siteWeb" : {
+      "type" : "string"
+    }
+  }
+}

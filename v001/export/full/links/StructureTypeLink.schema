@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "StructureTypeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "StructureType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

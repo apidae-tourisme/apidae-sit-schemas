@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "CommerceEtServiceTypeDetailleLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "CommerceEtServiceTypeDetaille" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

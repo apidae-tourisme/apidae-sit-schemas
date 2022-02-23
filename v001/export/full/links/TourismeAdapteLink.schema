@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "TourismeAdapteLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "TourismeAdapte" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

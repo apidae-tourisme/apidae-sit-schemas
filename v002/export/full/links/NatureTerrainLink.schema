@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "NatureTerrainLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "NatureTerrain" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

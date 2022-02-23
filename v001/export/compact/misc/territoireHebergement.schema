@@ -1,0 +1,52 @@
+{
+  "type" : "object",
+  "id" : "territoireHebergement",
+  "additionalProperties" : false,
+  "properties" : {
+    "parkingCampingCar" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "nombreCampings" : {
+      "type" : "integer"
+    },
+    "nombreResidencesTourisme" : {
+      "type" : "integer"
+    },
+    "nombreVillagesVacances" : {
+      "type" : "integer"
+    },
+    "nombreCaravaneiges" : {
+      "type" : "integer"
+    },
+    "nombreMeublesClasses" : {
+      "type" : "integer"
+    },
+    "nombreHotelsUneEtoile" : {
+      "type" : "integer"
+    },
+    "nombreHotelsDeuxEtoiles" : {
+      "type" : "integer"
+    },
+    "nombreHotelsTroisEtoiles" : {
+      "type" : "integer"
+    },
+    "nombreHotelsQuatreEtoiles" : {
+      "type" : "integer"
+    },
+    "nombreHotelsCinqEtoiles" : {
+      "type" : "integer"
+    },
+    "nombreHotelsNonClasses" : {
+      "type" : "integer"
+    },
+    "descriptifMeubles" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "descriptifAutres" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type" : "object",
+  "id" : "ouvertureExceptionnelle",
+  "additionalProperties" : false,
+  "properties" : {
+    "dateOuverture" : {
+      "type" : "string",
+      "format" : "date"
+    }
+  }
+}

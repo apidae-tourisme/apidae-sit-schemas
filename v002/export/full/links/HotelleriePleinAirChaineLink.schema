@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HotelleriePleinAirChaineLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HotelleriePleinAirChaine" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "AopAocIgpLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "AopAocIgp" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

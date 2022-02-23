@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "informationsStructure",
+  "additionalProperties" : false,
+  "properties" : {
+    "sigle" : {
+      "type" : "string"
+    },
+    "entiteType" : {
+      "type" : "object",
+      "id" : "StructureTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "StructureType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "type" : "object",
+  "id" : "itineraire",
+  "additionalProperties" : false,
+  "properties" : {
+    "denivellationPositive" : {
+      "type" : "integer"
+    },
+    "denivellationNegative" : {
+      "type" : "integer"
+    },
+    "penteMoyenne" : {
+      "type" : "integer"
+    },
+    "distance" : {
+      "type" : "number"
+    },
+    "dureeJournaliere" : {
+      "type" : "integer"
+    },
+    "dureeItinerance" : {
+      "type" : "number"
+    },
+    "referencesCartographiques" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "referencesTopoguides" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "passagesDelicats" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "altitudeMoyenne" : {
+      "type" : "integer"
+    },
+    "altitudeMaximum" : {
+      "type" : "integer"
+    },
+    "itineraireType" : {
+      "type" : "string",
+      "enum" : [ "ALLER_ITINERANCE", "ALLER_RETOUR", "BOUCLE" ]
+    },
+    "itineraireBalise" : {
+      "type" : "string",
+      "enum" : [ "BALISE", "NON_BALISE", "NON_DISPONIBLE" ]
+    },
+    "precisionsBalisage" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "naturesTerrain" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "NatureTerrain"
+      }
+    },
+    "denivellation" : {
+      "type" : "integer"
+    }
+  }
+}

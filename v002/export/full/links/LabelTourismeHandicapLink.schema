@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "LabelTourismeHandicapLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "LabelTourismeHandicap" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

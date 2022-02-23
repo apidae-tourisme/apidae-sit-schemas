@@ -1,0 +1,129 @@
+{
+  "type" : "object",
+  "id" : "apiObjetsTouristiquesRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiants" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "identifiersV1" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "listeEnregistreeId" : {
+      "type" : "integer"
+    },
+    "selectionIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "center" : {
+      "type" : "object",
+      "id" : "geoJson",
+      "additionalProperties" : false,
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "coordinates" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "number"
+          }
+        }
+      }
+    },
+    "radius" : {
+      "type" : "integer"
+    },
+    "communeCodesInsee" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "territoireIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "searchQuery" : {
+      "type" : "string"
+    },
+    "searchFields" : {
+      "type" : "string",
+      "enum" : [ "NOM", "NOM_DESCRIPTION", "NOM_DESCRIPTION_CRITERES" ]
+    },
+    "criteresQuery" : {
+      "type" : "string"
+    },
+    "dateDebut" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateFin" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "first" : {
+      "type" : "integer"
+    },
+    "count" : {
+      "type" : "integer"
+    },
+    "order" : {
+      "type" : "string",
+      "enum" : [ "PERTINENCE", "NOM", "DISTANCE", "IDENTIFIANT", "DATE_OUVERTURE", "RANDOM" ]
+    },
+    "asc" : {
+      "type" : "boolean"
+    },
+    "locales" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "responseFields" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "apiKey" : {
+      "type" : "string"
+    },
+    "siteWebExportIdV1" : {
+      "type" : "integer"
+    },
+    "randomSeed" : {
+      "type" : "string"
+    },
+    "membreProprietaireIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "searchLocale" : {
+      "type" : "string"
+    }
+  }
+}

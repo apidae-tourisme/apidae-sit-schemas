@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "RestaurationClassementGuideLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "RestaurationClassementGuide" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

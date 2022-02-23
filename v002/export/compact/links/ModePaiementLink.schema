@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ModePaiementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ModePaiement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

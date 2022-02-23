@@ -1,0 +1,176 @@
+{
+  "type" : "object",
+  "id" : "COMMERCE_ET_SERVICE",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "COMMERCE_ET_SERVICE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "identifier" : {
+      "type" : "string"
+    },
+    "state" : {
+      "type" : "string",
+      "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+    },
+    "gestion" : {
+      "type" : "object",
+      "id" : "gestion"
+    },
+    "informations" : {
+      "type" : "object",
+      "id" : "informations"
+    },
+    "presentation" : {
+      "type" : "object",
+      "id" : "presentation"
+    },
+    "localisation" : {
+      "type" : "object",
+      "id" : "localisation"
+    },
+    "liens" : {
+      "type" : "object",
+      "id" : "liens"
+    },
+    "prestations" : {
+      "type" : "object",
+      "id" : "prestations"
+    },
+    "ouverture" : {
+      "type" : "object",
+      "id" : "ouverture"
+    },
+    "descriptionTarif" : {
+      "type" : "object",
+      "id" : "descriptionTarif"
+    },
+    "reservation" : {
+      "type" : "object",
+      "id" : "reservation"
+    },
+    "criteresInternes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "critereInterne"
+      }
+    },
+    "contacts" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "contact"
+      }
+    },
+    "illustrations" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "multimedias" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "tourismeAffaires" : {
+      "type" : "object",
+      "id" : "tourismeAffaires"
+    },
+    "integration" : {
+      "type" : "object",
+      "id" : "integration"
+    },
+    "territoires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "territoireLink"
+      }
+    },
+    "datesOuverture" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string",
+        "format" : "date"
+      }
+    },
+    "informationsCommerceEtService" : {
+      "type" : "object",
+      "id" : "informationsCommerceEtService"
+    },
+    "formatVersion" : {
+      "type" : "string"
+    },
+    "informationsPrestataireActivites" : {
+      "type" : "object",
+      "id" : "prestataireActivites"
+    },
+    "donneesPrivees" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "additionalProperties" : false,
+        "properties" : {
+          "nomTechnique" : {
+            "type" : "string"
+          },
+          "libelleFr" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer",
+            "required" : true
+          },
+          "descriptif" : {
+            "type" : "object",
+            "id" : "traductionLibelle"
+          }
+        }
+      }
+    },
+    "prestationsList" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetTouristiqueLink"
+      }
+    },
+    "aspects" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "aspects"
+      }
+    },
+    "metadonnees" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "metaDonnees"
+      }
+    }
+  }
+}

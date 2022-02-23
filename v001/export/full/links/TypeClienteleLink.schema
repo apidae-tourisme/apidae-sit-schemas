@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "TypeClienteleLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "TypeClientele" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

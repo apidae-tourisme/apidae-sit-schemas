@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "hebergementLocatifAgrement",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "object",
+      "id" : "HebergementLocatifAgrementTypeLink"
+    },
+    "numero" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "SejourPackageTypeHebergementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "SejourPackageTypeHebergement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

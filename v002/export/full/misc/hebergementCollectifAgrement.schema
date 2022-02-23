@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "hebergementCollectifAgrement",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "object",
+      "id" : "HebergementCollectifAgrementTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HebergementCollectifAgrementType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "numero" : {
+      "type" : "string"
+    }
+  }
+}

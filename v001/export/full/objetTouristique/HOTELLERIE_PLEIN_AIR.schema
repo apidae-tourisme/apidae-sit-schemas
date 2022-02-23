@@ -1,0 +1,4511 @@
+{
+  "type" : "object",
+  "id" : "HOTELLERIE_PLEIN_AIR",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "HOTELLERIE_PLEIN_AIR" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "identifierSitra1" : {
+      "type" : "string"
+    },
+    "state" : {
+      "type" : "string",
+      "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+    },
+    "gestion" : {
+      "type" : "object",
+      "id" : "gestion",
+      "additionalProperties" : false,
+      "properties" : {
+        "dateCreation" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "dateModification" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "dateExportModification" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "membreProprietaire" : {
+          "type" : "object",
+          "id" : "membre",
+          "additionalProperties" : false,
+          "properties" : {
+            "type" : {
+              "type" : "object",
+              "id" : "MembreSitraTypeLink",
+              "additionalProperties" : false,
+              "properties" : {
+                "elementReferenceType" : {
+                  "type" : "string",
+                  "enum" : [ "MembreSitraType" ]
+                },
+                "id" : {
+                  "type" : "integer"
+                }
+              }
+            },
+            "nom" : {
+              "type" : "string"
+            },
+            "dateCreation" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "dateModification" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "departement" : {
+              "type" : "string"
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "siteWeb" : {
+              "type" : "string"
+            }
+          }
+        },
+        "signalerUnProblemeMails" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "informations" : {
+      "type" : "object",
+      "id" : "informations",
+      "additionalProperties" : false,
+      "properties" : {
+        "moyensCommunication" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "moyenCommunication",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "type" : {
+                "type" : "object",
+                "id" : "MoyenCommunicationTypeLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "MoyenCommunicationType" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "coordonnee" : {
+                "type" : "string"
+              },
+              "coordonnees" : {
+                "type" : "object",
+                "id" : "traductionValeurTexte",
+                "additionalProperties" : false,
+                "properties" : {
+                  "fr" : {
+                    "type" : "string"
+                  },
+                  "en" : {
+                    "type" : "string"
+                  },
+                  "es" : {
+                    "type" : "string"
+                  },
+                  "it" : {
+                    "type" : "string"
+                  },
+                  "de" : {
+                    "type" : "string"
+                  },
+                  "nl" : {
+                    "type" : "string"
+                  },
+                  "ru" : {
+                    "type" : "string"
+                  },
+                  "zh" : {
+                    "type" : "string"
+                  },
+                  "ptBR" : {
+                    "type" : "string"
+                  },
+                  "ja" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "observation" : {
+                "type" : "object",
+                "id" : "traductionLibelle",
+                "additionalProperties" : false,
+                "properties" : {
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "informationsLegales" : {
+          "type" : "object",
+          "id" : "informationsLegales",
+          "additionalProperties" : false,
+          "properties" : {
+            "siret" : {
+              "type" : "string"
+            },
+            "codeApeNaf" : {
+              "type" : "string"
+            },
+            "rcs" : {
+              "type" : "string"
+            },
+            "numeroAgrementLicence" : {
+              "type" : "string"
+            },
+            "modeGestion" : {
+              "type" : "object",
+              "id" : "ModeGestionLink",
+              "additionalProperties" : false,
+              "properties" : {
+                "elementReferenceType" : {
+                  "type" : "string",
+                  "enum" : [ "ModeGestion" ]
+                },
+                "id" : {
+                  "type" : "integer"
+                }
+              }
+            }
+          }
+        },
+        "structureGestion" : {
+          "type" : "object",
+          "id" : "objetTouristiqueLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "type" : {
+              "type" : "string",
+              "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+            },
+            "id" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "structureInformation" : {
+          "type" : "object",
+          "id" : "objetTouristiqueLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "type" : {
+              "type" : "string",
+              "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+            },
+            "id" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "presentation" : {
+      "type" : "object",
+      "id" : "presentation",
+      "additionalProperties" : false,
+      "properties" : {
+        "descriptifCourt" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "descriptifDetaille" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "typologiesPromoSitra" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "TypologiePromoSitraLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "TypologiePromoSitra" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "bonsPlans" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "localisation" : {
+      "type" : "object",
+      "id" : "localisation",
+      "additionalProperties" : false,
+      "properties" : {
+        "adresse" : {
+          "type" : "object",
+          "id" : "adresse",
+          "additionalProperties" : false,
+          "properties" : {
+            "nomDuLieu" : {
+              "type" : "string"
+            },
+            "adresse1" : {
+              "type" : "string"
+            },
+            "adresse2" : {
+              "type" : "string"
+            },
+            "adresse3" : {
+              "type" : "string"
+            },
+            "codePostal" : {
+              "type" : "string"
+            },
+            "bureauDistribution" : {
+              "type" : "string"
+            },
+            "cedex" : {
+              "type" : "string"
+            },
+            "etat" : {
+              "type" : "string"
+            },
+            "commune" : {
+              "type" : "object",
+              "id" : "communeLink",
+              "additionalProperties" : false,
+              "properties" : {
+                "id" : {
+                  "type" : "integer"
+                }
+              }
+            }
+          }
+        },
+        "geolocalisation" : {
+          "type" : "object",
+          "id" : "geolocalisation",
+          "additionalProperties" : false,
+          "properties" : {
+            "reperePlan" : {
+              "type" : "string"
+            },
+            "altitude" : {
+              "type" : "integer"
+            },
+            "altitudeMaxi" : {
+              "type" : "integer"
+            },
+            "altitudeMini" : {
+              "type" : "integer"
+            },
+            "altitudeMaxiHebergement" : {
+              "type" : "integer"
+            },
+            "altitudeMiniHebergement" : {
+              "type" : "integer"
+            },
+            "complement" : {
+              "type" : "object",
+              "id" : "traductionLibelle",
+              "additionalProperties" : false,
+              "properties" : {
+                "libelleFr" : {
+                  "type" : "string"
+                },
+                "libelleEn" : {
+                  "type" : "string"
+                },
+                "libelleEs" : {
+                  "type" : "string"
+                },
+                "libelleIt" : {
+                  "type" : "string"
+                },
+                "libelleDe" : {
+                  "type" : "string"
+                },
+                "libelleNl" : {
+                  "type" : "string"
+                },
+                "libelleRu" : {
+                  "type" : "string"
+                },
+                "libelleZh" : {
+                  "type" : "string"
+                },
+                "libellePtBR" : {
+                  "type" : "string"
+                },
+                "libelleJa" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "valide" : {
+              "type" : "boolean"
+            },
+            "geoJson" : {
+              "type" : "object",
+              "id" : "geoJson",
+              "additionalProperties" : false,
+              "properties" : {
+                "type" : {
+                  "type" : "string"
+                },
+                "coordinates" : {
+                  "type" : "array",
+                  "additionalItems" : false,
+                  "items" : {
+                    "type" : "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "perimetreGeographique" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "communeLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "environnements" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "EnvironnementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "Environnement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "liens" : {
+      "type" : "object",
+      "id" : "liens",
+      "additionalProperties" : false,
+      "properties" : {
+        "complement" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "objetsLies" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "objetTouristiqueLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "type" : {
+                "type" : "string",
+                "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "liensObjetsTouristiquesTypes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "objetTouristiqueLien",
+            "additionalProperties" : false,
+            "properties" : {
+              "type" : {
+                "type" : "string",
+                "enum" : [ "DEFAUT", "SUR_PLACE", "ADRESSE_UTILE", "ORGANISATEUR_PROGRAMME", "PROGRAMME_ORGANISATEUR", "CADRE_OFFRE_SPECIALE", "OFFRE_SPECIALE_CADRE", "PACKAGE_OBJET", "OBJET_PACKAGE", "AU_DEPART_DE", "A_L_ARRIVEE_DE", "SUR_LE_PARCOURS_DE", "PARCOURS_ETAPE", "ETAPE_PARCOURS", "COUPS_DE_COEUR_INCONTOURNABLES", "VISITE_ORGANISATEUR", "ORGANISATEUR_VISITE", "VEND_ICI", "PROPOSE_PRODUIT_DE", "PERMET_ACCEDER_A", "EST_ACCESSIBLE_PAR", "EST_SITUE_DANS", "A_DANS_SON_PERIMETRE", "OFFRE_SIMILAIRE_PROXIMITE", "SUGGESTION_A_PROXIMITE" ]
+              },
+              "objetTouristique" : {
+                "type" : "object",
+                "id" : "objetTouristiqueLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "type" : {
+                    "type" : "string",
+                    "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "prestations" : {
+      "type" : "object",
+      "id" : "prestations",
+      "additionalProperties" : false,
+      "properties" : {
+        "equipements" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "PrestationEquipementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "PrestationEquipement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "services" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "PrestationServiceLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "PrestationService" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "animauxAcceptes" : {
+          "type" : "string",
+          "enum" : [ "ACCEPTES", "NON_ACCEPTES", "NON_DISPONIBLE" ]
+        },
+        "animauxAcceptesSupplement" : {
+          "type" : "string",
+          "enum" : [ "AVEC_SUPPLEMENT", "SANS_SUPPLEMENT", "NON_DISPONIBLE" ]
+        },
+        "descriptifAnimauxAcceptes" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "activites" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "PrestationActiviteLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "PrestationActivite" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "conforts" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "PrestationConfortLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "PrestationConfort" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "languesParlees" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "LangueLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "Langue" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "languesDocumentation" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "LangueLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "Langue" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "complementAccueil" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "tourismesAdaptes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "TourismeAdapteLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "TourismeAdapte" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "labelsTourismeHandicap" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "LabelTourismeHandicapLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "LabelTourismeHandicap" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "descriptifHandicapMoteur" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "descriptifHandicapAuditif" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "descriptifHandicapVisuel" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "descriptifHandicapMental" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
+          "type" : "integer"
+        },
+        "typesClientele" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "TypeClienteleLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "TypeClientele" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "tailleGroupeMin" : {
+          "type" : "integer"
+        },
+        "tailleGroupeMax" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "ouverture" : {
+      "type" : "object",
+      "id" : "ouverture",
+      "additionalProperties" : false,
+      "properties" : {
+        "periodeEnClair" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "indicationsPeriode" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "IndicationPeriodeLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "IndicationPeriode" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "periodesOuvertures" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "periodeOuverture",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "dateDebut" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateFin" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "nom" : {
+                "type" : "object",
+                "id" : "traductionLibelle",
+                "additionalProperties" : false,
+                "properties" : {
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "complementHoraire" : {
+                "type" : "object",
+                "id" : "traductionLibelle",
+                "additionalProperties" : false,
+                "properties" : {
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "horaireOuverture" : {
+                "type" : "string",
+                "format" : "time"
+              },
+              "horaireFermeture" : {
+                "type" : "string",
+                "format" : "time"
+              },
+              "type" : {
+                "type" : "string",
+                "enum" : [ "OUVERTURE_TOUS_LES_JOURS", "OUVERTURE_SAUF", "OUVERTURE_SEMAINE", "OUVERTURE_MOIS" ]
+              },
+              "tousLesAns" : {
+                "type" : "boolean"
+              },
+              "ouverturesExceptionnelles" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "ouvertureExceptionnelle",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "dateOuverture" : {
+                      "type" : "string",
+                      "format" : "date"
+                    }
+                  }
+                }
+              },
+              "ouverturesJourDuMois" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "ouvertureJourDuMois",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "jourDuMois" : {
+                      "type" : "string",
+                      "enum" : [ "D_1ER", "D_2EME", "D_3EME", "D_4EME", "D_DERNIER" ]
+                    },
+                    "jour" : {
+                      "type" : "string",
+                      "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+                    }
+                  }
+                }
+              },
+              "ouverturesJournalieres" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "ouvertureJournaliere",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "jour" : {
+                      "type" : "string",
+                      "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+                    }
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "identifiantTechnique" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "fermeturesExceptionnelles" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "fermetureExceptionnelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "dateFermeture" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateSpeciale" : {
+                "type" : "string",
+                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+              }
+            }
+          }
+        },
+        "ouverturesComplementaires" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "OuvertureComplementaireLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "OuvertureComplementaire" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "ouvertTouteLAnnee" : {
+          "type" : "string",
+          "enum" : [ "OUVERT_TOUTE_L_ANNEE" ]
+        },
+        "fermeTemporairement" : {
+          "type" : "string",
+          "enum" : [ "FERME_TEMPORAIREMENT" ]
+        }
+      }
+    },
+    "descriptionTarif" : {
+      "type" : "object",
+      "id" : "descriptionTarif",
+      "additionalProperties" : false,
+      "properties" : {
+        "indicationTarif" : {
+          "type" : "string",
+          "enum" : [ "GRATUIT", "ACCES_LIBRE", "ACCES_LIBRE_STATIONNEMENT_PAYANT_OBLIGATOIRE", "ENTREE_LIBRE", "PARTICIPATION_LIBRE", "PAYANT_TARIFS_NON_COMMUNIQUES", "PAYANT" ]
+        },
+        "tarifsEnClair" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "complement" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "periodes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "periodeTarif",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "dateDebut" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateFin" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "tarifs" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "tarif",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "minimum" : {
+                      "type" : "number"
+                    },
+                    "maximum" : {
+                      "type" : "number"
+                    },
+                    "precisionTarif" : {
+                      "type" : "object",
+                      "id" : "traductionLibelle",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "libelleFr" : {
+                          "type" : "string"
+                        },
+                        "libelleEn" : {
+                          "type" : "string"
+                        },
+                        "libelleEs" : {
+                          "type" : "string"
+                        },
+                        "libelleIt" : {
+                          "type" : "string"
+                        },
+                        "libelleDe" : {
+                          "type" : "string"
+                        },
+                        "libelleNl" : {
+                          "type" : "string"
+                        },
+                        "libelleRu" : {
+                          "type" : "string"
+                        },
+                        "libelleZh" : {
+                          "type" : "string"
+                        },
+                        "libellePtBR" : {
+                          "type" : "string"
+                        },
+                        "libelleJa" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "type" : {
+                      "type" : "object",
+                      "id" : "TarifTypeLink",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "elementReferenceType" : {
+                          "type" : "string",
+                          "enum" : [ "TarifType" ]
+                        },
+                        "id" : {
+                          "type" : "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "type" : {
+                "type" : "object",
+                "id" : "TarifTypePeriodeLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "TarifTypePeriode" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "modesPaiement" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ModePaiementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ModePaiement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "modesPaiementAdd" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ModePaiementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ModePaiement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "modesPaiementRemove" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ModePaiementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ModePaiement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "leTarifComprend" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "leTarifNeComprendPas" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "conditions" : {
+          "type" : "object",
+          "id" : "conditionsTarif",
+          "additionalProperties" : false,
+          "properties" : {
+            "conditionsGratuite" : {
+              "type" : "array",
+              "additionalItems" : false,
+              "items" : {
+                "type" : "object",
+                "id" : "ConditionGratuiteLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "ConditionGratuite" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              }
+            },
+            "gratuitPourLesMoinsDe" : {
+              "type" : "integer"
+            },
+            "gratuitPourLesPlusDe" : {
+              "type" : "integer"
+            },
+            "conditionJuniorAgeMin" : {
+              "type" : "integer"
+            },
+            "conditionJuniorAgeMax" : {
+              "type" : "integer"
+            },
+            "conditionEnfantAgeMin" : {
+              "type" : "integer"
+            },
+            "conditionEnfantAgeMax" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "reservation" : {
+      "type" : "object",
+      "id" : "reservation",
+      "additionalProperties" : false,
+      "properties" : {
+        "organismes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "reservationOrganisme",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "structureReference" : {
+                "type" : "object",
+                "id" : "objetTouristiqueLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "type" : {
+                    "type" : "string",
+                    "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "nom" : {
+                "type" : "string"
+              },
+              "type" : {
+                "type" : "object",
+                "id" : "ReservationTypeLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "ReservationType" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "observation" : {
+                "type" : "object",
+                "id" : "traductionLibelle",
+                "additionalProperties" : false,
+                "properties" : {
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "moyensCommunication" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "moyenCommunication",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "identifiant" : {
+                      "type" : "integer"
+                    },
+                    "type" : {
+                      "type" : "object",
+                      "id" : "MoyenCommunicationTypeLink",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "elementReferenceType" : {
+                          "type" : "string",
+                          "enum" : [ "MoyenCommunicationType" ]
+                        },
+                        "id" : {
+                          "type" : "integer"
+                        }
+                      }
+                    },
+                    "coordonnee" : {
+                      "type" : "string"
+                    },
+                    "coordonnees" : {
+                      "type" : "object",
+                      "id" : "traductionValeurTexte",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "fr" : {
+                          "type" : "string"
+                        },
+                        "en" : {
+                          "type" : "string"
+                        },
+                        "es" : {
+                          "type" : "string"
+                        },
+                        "it" : {
+                          "type" : "string"
+                        },
+                        "de" : {
+                          "type" : "string"
+                        },
+                        "nl" : {
+                          "type" : "string"
+                        },
+                        "ru" : {
+                          "type" : "string"
+                        },
+                        "zh" : {
+                          "type" : "string"
+                        },
+                        "ptBR" : {
+                          "type" : "string"
+                        },
+                        "ja" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "observation" : {
+                      "type" : "object",
+                      "id" : "traductionLibelle",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "libelleFr" : {
+                          "type" : "string"
+                        },
+                        "libelleEn" : {
+                          "type" : "string"
+                        },
+                        "libelleEs" : {
+                          "type" : "string"
+                        },
+                        "libelleIt" : {
+                          "type" : "string"
+                        },
+                        "libelleDe" : {
+                          "type" : "string"
+                        },
+                        "libelleNl" : {
+                          "type" : "string"
+                        },
+                        "libelleRu" : {
+                          "type" : "string"
+                        },
+                        "libelleZh" : {
+                          "type" : "string"
+                        },
+                        "libellePtBR" : {
+                          "type" : "string"
+                        },
+                        "libelleJa" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "identifiantTemporaire" : {
+                      "type" : "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "complement" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "criteresInternes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "critereInterneLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "contacts" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "contact",
+        "additionalProperties" : false,
+        "properties" : {
+          "identifiant" : {
+            "type" : "integer"
+          },
+          "referent" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "civilite" : {
+            "type" : "object",
+            "id" : "ContactCiviliteLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ContactCivilite" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "prenom" : {
+            "type" : "string"
+          },
+          "titre" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "fonction" : {
+            "type" : "object",
+            "id" : "ContactFonctionLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ContactFonction" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          },
+          "autresFonctions" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "ContactFonctionLink",
+              "additionalProperties" : false,
+              "properties" : {
+                "elementReferenceType" : {
+                  "type" : "string",
+                  "enum" : [ "ContactFonction" ]
+                },
+                "id" : {
+                  "type" : "integer"
+                }
+              }
+            }
+          },
+          "moyensCommunication" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "moyenCommunication",
+              "additionalProperties" : false,
+              "properties" : {
+                "identifiant" : {
+                  "type" : "integer"
+                },
+                "type" : {
+                  "type" : "object",
+                  "id" : "MoyenCommunicationTypeLink",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "elementReferenceType" : {
+                      "type" : "string",
+                      "enum" : [ "MoyenCommunicationType" ]
+                    },
+                    "id" : {
+                      "type" : "integer"
+                    }
+                  }
+                },
+                "coordonnee" : {
+                  "type" : "string"
+                },
+                "coordonnees" : {
+                  "type" : "object",
+                  "id" : "traductionValeurTexte",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "fr" : {
+                      "type" : "string"
+                    },
+                    "en" : {
+                      "type" : "string"
+                    },
+                    "es" : {
+                      "type" : "string"
+                    },
+                    "it" : {
+                      "type" : "string"
+                    },
+                    "de" : {
+                      "type" : "string"
+                    },
+                    "nl" : {
+                      "type" : "string"
+                    },
+                    "ru" : {
+                      "type" : "string"
+                    },
+                    "zh" : {
+                      "type" : "string"
+                    },
+                    "ptBR" : {
+                      "type" : "string"
+                    },
+                    "ja" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "observation" : {
+                  "type" : "object",
+                  "id" : "traductionLibelle",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "libelleFr" : {
+                      "type" : "string"
+                    },
+                    "libelleEn" : {
+                      "type" : "string"
+                    },
+                    "libelleEs" : {
+                      "type" : "string"
+                    },
+                    "libelleIt" : {
+                      "type" : "string"
+                    },
+                    "libelleDe" : {
+                      "type" : "string"
+                    },
+                    "libelleNl" : {
+                      "type" : "string"
+                    },
+                    "libelleRu" : {
+                      "type" : "string"
+                    },
+                    "libelleZh" : {
+                      "type" : "string"
+                    },
+                    "libellePtBR" : {
+                      "type" : "string"
+                    },
+                    "libelleJa" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "identifiantTemporaire" : {
+                  "type" : "integer"
+                }
+              }
+            }
+          },
+          "identifiantTemporaire" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "illustrations" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "multimedias" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "imagePrincipale" : {
+      "type" : "object",
+      "id" : "multimedia",
+      "additionalProperties" : false,
+      "properties" : {
+        "link" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "type" : {
+          "type" : "string",
+          "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+        },
+        "nom" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "legende" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "copyright" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "observation" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "traductionFichiers" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "traductionFichierMultimedia",
+            "additionalProperties" : false,
+            "properties" : {
+              "locale" : {
+                "type" : "string"
+              },
+              "url" : {
+                "type" : "string"
+              },
+              "urlListe" : {
+                "type" : "string"
+              },
+              "urlFiche" : {
+                "type" : "string"
+              },
+              "urlDiaporama" : {
+                "type" : "string"
+              },
+              "extension" : {
+                "type" : "string"
+              },
+              "fileName" : {
+                "type" : "string"
+              },
+              "taille" : {
+                "type" : "integer"
+              },
+              "hauteur" : {
+                "type" : "integer"
+              },
+              "largeur" : {
+                "type" : "integer"
+              },
+              "lastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time"
+              }
+            }
+          }
+        },
+        "dateLimiteDePublication" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "source" : {
+          "type" : "string"
+        }
+      }
+    },
+    "images" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "imagePrincipaleHiver" : {
+      "type" : "object",
+      "id" : "multimedia",
+      "additionalProperties" : false,
+      "properties" : {
+        "link" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "type" : {
+          "type" : "string",
+          "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+        },
+        "nom" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "legende" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "copyright" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "observation" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "traductionFichiers" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "traductionFichierMultimedia",
+            "additionalProperties" : false,
+            "properties" : {
+              "locale" : {
+                "type" : "string"
+              },
+              "url" : {
+                "type" : "string"
+              },
+              "urlListe" : {
+                "type" : "string"
+              },
+              "urlFiche" : {
+                "type" : "string"
+              },
+              "urlDiaporama" : {
+                "type" : "string"
+              },
+              "extension" : {
+                "type" : "string"
+              },
+              "fileName" : {
+                "type" : "string"
+              },
+              "taille" : {
+                "type" : "integer"
+              },
+              "hauteur" : {
+                "type" : "integer"
+              },
+              "largeur" : {
+                "type" : "integer"
+              },
+              "lastModifiedDate" : {
+                "type" : "string",
+                "format" : "date-time"
+              }
+            }
+          }
+        },
+        "dateLimiteDePublication" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "source" : {
+          "type" : "string"
+        }
+      }
+    },
+    "imagesHiver" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "imagesTourismeAffaires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "imagesHandicap" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia",
+        "additionalProperties" : false,
+        "properties" : {
+          "link" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "IMAGE_PRINCIPALE", "IMAGE", "DOCUMENT", "SON", "VIDEO", "PLAN", "LOGO", "IMAGE_TOURISME_AFFAIRES", "WEBCAM", "VISITE_VIRTUELLE", "BROCHURE_VIRTUELLE", "BON_PLAN", "IMAGE_HANDICAP", "IMAGE_PRINCIPALE_HIVER", "IMAGE_HIVER", "CHAINE_YOUTUBE", "CHAINE_DAILYMOTION", "GALERIE_FLICKR", "WEBCAM_360", "APPLICATION_IPHONE", "APPLICATION_IPAD", "APPLICATION_ANDROID", "APPLICATION_ANDROID_TABLETTE", "CHAINE_VIMEO", "PINTEREST", "INSTAGRAM", "SNAPCHAT" ]
+          },
+          "nom" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "legende" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "copyright" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "observation" : {
+            "type" : "object",
+            "id" : "traductionLibelle",
+            "additionalProperties" : false,
+            "properties" : {
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "traductionFichiers" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "traductionFichierMultimedia",
+              "additionalProperties" : false,
+              "properties" : {
+                "locale" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                },
+                "urlListe" : {
+                  "type" : "string"
+                },
+                "urlFiche" : {
+                  "type" : "string"
+                },
+                "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "extension" : {
+                  "type" : "string"
+                },
+                "fileName" : {
+                  "type" : "string"
+                },
+                "taille" : {
+                  "type" : "integer"
+                },
+                "hauteur" : {
+                  "type" : "integer"
+                },
+                "largeur" : {
+                  "type" : "integer"
+                },
+                "lastModifiedDate" : {
+                  "type" : "string",
+                  "format" : "date-time"
+                }
+              }
+            }
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "source" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "tourismeAffaires" : {
+      "type" : "object",
+      "id" : "tourismeAffaires",
+      "additionalProperties" : false,
+      "properties" : {
+        "tourismeAffairesEnabled" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "sallesEquipeesPour" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "SalleEquipeePourLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "SalleEquipeePour" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "sallesEquipement" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "SalleEquipementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "SalleEquipement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "sallesRestauration" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "SalleRestaurationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "SalleRestauration" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "sallesHebergement" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "SalleHebergementLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "SalleHebergement" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "sallesReunion" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "salleReunion",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "nom" : {
+                "type" : "string"
+              },
+              "description" : {
+                "type" : "object",
+                "id" : "traductionLibelle",
+                "additionalProperties" : false,
+                "properties" : {
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "capaciteMax" : {
+                "type" : "integer"
+              },
+              "superficie" : {
+                "type" : "integer"
+              },
+              "hauteur" : {
+                "type" : "number"
+              },
+              "lumiereNaturelle" : {
+                "type" : "boolean"
+              },
+              "tarifSalle" : {
+                "type" : "object",
+                "id" : "salleReunionTarif",
+                "additionalProperties" : false,
+                "properties" : {
+                  "minimum" : {
+                    "type" : "number"
+                  },
+                  "maximum" : {
+                    "type" : "number"
+                  }
+                }
+              },
+              "tarifJournee" : {
+                "type" : "object",
+                "id" : "salleReunionTarif",
+                "additionalProperties" : false,
+                "properties" : {
+                  "minimum" : {
+                    "type" : "number"
+                  },
+                  "maximum" : {
+                    "type" : "number"
+                  }
+                }
+              },
+              "tarifResident" : {
+                "type" : "object",
+                "id" : "salleReunionTarif",
+                "additionalProperties" : false,
+                "properties" : {
+                  "minimum" : {
+                    "type" : "number"
+                  },
+                  "maximum" : {
+                    "type" : "number"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "dispositions" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "salleReunionDisposition",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "capacite" : {
+                      "type" : "integer"
+                    },
+                    "disposition" : {
+                      "type" : "object",
+                      "id" : "SalleDispositionLink",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "elementReferenceType" : {
+                          "type" : "string",
+                          "enum" : [ "SalleDisposition" ]
+                        },
+                        "id" : {
+                          "type" : "integer"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "nombreSallesReunionEquipees" : {
+          "type" : "integer"
+        },
+        "capaciteMaxAccueil" : {
+          "type" : "integer"
+        },
+        "nombreSallesModulables" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "territoires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "territoireLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "type" : {
+            "type" : "string",
+            "enum" : [ "TERRITOIRE" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "datesOuverture" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string",
+        "format" : "date"
+      }
+    },
+    "informationsHotelleriePleinAir" : {
+      "type" : "object",
+      "id" : "informationsHotelleriePleinAir",
+      "additionalProperties" : false,
+      "properties" : {
+        "hotelleriePleinAirType" : {
+          "type" : "object",
+          "id" : "HotelleriePleinAirTypeLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "HotelleriePleinAirType" ]
+            },
+            "id" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "numeroClassement" : {
+          "type" : "string"
+        },
+        "dateClassement" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "classement" : {
+          "type" : "object",
+          "id" : "HotelleriePleinAirClassementLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "HotelleriePleinAirClassement" ]
+            },
+            "id" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "chaines" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "HotelleriePleinAirChaineLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "HotelleriePleinAirChaine" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "labels" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "HotelleriePleinAirLabelLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "HotelleriePleinAirLabel" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "capacite" : {
+          "type" : "object",
+          "id" : "hotelleriePleinAirCapacite",
+          "additionalProperties" : false,
+          "properties" : {
+            "superficie" : {
+              "type" : "integer"
+            },
+            "caravaneige" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "nombreEmplacementsClasses" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsDeclares" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassages" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsLocatifs" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassagesLocatifs" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassagesNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsResidentielsNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsResidentiels" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCaravaneiges" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsTentes" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCaravanes" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCampingCars" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsMobiliteReduite" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsInsolites" : {
+              "type" : "integer"
+            },
+            "capaciteHebergementsInsolites" : {
+              "type" : "integer"
+            },
+            "nombreLocationMobilhomes" : {
+              "type" : "integer"
+            },
+            "nombreLocationTentes" : {
+              "type" : "integer"
+            },
+            "nombreLocationBungalows" : {
+              "type" : "integer"
+            },
+            "nombreLocationCaravanes" : {
+              "type" : "integer"
+            }
+          }
+        }
+      }
+    },
+    "formatVersion" : {
+      "type" : "string"
+    },
+    "informationsPrestataireActivites" : {
+      "type" : "object",
+      "id" : "prestataireActivites",
+      "additionalProperties" : false,
+      "properties" : {
+        "prestataireActivites" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "activitesSportives" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteSportivePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteSportivePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "activitesSportivesAdd" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteSportivePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteSportivePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "activitesSportivesRemove" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteSportivePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteSportivePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "activitesCulturelles" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteCulturellePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCulturellePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "activitesCulturellesAdd" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteCulturellePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCulturellePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "activitesCulturellesRemove" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "ActiviteCulturellePrestationLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCulturellePrestation" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        },
+        "habilitationsPrestataires" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "StructureHabilitationPrestataireLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "StructureHabilitationPrestataire" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "prestationsList" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetTouristiqueLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "type" : {
+            "type" : "string",
+            "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}

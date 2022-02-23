@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DegustationLabelCharteQualiteLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "DegustationLabelCharteQualite" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

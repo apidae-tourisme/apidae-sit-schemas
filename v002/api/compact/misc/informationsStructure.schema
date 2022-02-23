@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "informationsStructure",
+  "additionalProperties" : false,
+  "properties" : {
+    "sigle" : {
+      "type" : "string"
+    },
+    "entiteType" : {
+      "type" : "object",
+      "id" : "StructureType"
+    }
+  }
+}

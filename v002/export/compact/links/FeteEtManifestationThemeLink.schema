@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "FeteEtManifestationThemeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "FeteEtManifestationTheme" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

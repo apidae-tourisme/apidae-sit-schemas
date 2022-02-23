@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "RestaurationCategorieLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "RestaurationCategorie" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

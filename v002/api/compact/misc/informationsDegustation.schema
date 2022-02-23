@@ -1,0 +1,51 @@
+{
+  "type" : "object",
+  "id" : "informationsDegustation",
+  "additionalProperties" : false,
+  "properties" : {
+    "aoc" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "labelsChartesQualite" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationLabelCharteQualite"
+      }
+    },
+    "charteQualite" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "aopAocIgps" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "AopAocIgp"
+      }
+    },
+    "aocDescriptif" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "typesProduit" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationTypeProduit"
+      }
+    },
+    "statutsExploitant" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationStatutExploitant"
+      }
+    }
+  }
+}

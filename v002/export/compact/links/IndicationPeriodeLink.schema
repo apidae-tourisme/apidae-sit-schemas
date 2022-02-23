@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "IndicationPeriodeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "IndicationPeriode" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

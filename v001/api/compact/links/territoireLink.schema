@@ -1,0 +1,25 @@
+{
+  "type" : "object",
+  "id" : "territoireLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "TERRITOIRE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "identifierSitra1" : {
+      "type" : "string"
+    },
+    "state" : {
+      "type" : "string",
+      "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+    }
+  }
+}

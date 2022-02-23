@@ -1,0 +1,50 @@
+{
+  "type" : "object",
+  "id" : "informationsHotellerie",
+  "additionalProperties" : false,
+  "properties" : {
+    "hotellerieType" : {
+      "type" : "object",
+      "id" : "HotellerieTypeLink"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "HotellerieClassementLink"
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotellerieLabelLink"
+      }
+    },
+    "chaines" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotellerieChaineLink"
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hotellerieCapacite"
+    },
+    "typesHabitation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeHabitationLink"
+      }
+    }
+  }
+}

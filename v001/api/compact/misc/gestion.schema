@@ -1,0 +1,30 @@
+{
+  "type" : "object",
+  "id" : "gestion",
+  "additionalProperties" : false,
+  "properties" : {
+    "dateCreation" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dateModification" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dateExportModification" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "membreProprietaire" : {
+      "type" : "object",
+      "id" : "membre"
+    },
+    "signalerUnProblemeMails" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

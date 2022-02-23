@@ -1,0 +1,13 @@
+{
+  "type" : "object",
+  "id" : "salleReunionTarif",
+  "additionalProperties" : false,
+  "properties" : {
+    "minimum" : {
+      "type" : "number"
+    },
+    "maximum" : {
+      "type" : "number"
+    }
+  }
+}

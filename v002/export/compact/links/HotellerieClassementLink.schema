@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HotellerieClassementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HotellerieClassement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

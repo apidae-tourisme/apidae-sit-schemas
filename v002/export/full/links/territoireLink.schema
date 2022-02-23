@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "territoireLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "TERRITOIRE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

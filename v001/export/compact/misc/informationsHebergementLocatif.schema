@@ -1,0 +1,68 @@
+{
+  "type" : "object",
+  "id" : "informationsHebergementLocatif",
+  "additionalProperties" : false,
+  "properties" : {
+    "hebergementLocatifType" : {
+      "type" : "object",
+      "id" : "HebergementLocatifTypeLink"
+    },
+    "dateDerniereVisite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "numeroAgrementLabel" : {
+      "type" : "string"
+    },
+    "dateAgrementLabel" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "classementPrefectoral" : {
+      "type" : "object",
+      "id" : "HebergementLocatifClassementPrefectoralLink"
+    },
+    "typeLabel" : {
+      "type" : "object",
+      "id" : "HebergementLocatifTypeLabelLink"
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HebergementLocatifLabelLink"
+      }
+    },
+    "typesHabitation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeHabitationLink"
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hebergementLocatifCapacite"
+    },
+    "dureeMinimumEnJours" : {
+      "type" : "integer"
+    },
+    "agrements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "hebergementLocatifAgrement"
+      }
+    }
+  }
+}

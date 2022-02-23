@@ -1,0 +1,26 @@
+{
+  "type" : "object",
+  "id" : "commune",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "pays" : {
+      "type" : "object",
+      "id" : "Pays"
+    },
+    "codePostal" : {
+      "type" : "string"
+    },
+    "complement" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "LangueLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "Langue" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

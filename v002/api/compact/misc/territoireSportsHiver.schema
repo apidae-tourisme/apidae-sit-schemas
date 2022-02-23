@@ -1,0 +1,55 @@
+{
+  "type" : "object",
+  "id" : "territoireSportsHiver",
+  "additionalProperties" : false,
+  "properties" : {
+    "typesStation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TerritoireTypeStation"
+      }
+    },
+    "nombreItinerairesRaquettes" : {
+      "type" : "integer"
+    },
+    "nombreKilometresItinerairesRaquettes" : {
+      "type" : "integer"
+    },
+    "nombreItinerairesPietons" : {
+      "type" : "integer"
+    },
+    "nombreKilometresItinerairesPietons" : {
+      "type" : "integer"
+    },
+    "nombreItinerairesVtt" : {
+      "type" : "integer"
+    },
+    "nombreKilometresItinerairesVtt" : {
+      "type" : "integer"
+    },
+    "nombreItinerairesRandonneeEte" : {
+      "type" : "integer"
+    },
+    "nombreKilometresItinerairesRandonneeEte" : {
+      "type" : "integer"
+    },
+    "ageMinimumEnseignementSki" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "trancheAgeAccueilEnfantGarderie" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "domaines" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "domaineSkiableLien"
+      }
+    }
+  }
+}

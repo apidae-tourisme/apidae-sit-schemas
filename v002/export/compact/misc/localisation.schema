@@ -1,0 +1,65 @@
+{
+  "type" : "object",
+  "id" : "localisation",
+  "additionalProperties" : false,
+  "properties" : {
+    "adresse" : {
+      "type" : "object",
+      "id" : "adresse"
+    },
+    "geolocalisation" : {
+      "type" : "object",
+      "id" : "geolocalisation"
+    },
+    "perimetreGeographique" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "communeLink"
+      }
+    },
+    "environnements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "EnvironnementLink"
+      }
+    },
+    "environnementsAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "EnvironnementLink"
+      }
+    },
+    "environnementsRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "EnvironnementLink"
+      }
+    },
+    "lieu" : {
+      "type" : "object",
+      "id" : "lieu",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+    },
+    "lieuObjetTouristique" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+    },
+    "territoiresAffectes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "territoireLink"
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "type" : "object",
+  "id" : "DEGUSTATION",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "DEGUSTATION" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "identifierSitra1" : {
+      "type" : "string"
+    },
+    "state" : {
+      "type" : "string",
+      "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+    },
+    "gestion" : {
+      "type" : "object",
+      "id" : "gestion"
+    },
+    "informations" : {
+      "type" : "object",
+      "id" : "informations"
+    },
+    "presentation" : {
+      "type" : "object",
+      "id" : "presentation"
+    },
+    "localisation" : {
+      "type" : "object",
+      "id" : "localisation"
+    },
+    "liens" : {
+      "type" : "object",
+      "id" : "liens"
+    },
+    "prestations" : {
+      "type" : "object",
+      "id" : "prestations"
+    },
+    "ouverture" : {
+      "type" : "object",
+      "id" : "ouverture"
+    },
+    "descriptionTarif" : {
+      "type" : "object",
+      "id" : "descriptionTarif"
+    },
+    "reservation" : {
+      "type" : "object",
+      "id" : "reservation"
+    },
+    "criteresInternes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "critereInterneLink"
+      }
+    },
+    "contacts" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "contact"
+      }
+    },
+    "illustrations" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "multimedias" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "imagePrincipale" : {
+      "type" : "object",
+      "id" : "multimedia"
+    },
+    "images" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "imagePrincipaleHiver" : {
+      "type" : "object",
+      "id" : "multimedia"
+    },
+    "imagesHiver" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "imagesTourismeAffaires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "imagesHandicap" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "tourismeAffaires" : {
+      "type" : "object",
+      "id" : "tourismeAffaires"
+    },
+    "visites" : {
+      "type" : "object",
+      "id" : "visites"
+    },
+    "territoires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "territoireLink"
+      }
+    },
+    "datesOuverture" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string",
+        "format" : "date"
+      }
+    },
+    "informationsDegustation" : {
+      "type" : "object",
+      "id" : "informationsDegustation"
+    },
+    "formatVersion" : {
+      "type" : "string"
+    },
+    "informationsPrestataireActivites" : {
+      "type" : "object",
+      "id" : "prestataireActivites"
+    },
+    "prestationsList" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetTouristiqueLink"
+      }
+    }
+  }
+}

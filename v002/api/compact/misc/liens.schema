@@ -1,0 +1,20 @@
+{
+  "type" : "object",
+  "id" : "liens",
+  "additionalProperties" : false,
+  "properties" : {
+    "complement" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "liensObjetsTouristiquesTypes" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE, TERRITOIRE",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetTouristiqueLien"
+      }
+    }
+  }
+}

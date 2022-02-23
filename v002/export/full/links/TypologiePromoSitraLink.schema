@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "TypologiePromoSitraLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "TypologiePromoSitra" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

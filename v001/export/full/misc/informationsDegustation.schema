@@ -1,0 +1,157 @@
+{
+  "type" : "object",
+  "id" : "informationsDegustation",
+  "additionalProperties" : false,
+  "properties" : {
+    "aoc" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "labelsChartesQualite" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationLabelCharteQualiteLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "DegustationLabelCharteQualite" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "charteQualite" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "aopAocIgps" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "AopAocIgpLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "AopAocIgp" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "aocDescriptif" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "typesProduit" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationTypeProduitLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "DegustationTypeProduit" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "statutsExploitant" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "DegustationStatutExploitantLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "DegustationStatutExploitant" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}

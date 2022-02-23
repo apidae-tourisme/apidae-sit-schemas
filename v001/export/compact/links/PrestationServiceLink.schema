@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PrestationServiceLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "PrestationService" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

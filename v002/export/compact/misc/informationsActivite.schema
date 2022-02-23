@@ -1,0 +1,52 @@
+{
+  "type" : "object",
+  "id" : "informationsActivite",
+  "additionalProperties" : false,
+  "properties" : {
+    "nomLieu" : {
+      "type" : "string"
+    },
+    "dureeSeance" : {
+      "type" : "integer"
+    },
+    "nombreJours" : {
+      "type" : "integer"
+    },
+    "activiteType" : {
+      "type" : "object",
+      "id" : "ActiviteTypeLink"
+    },
+    "categories" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCategorieLink"
+      }
+    },
+    "activitesSportives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesCulturelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    },
+    "prestataireActivites" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink"
+    },
+    "commerceEtServicePrestataire" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink"
+    }
+  }
+}

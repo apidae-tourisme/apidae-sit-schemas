@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HotelleriePleinAirLabelLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HotelleriePleinAirLabel" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

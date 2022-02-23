@@ -1,0 +1,245 @@
+{
+  "type" : "object",
+  "id" : "prestations",
+  "additionalProperties" : false,
+  "properties" : {
+    "equipements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationEquipement"
+      }
+    },
+    "equipementsAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationEquipement"
+      }
+    },
+    "equipementsRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationEquipement"
+      }
+    },
+    "services" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationService"
+      }
+    },
+    "animauxAcceptes" : {
+      "type" : "string",
+      "enum" : [ "ACCEPTES", "NON_ACCEPTES", "NON_DISPONIBLE" ]
+    },
+    "animauxAcceptesSupplement" : {
+      "type" : "string",
+      "enum" : [ "AVEC_SUPPLEMENT", "SANS_SUPPLEMENT", "NON_DISPONIBLE" ]
+    },
+    "descriptifAnimauxAcceptes" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "servicesAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationService"
+      }
+    },
+    "servicesRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationService"
+      }
+    },
+    "activites" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationActivite"
+      }
+    },
+    "activitesAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationActivite"
+      }
+    },
+    "activitesRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationActivite"
+      }
+    },
+    "conforts" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationConfort"
+      }
+    },
+    "confortsAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationConfort"
+      }
+    },
+    "confortsRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationConfort"
+      }
+    },
+    "languesParlees" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, STRUCTURE, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "Langue"
+      }
+    },
+    "languesDocumentation" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, STRUCTURE, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "Langue"
+      }
+    },
+    "complementAccueil" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, STRUCTURE, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
+    },
+    "tourismesAdaptes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TourismeAdapte"
+      }
+    },
+    "tourismesAdaptesAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TourismeAdapte"
+      }
+    },
+    "tourismesAdaptesRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TourismeAdapte"
+      }
+    },
+    "labelsTourismeHandicap" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LabelTourismeHandicap"
+      }
+    },
+    "descriptifHandicapMoteur" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "descriptifHandicapAuditif" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "descriptifHandicapVisuel" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "descriptifHandicapMental" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
+      "type" : "integer"
+    },
+    "typesClientele" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeClientele"
+      }
+    },
+    "typesClienteleAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeClientele"
+      }
+    },
+    "typesClienteleRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeClientele"
+      }
+    },
+    "nombrePersonnesMinimum" : {
+      "type" : "integer",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+    },
+    "tailleGroupeMin" : {
+      "type" : "integer",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
+    },
+    "tailleGroupeMax" : {
+      "type" : "integer",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
+    },
+    "ageMin" : {
+      "type" : "integer",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, SEJOUR_PACKAGE"
+    },
+    "ageMax" : {
+      "type" : "integer",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, SEJOUR_PACKAGE"
+    },
+    "uniteAgeMin" : {
+      "type" : "string",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, SEJOUR_PACKAGE",
+      "enum" : [ "MOIS", "ANNEE" ]
+    },
+    "uniteAgeMax" : {
+      "type" : "string",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, SEJOUR_PACKAGE",
+      "enum" : [ "MOIS", "ANNEE" ]
+    }
+  }
+}

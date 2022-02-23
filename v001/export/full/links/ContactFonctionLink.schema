@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ContactFonctionLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ContactFonction" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

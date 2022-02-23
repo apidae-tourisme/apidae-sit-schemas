@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ContactCiviliteLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ContactCivilite" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

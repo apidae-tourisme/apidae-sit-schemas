@@ -1,0 +1,11 @@
+{
+  "type" : "object",
+  "id" : "ouvertureJournaliere",
+  "additionalProperties" : false,
+  "properties" : {
+    "jour" : {
+      "type" : "string",
+      "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+    }
+  }
+}

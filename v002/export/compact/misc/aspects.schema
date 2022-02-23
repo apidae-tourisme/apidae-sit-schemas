@@ -1,0 +1,155 @@
+{
+  "type" : "object",
+  "id" : "aspects",
+  "additionalProperties" : false,
+  "properties" : {
+    "aspect" : {
+      "type" : "string",
+      "enum" : [ "STANDARD", "HIVER", "ETE", "HANDICAP", "GROUPES", "TOURISME_AFFAIRES", "PRESTATAIRE_ACTIVITES" ]
+    },
+    "champsAspect" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "informations" : {
+      "type" : "object",
+      "id" : "informations"
+    },
+    "presentation" : {
+      "type" : "object",
+      "id" : "presentation"
+    },
+    "localisation" : {
+      "type" : "object",
+      "id" : "localisation"
+    },
+    "liens" : {
+      "type" : "object",
+      "id" : "liens"
+    },
+    "prestations" : {
+      "type" : "object",
+      "id" : "prestations"
+    },
+    "ouverture" : {
+      "type" : "object",
+      "id" : "ouverture"
+    },
+    "descriptionTarif" : {
+      "type" : "object",
+      "id" : "descriptionTarif"
+    },
+    "reservation" : {
+      "type" : "object",
+      "id" : "reservation"
+    },
+    "illustrations" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "multimedias" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "multimedia"
+      }
+    },
+    "informationsActivite" : {
+      "type" : "object",
+      "id" : "informationsActivite"
+    },
+    "informationsCommerceEtService" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "commerceEtServiceType" : {
+          "type" : "object",
+          "id" : "CommerceEtServiceTypeLink"
+        },
+        "typesDetailles" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "CommerceEtServiceTypeDetailleLink"
+          }
+        },
+        "classement" : {
+          "type" : "object",
+          "id" : "StructureClassementLink"
+        },
+        "nomLieu" : {
+          "type" : "string"
+        }
+      }
+    },
+    "informationsDegustation" : {
+      "type" : "object",
+      "id" : "informationsDegustation"
+    },
+    "informationsDomaineSkiable" : {
+      "type" : "object",
+      "id" : "informationsDomaineSkiable"
+    },
+    "informationsEquipement" : {
+      "type" : "object",
+      "id" : "informationsEquipement"
+    },
+    "informationsFeteEtManifestation" : {
+      "type" : "object",
+      "id" : "informationsFeteEtManifestation"
+    },
+    "informationsHebergementCollectif" : {
+      "type" : "object",
+      "id" : "informationsHebergementCollectif"
+    },
+    "informationsHebergementLocatif" : {
+      "type" : "object",
+      "id" : "informationsHebergementLocatif"
+    },
+    "informationsHotellerie" : {
+      "type" : "object",
+      "id" : "informationsHotellerie"
+    },
+    "informationsHotelleriePleinAir" : {
+      "type" : "object",
+      "id" : "informationsHotelleriePleinAir"
+    },
+    "informationsPatrimoineCulturel" : {
+      "type" : "object",
+      "id" : "informationsPatrimoineCulturel"
+    },
+    "informationsPatrimoineNaturel" : {
+      "type" : "object",
+      "id" : "informationsPatrimoineNaturel"
+    },
+    "informationsRestauration" : {
+      "type" : "object",
+      "id" : "informationsRestauration"
+    },
+    "informationsSejourPackage" : {
+      "type" : "object",
+      "id" : "informationsSejourPackage"
+    },
+    "informationsStructure" : {
+      "type" : "object",
+      "id" : "informationsStructure"
+    },
+    "informationsTerritoire" : {
+      "type" : "object",
+      "id" : "informationsTerritoire"
+    },
+    "informationsPrestataireActivites" : {
+      "type" : "object",
+      "id" : "prestataireActivites"
+    }
+  }
+}

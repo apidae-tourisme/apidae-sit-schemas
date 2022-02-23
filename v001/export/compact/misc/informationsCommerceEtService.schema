@@ -1,0 +1,50 @@
+{
+  "type" : "object",
+  "id" : "informationsCommerceEtService",
+  "additionalProperties" : false,
+  "properties" : {
+    "commerceEtServiceType" : {
+      "type" : "object",
+      "id" : "CommerceEtServiceTypeLink"
+    },
+    "typesDetailles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "CommerceEtServiceTypeDetailleLink"
+      }
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "StructureClassementLink"
+    },
+    "habilitationsPrestataires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "StructureHabilitationPrestataireLink"
+      }
+    },
+    "activitesSportives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesCulturelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    },
+    "nomLieu" : {
+      "type" : "string"
+    }
+  }
+}

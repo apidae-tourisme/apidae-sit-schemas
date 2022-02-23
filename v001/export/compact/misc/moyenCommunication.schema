@@ -1,0 +1,28 @@
+{
+  "type" : "object",
+  "id" : "moyenCommunication",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiant" : {
+      "type" : "integer"
+    },
+    "type" : {
+      "type" : "object",
+      "id" : "MoyenCommunicationTypeLink"
+    },
+    "coordonnee" : {
+      "type" : "string"
+    },
+    "coordonnees" : {
+      "type" : "object",
+      "id" : "traductionValeurTexte"
+    },
+    "observation" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "identifiantTemporaire" : {
+      "type" : "integer"
+    }
+  }
+}

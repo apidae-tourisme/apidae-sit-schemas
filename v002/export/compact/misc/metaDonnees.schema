@@ -1,0 +1,18 @@
+{
+  "type" : "object",
+  "id" : "metaDonnees",
+  "additionalProperties" : false,
+  "properties" : {
+    "noeudId" : {
+      "type" : "string"
+    },
+    "contenus" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "metaDonneeContenu"
+      }
+    }
+  }
+}

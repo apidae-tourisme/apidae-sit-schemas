@@ -1,0 +1,49 @@
+{
+  "type" : "object",
+  "id" : "hebergementLocatifCapacite",
+  "additionalProperties" : false,
+  "properties" : {
+    "capaciteHebergement" : {
+      "type" : "integer"
+    },
+    "capaciteMaximumPossible" : {
+      "type" : "integer"
+    },
+    "nombreSallesDeBain" : {
+      "type" : "integer"
+    },
+    "nombreWC" : {
+      "type" : "integer"
+    },
+    "nombreCabines" : {
+      "type" : "integer"
+    },
+    "nombreChambresEnMezzanine" : {
+      "type" : "integer"
+    },
+    "nombreSuites" : {
+      "type" : "integer"
+    },
+    "nombreLitsDoubles" : {
+      "type" : "integer"
+    },
+    "nombreLitsSimples" : {
+      "type" : "integer"
+    },
+    "surface" : {
+      "type" : "integer"
+    },
+    "nombrePieces" : {
+      "type" : "integer"
+    },
+    "nombreChambres" : {
+      "type" : "integer"
+    },
+    "nombreEtages" : {
+      "type" : "integer"
+    },
+    "numeroEtage" : {
+      "type" : "string"
+    }
+  }
+}

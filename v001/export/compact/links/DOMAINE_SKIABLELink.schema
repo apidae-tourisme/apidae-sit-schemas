@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DOMAINE_SKIABLELink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "DOMAINE_SKIABLE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

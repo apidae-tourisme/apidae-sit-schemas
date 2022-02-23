@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "domaineSkiableLien",
+  "additionalProperties" : false,
+  "properties" : {
+    "order" : {
+      "type" : "integer"
+    },
+    "objetTouristique" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink"
+    }
+  }
+}

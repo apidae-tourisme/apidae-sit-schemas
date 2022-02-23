@@ -1,0 +1,23 @@
+{
+  "type" : "object",
+  "id" : "informationsEquipement",
+  "additionalProperties" : false,
+  "properties" : {
+    "rubrique" : {
+      "type" : "object",
+      "id" : "EquipementRubrique"
+    },
+    "activites" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "EquipementActivite"
+      }
+    },
+    "itineraire" : {
+      "type" : "object",
+      "id" : "itineraire"
+    }
+  }
+}

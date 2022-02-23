@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DescriptifThemeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "DescriptifTheme" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

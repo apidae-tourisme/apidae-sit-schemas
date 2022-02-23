@@ -1,0 +1,92 @@
+{
+  "type" : "object",
+  "id" : "informationsHebergementCollectif",
+  "additionalProperties" : false,
+  "properties" : {
+    "hebergementCollectifType" : {
+      "type" : "object",
+      "id" : "HebergementCollectifType"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "classementPrefectoral" : {
+      "type" : "object",
+      "id" : "HebergementCollectifClassementPrefectoral"
+    },
+    "chaineEtLabel" : {
+      "type" : "object",
+      "id" : "HebergementCollectifChaineEtLabel"
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HebergementCollectifLabel"
+      }
+    },
+    "typesHebergement" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HebergementCollectifTypeHebergement"
+      }
+    },
+    "typesHabitation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeHabitation"
+      }
+    },
+    "agrements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "hebergementCollectifAgrement"
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hebergementCollectifCapacite"
+    },
+    "tempsAccesDepuisParking" : {
+      "type" : "integer"
+    },
+    "denivellationDepuisParking" : {
+      "type" : "integer"
+    },
+    "moyensLocomotion" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SejourPackageTransport"
+      }
+    },
+    "moyensLocomotionAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SejourPackageTransport"
+      }
+    },
+    "moyensLocomotionRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SejourPackageTransport"
+      }
+    }
+  }
+}

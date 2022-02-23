@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DomaineSkiableClassificationLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "DomaineSkiableClassification" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

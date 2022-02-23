@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HotelleriePleinAirClassementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HotelleriePleinAirClassement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

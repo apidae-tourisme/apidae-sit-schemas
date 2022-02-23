@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HebergementLocatifLabelLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HebergementLocatifLabel" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

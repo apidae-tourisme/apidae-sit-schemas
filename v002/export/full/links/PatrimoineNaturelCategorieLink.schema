@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PatrimoineNaturelCategorieLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "PatrimoineNaturelCategorie" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HebergementCollectifTypeHebergementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HebergementCollectifTypeHebergement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

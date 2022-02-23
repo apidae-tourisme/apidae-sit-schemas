@@ -1,0 +1,42 @@
+{
+  "type" : "object",
+  "id" : "informationsHotelleriePleinAir",
+  "additionalProperties" : false,
+  "properties" : {
+    "hotelleriePleinAirType" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirTypeLink"
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirClassementLink"
+    },
+    "chaines" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirChaineLink"
+      }
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirLabelLink"
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hotelleriePleinAirCapacite"
+    }
+  }
+}

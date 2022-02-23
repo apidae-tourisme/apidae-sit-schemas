@@ -1,0 +1,62 @@
+{
+  "type" : "object",
+  "id" : "LabelTourismeHandicap",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "LabelTourismeHandicap" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "libelleFr" : {
+      "type" : "string"
+    },
+    "libelleEn" : {
+      "type" : "string"
+    },
+    "libelleEs" : {
+      "type" : "string"
+    },
+    "libelleIt" : {
+      "type" : "string"
+    },
+    "libelleDe" : {
+      "type" : "string"
+    },
+    "libelleNl" : {
+      "type" : "string"
+    },
+    "ordre" : {
+      "type" : "integer"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "libelleRu" : {
+      "type" : "string"
+    },
+    "libelleZh" : {
+      "type" : "string"
+    },
+    "libellePtBR" : {
+      "type" : "string"
+    },
+    "libelleJa" : {
+      "type" : "string"
+    },
+    "actif" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "familleCritere" : {
+      "type" : "object",
+      "id" : "familleCritereLink"
+    },
+    "parent" : {
+      "type" : "object",
+      "id" : "elementReferenceLink"
+    }
+  }
+}

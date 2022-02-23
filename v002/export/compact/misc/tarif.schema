@@ -1,0 +1,25 @@
+{
+  "type" : "object",
+  "id" : "tarif",
+  "additionalProperties" : false,
+  "properties" : {
+    "devise" : {
+      "type" : "string",
+      "enum" : [ "EUR", "CHF", "CFP" ]
+    },
+    "minimum" : {
+      "type" : "number"
+    },
+    "maximum" : {
+      "type" : "number"
+    },
+    "precisionTarif" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "type" : {
+      "type" : "object",
+      "id" : "TarifTypeLink"
+    }
+  }
+}

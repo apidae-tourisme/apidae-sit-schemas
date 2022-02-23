@@ -1,0 +1,15 @@
+{
+  "type" : "object",
+  "id" : "ouvertureJourDuMois",
+  "additionalProperties" : false,
+  "properties" : {
+    "jourDuMois" : {
+      "type" : "string",
+      "enum" : [ "D_1ER", "D_2EME", "D_3EME", "D_4EME", "D_DERNIER" ]
+    },
+    "jour" : {
+      "type" : "string",
+      "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+    }
+  }
+}

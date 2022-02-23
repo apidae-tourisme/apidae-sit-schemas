@@ -1,0 +1,152 @@
+{
+  "type" : "object",
+  "id" : "informationsHotelleriePleinAir",
+  "additionalProperties" : false,
+  "properties" : {
+    "hotelleriePleinAirType" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HotelleriePleinAirType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirClassementLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HotelleriePleinAirClassement" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "chaines" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirChaineLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "HotelleriePleinAirChaine" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirLabelLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "HotelleriePleinAirLabel" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hotelleriePleinAirCapacite",
+      "additionalProperties" : false,
+      "properties" : {
+        "superficie" : {
+          "type" : "integer"
+        },
+        "caravaneige" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "nombreEmplacementsClasses" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsDeclares" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassages" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsLocatifs" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassagesLocatifs" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassagesNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsResidentielsNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsResidentiels" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCaravaneiges" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsTentes" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCaravanes" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCampingCars" : {
+          "type" : "integer"
+        },
+        "nombreHebergementsMobiliteReduite" : {
+          "type" : "integer"
+        },
+        "nombreHebergementsInsolites" : {
+          "type" : "integer"
+        },
+        "capaciteHebergementsInsolites" : {
+          "type" : "integer"
+        },
+        "nombreLocationMobilhomes" : {
+          "type" : "integer"
+        },
+        "nombreLocationTentes" : {
+          "type" : "integer"
+        },
+        "nombreLocationBungalows" : {
+          "type" : "integer"
+        },
+        "nombreLocationCaravanes" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

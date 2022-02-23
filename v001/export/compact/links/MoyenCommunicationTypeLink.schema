@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "MoyenCommunicationTypeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "MoyenCommunicationType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

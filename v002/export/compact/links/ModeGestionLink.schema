@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ModeGestionLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ModeGestion" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

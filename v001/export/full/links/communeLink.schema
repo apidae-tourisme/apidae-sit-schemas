@@ -1,0 +1,10 @@
+{
+  "type" : "object",
+  "id" : "communeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

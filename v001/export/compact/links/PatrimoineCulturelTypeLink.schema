@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PatrimoineCulturelTypeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "PatrimoineCulturelType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "type" : "object",
+  "id" : "prestations",
+  "additionalProperties" : false,
+  "properties" : {
+    "equipements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationEquipementLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PrestationEquipement" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "services" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationServiceLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PrestationService" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "animauxAcceptes" : {
+      "type" : "string",
+      "enum" : [ "ACCEPTES", "NON_ACCEPTES", "NON_DISPONIBLE" ]
+    },
+    "animauxAcceptesSupplement" : {
+      "type" : "string",
+      "enum" : [ "AVEC_SUPPLEMENT", "SANS_SUPPLEMENT", "NON_DISPONIBLE" ]
+    },
+    "descriptifAnimauxAcceptes" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "activites" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationActiviteLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PrestationActivite" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "conforts" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationConfortLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PrestationConfort" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "languesParlees" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "Langue" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "languesDocumentation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "Langue" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "complementAccueil" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "tourismesAdaptes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TourismeAdapteLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "TourismeAdapte" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "labelsTourismeHandicap" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LabelTourismeHandicapLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "LabelTourismeHandicap" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "descriptifHandicapMoteur" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "descriptifHandicapAuditif" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "descriptifHandicapVisuel" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "descriptifHandicapMental" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
+      "type" : "integer"
+    },
+    "typesClientele" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeClienteleLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "TypeClientele" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "nombrePersonnesMinimum" : {
+      "type" : "integer"
+    },
+    "tailleGroupeMin" : {
+      "type" : "integer"
+    },
+    "tailleGroupeMax" : {
+      "type" : "integer"
+    },
+    "ageMin" : {
+      "type" : "integer"
+    },
+    "ageMax" : {
+      "type" : "integer"
+    },
+    "uniteAgeMin" : {
+      "type" : "string",
+      "enum" : [ "MOIS", "ANNEE" ]
+    },
+    "uniteAgeMax" : {
+      "type" : "string",
+      "enum" : [ "MOIS", "ANNEE" ]
+    }
+  }
+}

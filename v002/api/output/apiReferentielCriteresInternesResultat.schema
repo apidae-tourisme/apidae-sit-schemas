@@ -1,0 +1,20 @@
+{
+  "type" : "array",
+  "id" : "apiReferentielCriteresInternesResultat",
+  "items" : [ {
+    "type" : "object",
+    "id" : "critereInterne",
+    "additionalProperties" : false,
+    "properties" : {
+      "id" : {
+        "type" : "integer"
+      },
+      "libelle" : {
+        "type" : "string"
+      },
+      "commentaire" : {
+        "type" : "string"
+      }
+    }
+  } ]
+}

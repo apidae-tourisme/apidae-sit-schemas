@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "TarifTypeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "TarifType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

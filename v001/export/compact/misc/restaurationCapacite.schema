@@ -1,0 +1,23 @@
+{
+  "type" : "object",
+  "id" : "restaurationCapacite",
+  "additionalProperties" : false,
+  "properties" : {
+    "descriptionSalles" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "nombreSalles" : {
+      "type" : "integer"
+    },
+    "nombreSallesClimatisees" : {
+      "type" : "integer"
+    },
+    "nombreMaximumCouverts" : {
+      "type" : "integer"
+    },
+    "nombreCouvertsTerrasse" : {
+      "type" : "integer"
+    }
+  }
+}

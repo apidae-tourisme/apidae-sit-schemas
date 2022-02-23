@@ -1,0 +1,57 @@
+{
+  "type" : "object",
+  "id" : "informationsPatrimoineCulturel",
+  "additionalProperties" : false,
+  "properties" : {
+    "patrimoineCulturelType" : {
+      "type" : "object",
+      "id" : "PatrimoineCulturelTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "PatrimoineCulturelType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "themes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PatrimoineCulturelThemeLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PatrimoineCulturelTheme" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "categories" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PatrimoineCulturelCategorieLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "PatrimoineCulturelCategorie" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type" : "object",
+  "id" : "contact",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiant" : {
+      "type" : "integer"
+    },
+    "referent" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "civilite" : {
+      "type" : "object",
+      "id" : "ContactCiviliteLink"
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "prenom" : {
+      "type" : "string"
+    },
+    "titre" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "fonction" : {
+      "type" : "object",
+      "id" : "ContactFonctionLink"
+    },
+    "autresFonctions" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ContactFonctionLink"
+      }
+    },
+    "moyensCommunication" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "moyenCommunication"
+      }
+    },
+    "identifiantTemporaire" : {
+      "type" : "integer"
+    }
+  }
+}

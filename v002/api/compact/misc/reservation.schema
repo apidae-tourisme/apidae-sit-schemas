@@ -1,0 +1,19 @@
+{
+  "type" : "object",
+  "id" : "reservation",
+  "additionalProperties" : false,
+  "properties" : {
+    "organismes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "reservationOrganisme"
+      }
+    },
+    "complement" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    }
+  }
+}

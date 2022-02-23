@@ -1,0 +1,846 @@
+{
+  "type" : "object",
+  "id" : "informationsHotelleriePleinAir",
+  "additionalProperties" : false,
+  "properties" : {
+    "hotelleriePleinAirType" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirType",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HotelleriePleinAirType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        },
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "ordre" : {
+          "type" : "integer"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        },
+        "familleCritere" : {
+          "type" : "object",
+          "id" : "familleCritereLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "FamilleCritere" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "parent" : {
+          "type" : "object",
+          "id" : "elementReferenceLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "HotelleriePleinAirClassement",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HotelleriePleinAirClassement" ]
+        },
+        "id" : {
+          "type" : "integer"
+        },
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "ordre" : {
+          "type" : "integer"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        },
+        "familleCritere" : {
+          "type" : "object",
+          "id" : "familleCritereLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "FamilleCritere" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "parent" : {
+          "type" : "object",
+          "id" : "elementReferenceLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "chaines" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirChaine",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "HotelleriePleinAirChaine" ]
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "libelleFr" : {
+            "type" : "string"
+          },
+          "libelleEn" : {
+            "type" : "string"
+          },
+          "libelleEs" : {
+            "type" : "string"
+          },
+          "libelleIt" : {
+            "type" : "string"
+          },
+          "libelleDe" : {
+            "type" : "string"
+          },
+          "libelleNl" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "libelleRu" : {
+            "type" : "string"
+          },
+          "libelleZh" : {
+            "type" : "string"
+          },
+          "libellePtBR" : {
+            "type" : "string"
+          },
+          "libelleJa" : {
+            "type" : "string"
+          },
+          "familleCritere" : {
+            "type" : "object",
+            "id" : "familleCritereLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "FamilleCritere" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "parent" : {
+            "type" : "object",
+            "id" : "elementReferenceLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HotelleriePleinAirLabel",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "HotelleriePleinAirLabel" ]
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "libelleFr" : {
+            "type" : "string"
+          },
+          "libelleEn" : {
+            "type" : "string"
+          },
+          "libelleEs" : {
+            "type" : "string"
+          },
+          "libelleIt" : {
+            "type" : "string"
+          },
+          "libelleDe" : {
+            "type" : "string"
+          },
+          "libelleNl" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "familleCritere" : {
+            "type" : "object",
+            "id" : "familleCritereLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "FamilleCritere" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "parent" : {
+            "type" : "object",
+            "id" : "elementReferenceLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "typeLabel" : {
+            "type" : "object",
+            "id" : "HotelleriePleinAirTypeLabel",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "HotelleriePleinAirTypeLabel" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              },
+              "familleCritere" : {
+                "type" : "object",
+                "id" : "familleCritereLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "FamilleCritere" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  },
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "ordre" : {
+                    "type" : "integer"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "parent" : {
+                "type" : "object",
+                "id" : "elementReferenceLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  },
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "ordre" : {
+                    "type" : "integer"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          },
+          "libelleRu" : {
+            "type" : "string"
+          },
+          "libelleZh" : {
+            "type" : "string"
+          },
+          "libellePtBR" : {
+            "type" : "string"
+          },
+          "libelleJa" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hotelleriePleinAirCapacite",
+      "additionalProperties" : false,
+      "properties" : {
+        "superficie" : {
+          "type" : "integer"
+        },
+        "caravaneige" : {
+          "type" : "boolean",
+          "required" : true
+        },
+        "nombreEmplacementsClasses" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsDeclares" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassages" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsLocatifs" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassagesLocatifs" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsPassagesNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsResidentielsNus" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsResidentiels" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCaravaneiges" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsTentes" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCaravanes" : {
+          "type" : "integer"
+        },
+        "nombreEmplacementsCampingCars" : {
+          "type" : "integer"
+        },
+        "nombreHebergementsMobiliteReduite" : {
+          "type" : "integer"
+        },
+        "nombreHebergementsInsolites" : {
+          "type" : "integer"
+        },
+        "capaciteHebergementsInsolites" : {
+          "type" : "integer"
+        },
+        "nombreLocationMobilhomes" : {
+          "type" : "integer"
+        },
+        "nombreLocationTentes" : {
+          "type" : "integer"
+        },
+        "nombreLocationBungalows" : {
+          "type" : "integer"
+        },
+        "nombreLocationCaravanes" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

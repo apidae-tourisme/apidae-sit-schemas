@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HebergementCollectifClassementPrefectoralLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HebergementCollectifClassementPrefectoral" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

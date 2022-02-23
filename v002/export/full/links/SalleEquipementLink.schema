@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "SalleEquipementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "SalleEquipement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

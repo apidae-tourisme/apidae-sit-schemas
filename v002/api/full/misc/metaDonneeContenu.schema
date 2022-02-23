@@ -1,0 +1,16 @@
+{
+  "type" : "object",
+  "id" : "metaDonneeContenu",
+  "additionalProperties" : false,
+  "properties" : {
+    "cible" : {
+      "type" : "string"
+    },
+    "metadonnee" : {
+      "type" : "any"
+    },
+    "xmlMetadonnee" : {
+      "type" : "string"
+    }
+  }
+}

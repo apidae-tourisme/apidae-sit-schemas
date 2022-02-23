@@ -1,0 +1,277 @@
+{
+  "type" : "array",
+  "id" : "apiRechercheEnregistreeResultat",
+  "items" : [ {
+    "type" : "object",
+    "id" : "rechercheEnregistreeExport",
+    "additionalProperties" : false,
+    "properties" : {
+      "memberId" : {
+        "type" : "integer"
+      },
+      "searchId" : {
+        "type" : "integer"
+      },
+      "searchLabel" : {
+        "type" : "string"
+      },
+      "searchIntuitiveCriteriaJson" : {
+        "type" : "object",
+        "id" : "rechercheIntuitiveExport",
+        "additionalProperties" : false,
+        "properties" : {
+          "quoi" : {
+            "type" : "string"
+          },
+          "geographyItems" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "id" : "GeographyItem",
+              "additionalProperties" : false,
+              "properties" : {
+                "id" : {
+                  "type" : "string"
+                },
+                "label" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "criteres" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "id" : {
+                  "type" : "string"
+                },
+                "label" : {
+                  "type" : "string"
+                },
+                "elementReferenceFictif" : {
+                  "type" : "string"
+                },
+                "critereInterne" : {
+                  "type" : "string"
+                },
+                "type" : {
+                  "type" : "string",
+                  "enum" : [ "CRITERE_INTERNE", "ELEMENT_REFERENCE", "ELEMENT_REFERENCE_FICTIF" ]
+                },
+                "elementsReference" : {
+                  "type" : "array",
+                  "additionalItems" : false,
+                  "items" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          },
+          "ouCriteres" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "debutOuverture" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "finOuverture" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "periode" : {
+            "type" : "string",
+            "enum" : [ "AUJOURDHUI", "DEMAIN", "_3_JOURS", "WEEK_END_PROCHAIN", "_8_JOURS", "_15_JOURS", "_1_MOIS", "_3_MOIS", "_6_MOIS", "A_VENIR" ]
+          },
+          "ongletsInformations" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "tri" : {
+                  "type" : "string",
+                  "enum" : [ "DISTANCE", "PERTINENCE", "NOM", "STRUCTURE", "COMMUNE", "DEPARTEMENT", "CLASSEMENT_CROISSANT", "CLASSEMENT_DECROISSANT" ]
+                },
+                "facetFilters" : {
+                  "type" : "object",
+                  "additionalProperties" : {
+                    "type" : "object",
+                    "additionalProperties" : false,
+                    "properties" : {
+                      "and" : {
+                        "type" : "boolean",
+                        "required" : true
+                      },
+                      "fieldName" : {
+                        "type" : "string"
+                      },
+                      "query" : {
+                        "type" : "boolean",
+                        "required" : true
+                      },
+                      "aggregating" : {
+                        "type" : "boolean",
+                        "required" : true
+                      },
+                      "facetFilterValues" : {
+                        "type" : "array",
+                        "additionalItems" : false,
+                        "items" : {
+                          "type" : "object",
+                          "additionalProperties" : false,
+                          "properties" : {
+                            "positive" : {
+                              "type" : "boolean",
+                              "required" : true
+                            },
+                            "value" : {
+                              "type" : "object",
+                              "id" : "com.rhonealpestourisme.sitra.core.common.indexation.model.objettouristique.facet.IFacetValue",
+                              "additionalProperties" : false
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "count" : {
+                  "type" : "integer"
+                },
+                "lastDisplayedPage" : {
+                  "type" : "integer",
+                  "required" : true
+                },
+                "capaciteMinimum" : {
+                  "type" : "integer"
+                },
+                "capaciteMaximum" : {
+                  "type" : "integer"
+                },
+                "tarifMinimum" : {
+                  "type" : "integer"
+                },
+                "tarifMaximum" : {
+                  "type" : "integer"
+                },
+                "tarifDevise" : {
+                  "type" : "string",
+                  "enum" : [ "EUR", "CHF", "CFP" ]
+                }
+              }
+            }
+          },
+          "ongletCourant" : {
+            "type" : "string",
+            "enum" : [ "AGENDA", "MANGER_DEGUSTER", "DORMIR", "A_VOIR_A_FAIRE", "SERVICES_PRATIQUES", "SEJOURS_PACKAGES", "DESTINATIONS", "TOUT" ]
+          },
+          "aspectName" : {
+            "type" : "string",
+            "enum" : [ "STANDARD", "HIVER", "ETE", "HANDICAP", "GROUPES", "TOURISME_AFFAIRES", "PRESTATAIRE_ACTIVITES" ]
+          },
+          "boostAdherent" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "niveauDiffusion" : {
+            "type" : "string",
+            "enum" : [ "STANDARD", "OPEN_DATA" ]
+          }
+        }
+      },
+      "searchAdvancedCriteriaJson" : {
+        "type" : "object",
+        "id" : "rechercheAvanceeExport",
+        "additionalProperties" : false,
+        "properties" : {
+          "requetePrincipale" : {
+            "type" : "object",
+            "id" : "critereRechercheAvanceeGroupExport",
+            "additionalProperties" : false,
+            "properties" : {
+              "criteres" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "critereRechercheAvanceeGroupExport",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "type" : {
+                      "type" : "string",
+                      "enum" : [ "CRITERE_AND_GROUP", "CRITERE_OR_GROUP", "CRITERE_TEXTUEL", "CRITERE_TEXTUEL_DONNEES_PRIVEES", "CRITERE_ELEMENTS_REFERENCE", "CRITERE_TERRITOIRES", "CRITERE_COMMUNES", "CRITERE_STRUCTURE_COMMUNES", "CRITERE_CRITERES_INTERNES", "CRITERE_OBJET_TOURISTIQUE_TYPES", "CRITERE_STRUCTURE_OBJETS_LIES_TYPES", "CRITERE_DEPARTEMENTS", "CRITERE_BOOLEAN", "CRITERE_OUVERTURE", "CRITERE_NUMERIQUE", "CRITERE_NUMERIQUE_AGE", "CRITERE_INTERVALLE_DATE", "CRITERE_MULTIMEDIA_TYPES", "CRITERE_HEBERGEMENT_LOCATIF_CLASSEMENT", "CRITERE_TARIF", "CRITERE_GEOLOCALISATION", "CRITERE_MEMBRES_SITRA", "CRITERE_UTILISATEURS_SITRA", "CRITERE_STRUCTURES", "CRITERE_OBJETS_TOURISTIQUES_REFERENCES", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDENTIFIERS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_STATES", "CRITERE_SALLE_REUNION", "CRITERE_ENQUETE", "CRITERE_ANIMAUX_ACCEPTES", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT", "CRITERE_NIVEAU_DIFFUSION", "CRITERE_EXTERNAL_LINK_STATUS", "CRITERE_LIEUX", "CRITERE_OBJET_TOURISTIQUE_MODIFICATION_TYPE", "CRITERE_MULTIMEDIA", "CRITERE_OUVERTURE_RECURRENCE_TYPES", "CRITERE_ITINERAIRE_TYPES", "CRITERE_ITINERAIRE_BALISE", "CRITERE_ASPECT_CHAMPS_SURCHARGES", "CRITERE_OBJET_TOURISTIQUE_LIEN_TYPES", "CRITERE_PAYS", "CRITERE_TARIF_DEVISE", "CRITERE_PROPRIETE_COLLABORATION", "CRITERE_PERIODES_OUVERTURE_STATE", "CRITERE_PERIODE_COULISSANTE", "CRITERE_ENTITES_NON_UTILISEES", "CRITERE_ENUM_AS_BOOLEAN", "CRITERE_ANIMAUX_ACCEPTES_ENUM", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT_ENUM", "CRITERE_TAXE_DE_SEJOUR", "CRITERE_TEXTUEL_DESCRIPTIFS_THEMATISES", "CRITERE_OUVERTURE_EN_CLAIR_GENERATION_MODE", "CRITERE_TARIF_EN_CLAIR_GENERATION_MODE", "CRITERE_TOUS_LES_ANS", "CRITERE_METADATA" ]
+                    }
+                  }
+                }
+              },
+              "type" : {
+                "type" : "string",
+                "enum" : [ "CRITERE_AND_GROUP", "CRITERE_OR_GROUP", "CRITERE_TEXTUEL", "CRITERE_TEXTUEL_DONNEES_PRIVEES", "CRITERE_ELEMENTS_REFERENCE", "CRITERE_TERRITOIRES", "CRITERE_COMMUNES", "CRITERE_STRUCTURE_COMMUNES", "CRITERE_CRITERES_INTERNES", "CRITERE_OBJET_TOURISTIQUE_TYPES", "CRITERE_STRUCTURE_OBJETS_LIES_TYPES", "CRITERE_DEPARTEMENTS", "CRITERE_BOOLEAN", "CRITERE_OUVERTURE", "CRITERE_NUMERIQUE", "CRITERE_NUMERIQUE_AGE", "CRITERE_INTERVALLE_DATE", "CRITERE_MULTIMEDIA_TYPES", "CRITERE_HEBERGEMENT_LOCATIF_CLASSEMENT", "CRITERE_TARIF", "CRITERE_GEOLOCALISATION", "CRITERE_MEMBRES_SITRA", "CRITERE_UTILISATEURS_SITRA", "CRITERE_STRUCTURES", "CRITERE_OBJETS_TOURISTIQUES_REFERENCES", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDENTIFIERS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_STATES", "CRITERE_SALLE_REUNION", "CRITERE_ENQUETE", "CRITERE_ANIMAUX_ACCEPTES", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT", "CRITERE_NIVEAU_DIFFUSION", "CRITERE_EXTERNAL_LINK_STATUS", "CRITERE_LIEUX", "CRITERE_OBJET_TOURISTIQUE_MODIFICATION_TYPE", "CRITERE_MULTIMEDIA", "CRITERE_OUVERTURE_RECURRENCE_TYPES", "CRITERE_ITINERAIRE_TYPES", "CRITERE_ITINERAIRE_BALISE", "CRITERE_ASPECT_CHAMPS_SURCHARGES", "CRITERE_OBJET_TOURISTIQUE_LIEN_TYPES", "CRITERE_PAYS", "CRITERE_TARIF_DEVISE", "CRITERE_PROPRIETE_COLLABORATION", "CRITERE_PERIODES_OUVERTURE_STATE", "CRITERE_PERIODE_COULISSANTE", "CRITERE_ENTITES_NON_UTILISEES", "CRITERE_ENUM_AS_BOOLEAN", "CRITERE_ANIMAUX_ACCEPTES_ENUM", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT_ENUM", "CRITERE_TAXE_DE_SEJOUR", "CRITERE_TEXTUEL_DESCRIPTIFS_THEMATISES", "CRITERE_OUVERTURE_EN_CLAIR_GENERATION_MODE", "CRITERE_TARIF_EN_CLAIR_GENERATION_MODE", "CRITERE_TOUS_LES_ANS", "CRITERE_METADATA" ]
+              }
+            }
+          },
+          "requeteSecondaire" : {
+            "type" : "object",
+            "id" : "critereRechercheAvanceeGroupExport",
+            "additionalProperties" : false,
+            "properties" : {
+              "criteres" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "critereRechercheAvanceeGroupExport",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "type" : {
+                      "type" : "string",
+                      "enum" : [ "CRITERE_AND_GROUP", "CRITERE_OR_GROUP", "CRITERE_TEXTUEL", "CRITERE_TEXTUEL_DONNEES_PRIVEES", "CRITERE_ELEMENTS_REFERENCE", "CRITERE_TERRITOIRES", "CRITERE_COMMUNES", "CRITERE_STRUCTURE_COMMUNES", "CRITERE_CRITERES_INTERNES", "CRITERE_OBJET_TOURISTIQUE_TYPES", "CRITERE_STRUCTURE_OBJETS_LIES_TYPES", "CRITERE_DEPARTEMENTS", "CRITERE_BOOLEAN", "CRITERE_OUVERTURE", "CRITERE_NUMERIQUE", "CRITERE_NUMERIQUE_AGE", "CRITERE_INTERVALLE_DATE", "CRITERE_MULTIMEDIA_TYPES", "CRITERE_HEBERGEMENT_LOCATIF_CLASSEMENT", "CRITERE_TARIF", "CRITERE_GEOLOCALISATION", "CRITERE_MEMBRES_SITRA", "CRITERE_UTILISATEURS_SITRA", "CRITERE_STRUCTURES", "CRITERE_OBJETS_TOURISTIQUES_REFERENCES", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDENTIFIERS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_STATES", "CRITERE_SALLE_REUNION", "CRITERE_ENQUETE", "CRITERE_ANIMAUX_ACCEPTES", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT", "CRITERE_NIVEAU_DIFFUSION", "CRITERE_EXTERNAL_LINK_STATUS", "CRITERE_LIEUX", "CRITERE_OBJET_TOURISTIQUE_MODIFICATION_TYPE", "CRITERE_MULTIMEDIA", "CRITERE_OUVERTURE_RECURRENCE_TYPES", "CRITERE_ITINERAIRE_TYPES", "CRITERE_ITINERAIRE_BALISE", "CRITERE_ASPECT_CHAMPS_SURCHARGES", "CRITERE_OBJET_TOURISTIQUE_LIEN_TYPES", "CRITERE_PAYS", "CRITERE_TARIF_DEVISE", "CRITERE_PROPRIETE_COLLABORATION", "CRITERE_PERIODES_OUVERTURE_STATE", "CRITERE_PERIODE_COULISSANTE", "CRITERE_ENTITES_NON_UTILISEES", "CRITERE_ENUM_AS_BOOLEAN", "CRITERE_ANIMAUX_ACCEPTES_ENUM", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT_ENUM", "CRITERE_TAXE_DE_SEJOUR", "CRITERE_TEXTUEL_DESCRIPTIFS_THEMATISES", "CRITERE_OUVERTURE_EN_CLAIR_GENERATION_MODE", "CRITERE_TARIF_EN_CLAIR_GENERATION_MODE", "CRITERE_TOUS_LES_ANS", "CRITERE_METADATA" ]
+                    }
+                  }
+                }
+              },
+              "type" : {
+                "type" : "string",
+                "enum" : [ "CRITERE_AND_GROUP", "CRITERE_OR_GROUP", "CRITERE_TEXTUEL", "CRITERE_TEXTUEL_DONNEES_PRIVEES", "CRITERE_ELEMENTS_REFERENCE", "CRITERE_TERRITOIRES", "CRITERE_COMMUNES", "CRITERE_STRUCTURE_COMMUNES", "CRITERE_CRITERES_INTERNES", "CRITERE_OBJET_TOURISTIQUE_TYPES", "CRITERE_STRUCTURE_OBJETS_LIES_TYPES", "CRITERE_DEPARTEMENTS", "CRITERE_BOOLEAN", "CRITERE_OUVERTURE", "CRITERE_NUMERIQUE", "CRITERE_NUMERIQUE_AGE", "CRITERE_INTERVALLE_DATE", "CRITERE_MULTIMEDIA_TYPES", "CRITERE_HEBERGEMENT_LOCATIF_CLASSEMENT", "CRITERE_TARIF", "CRITERE_GEOLOCALISATION", "CRITERE_MEMBRES_SITRA", "CRITERE_UTILISATEURS_SITRA", "CRITERE_STRUCTURES", "CRITERE_OBJETS_TOURISTIQUES_REFERENCES", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_IDENTIFIERS", "CRITERE_OBJET_TOURISTIQUE_REFERENCE_STATES", "CRITERE_SALLE_REUNION", "CRITERE_ENQUETE", "CRITERE_ANIMAUX_ACCEPTES", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT", "CRITERE_NIVEAU_DIFFUSION", "CRITERE_EXTERNAL_LINK_STATUS", "CRITERE_LIEUX", "CRITERE_OBJET_TOURISTIQUE_MODIFICATION_TYPE", "CRITERE_MULTIMEDIA", "CRITERE_OUVERTURE_RECURRENCE_TYPES", "CRITERE_ITINERAIRE_TYPES", "CRITERE_ITINERAIRE_BALISE", "CRITERE_ASPECT_CHAMPS_SURCHARGES", "CRITERE_OBJET_TOURISTIQUE_LIEN_TYPES", "CRITERE_PAYS", "CRITERE_TARIF_DEVISE", "CRITERE_PROPRIETE_COLLABORATION", "CRITERE_PERIODES_OUVERTURE_STATE", "CRITERE_PERIODE_COULISSANTE", "CRITERE_ENTITES_NON_UTILISEES", "CRITERE_ENUM_AS_BOOLEAN", "CRITERE_ANIMAUX_ACCEPTES_ENUM", "CRITERE_ANIMAUX_ACCEPTES_SUPPLEMENT_ENUM", "CRITERE_TAXE_DE_SEJOUR", "CRITERE_TEXTUEL_DESCRIPTIFS_THEMATISES", "CRITERE_OUVERTURE_EN_CLAIR_GENERATION_MODE", "CRITERE_TARIF_EN_CLAIR_GENERATION_MODE", "CRITERE_TOUS_LES_ANS", "CRITERE_METADATA" ]
+              }
+            }
+          },
+          "requeteLieeMode" : {
+            "type" : "string",
+            "enum" : [ "OBJETS", "OBJETS_LIES", "OBJETS_TOURISTIQUE_LIES", "STRUCTURES_LIEES", "PRESTATAIRES_LIES", "PRESTATIONS_LIEES" ]
+          },
+          "requeteStructuresLieesTypes" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "string",
+              "enum" : [ "GESTION", "INFORMATION" ]
+            }
+          },
+          "aspectName" : {
+            "type" : "string",
+            "enum" : [ "STANDARD", "HIVER", "ETE", "HANDICAP", "GROUPES", "TOURISME_AFFAIRES", "PRESTATAIRE_ACTIVITES" ]
+          },
+          "sortOrderMap" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "string",
+              "enum" : [ "ASC", "DESC" ]
+            }
+          }
+        }
+      },
+      "searchCreatedAt" : {
+        "type" : "string",
+        "format" : "date-time"
+      }
+    }
+  } ]
+}

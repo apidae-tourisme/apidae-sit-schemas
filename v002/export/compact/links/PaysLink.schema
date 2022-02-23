@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PaysLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "Pays" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type" : "object",
+  "id" : "visites",
+  "additionalProperties" : false,
+  "properties" : {
+    "languesVisite" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink"
+      }
+    },
+    "languesAudioGuide" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink"
+      }
+    },
+    "languesPanneauInformation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink"
+      }
+    },
+    "visitable" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "dureeMoyenneVisiteGroupe" : {
+      "type" : "integer"
+    },
+    "dureeMoyenneVisiteIndividuelle" : {
+      "type" : "integer"
+    },
+    "prestationsVisitesIndividuelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationVisiteIndividuelleLink"
+      }
+    },
+    "prestationsVisitesGroupees" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PrestationVisiteGroupeeLink"
+      }
+    },
+    "complementVisite" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    }
+  }
+}

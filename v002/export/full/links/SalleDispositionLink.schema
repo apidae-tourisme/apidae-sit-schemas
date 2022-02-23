@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "SalleDispositionLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "SalleDisposition" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type" : "object",
+  "id" : "conditionsTarif",
+  "additionalProperties" : false,
+  "properties" : {
+    "conditionsGratuite" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ConditionGratuiteLink"
+      }
+    },
+    "gratuitPourLesMoinsDe" : {
+      "type" : "integer"
+    },
+    "gratuitPourLesPlusDe" : {
+      "type" : "integer"
+    },
+    "conditionJuniorAgeMin" : {
+      "type" : "integer"
+    },
+    "conditionJuniorAgeMax" : {
+      "type" : "integer"
+    },
+    "conditionEnfantAgeMin" : {
+      "type" : "integer"
+    },
+    "conditionEnfantAgeMax" : {
+      "type" : "integer"
+    }
+  }
+}

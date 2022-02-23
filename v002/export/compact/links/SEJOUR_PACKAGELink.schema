@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "SEJOUR_PACKAGELink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "SEJOUR_PACKAGE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

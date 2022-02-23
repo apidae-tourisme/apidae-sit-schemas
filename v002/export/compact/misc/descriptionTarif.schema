@@ -1,0 +1,81 @@
+{
+  "type" : "object",
+  "id" : "descriptionTarif",
+  "additionalProperties" : false,
+  "properties" : {
+    "indicationTarif" : {
+      "type" : "string",
+      "enum" : [ "GRATUIT", "ACCES_LIBRE", "ACCES_LIBRE_STATIONNEMENT_PAYANT_OBLIGATOIRE", "ENTREE_LIBRE", "PARTICIPATION_LIBRE", "PAYANT_TARIFS_NON_COMMUNIQUES", "PAYANT" ]
+    },
+    "gratuit" : {
+      "type" : "boolean",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION"
+    },
+    "tarifsEnClair" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "tarifsEnClairGenerationMode" : {
+      "type" : "string",
+      "enum" : [ "AUTOMATIQUE", "MANUEL" ]
+    },
+    "complement" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
+    },
+    "periodes" : {
+      "type" : "array",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "periodeTarif"
+      }
+    },
+    "modesPaiement" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ModePaiementLink"
+      }
+    },
+    "modesPaiementAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ModePaiementLink"
+      }
+    },
+    "modesPaiementRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ModePaiementLink"
+      }
+    },
+    "devise" : {
+      "type" : "string",
+      "enum" : [ "EUR", "CHF", "CFP" ]
+    },
+    "taxeDeSejourIncluse" : {
+      "type" : "string",
+      "enum" : [ "OUI", "NON", "NON_COMMUNIQUE" ]
+    },
+    "leTarifComprend" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "leTarifNeComprendPas" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "conditions" : {
+      "type" : "object",
+      "id" : "conditionsTarif"
+    }
+  }
+}

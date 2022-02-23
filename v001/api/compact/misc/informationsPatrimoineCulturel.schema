@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "informationsPatrimoineCulturel",
+  "additionalProperties" : false,
+  "properties" : {
+    "patrimoineCulturelType" : {
+      "type" : "object",
+      "id" : "PatrimoineCulturelType"
+    },
+    "themes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PatrimoineCulturelTheme"
+      }
+    },
+    "categories" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "PatrimoineCulturelCategorie"
+      }
+    }
+  }
+}

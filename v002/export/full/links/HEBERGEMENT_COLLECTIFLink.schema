@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HEBERGEMENT_COLLECTIFLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "HEBERGEMENT_COLLECTIF" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

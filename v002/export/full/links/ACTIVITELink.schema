@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ACTIVITELink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "ACTIVITE" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

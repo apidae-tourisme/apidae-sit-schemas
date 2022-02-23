@@ -1,0 +1,60 @@
+{
+  "type" : "object",
+  "id" : "tourismeAffaires",
+  "additionalProperties" : false,
+  "properties" : {
+    "tourismeAffairesEnabled" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "sallesEquipeesPour" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SalleEquipeePour"
+      }
+    },
+    "sallesEquipement" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SalleEquipement"
+      }
+    },
+    "sallesRestauration" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SalleRestauration"
+      }
+    },
+    "sallesHebergement" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "SalleHebergement"
+      }
+    },
+    "sallesReunion" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "salleReunion"
+      }
+    },
+    "nombreSallesReunionEquipees" : {
+      "type" : "integer"
+    },
+    "capaciteMaxAccueil" : {
+      "type" : "integer"
+    },
+    "nombreSallesModulables" : {
+      "type" : "integer"
+    }
+  }
+}

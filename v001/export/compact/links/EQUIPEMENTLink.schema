@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "EQUIPEMENTLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "EQUIPEMENT" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

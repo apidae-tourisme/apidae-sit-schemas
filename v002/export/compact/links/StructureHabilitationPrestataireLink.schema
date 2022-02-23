@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "StructureHabilitationPrestataireLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "StructureHabilitationPrestataire" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type" : "object",
+  "id" : "informationsStructure",
+  "additionalProperties" : false,
+  "properties" : {
+    "sigle" : {
+      "type" : "string"
+    },
+    "structureType" : {
+      "type" : "object",
+      "id" : "StructureTypeLink"
+    },
+    "entiteType" : {
+      "type" : "object",
+      "id" : "StructureTypeLink"
+    },
+    "classement" : {
+      "type" : "object",
+      "id" : "StructureClassementLink"
+    },
+    "habilitationsPrestataires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "StructureHabilitationPrestataireLink"
+      }
+    },
+    "activitesSportives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesCulturelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    }
+  }
+}

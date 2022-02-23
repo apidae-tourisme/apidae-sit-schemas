@@ -1,0 +1,183 @@
+{
+  "type" : "object",
+  "id" : "informationsHebergementLocatif",
+  "additionalProperties" : false,
+  "properties" : {
+    "hebergementLocatifType" : {
+      "type" : "object",
+      "id" : "HebergementLocatifTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HebergementLocatifType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "dateDerniereVisite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateClassement" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numeroClassement" : {
+      "type" : "string"
+    },
+    "numeroAgrementLabel" : {
+      "type" : "string"
+    },
+    "dateAgrementLabel" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "classementPrefectoral" : {
+      "type" : "object",
+      "id" : "HebergementLocatifClassementPrefectoralLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HebergementLocatifClassementPrefectoral" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "typeLabel" : {
+      "type" : "object",
+      "id" : "HebergementLocatifTypeLabelLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "HebergementLocatifTypeLabel" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "labels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "HebergementLocatifLabelLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "HebergementLocatifLabel" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "typesHabitation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TypeHabitationLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "TypeHabitation" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "capacite" : {
+      "type" : "object",
+      "id" : "hebergementLocatifCapacite",
+      "additionalProperties" : false,
+      "properties" : {
+        "capaciteHebergement" : {
+          "type" : "integer"
+        },
+        "capaciteMaximumPossible" : {
+          "type" : "integer"
+        },
+        "nombreSallesDeBain" : {
+          "type" : "integer"
+        },
+        "nombreWC" : {
+          "type" : "integer"
+        },
+        "nombreCabines" : {
+          "type" : "integer"
+        },
+        "nombreChambresEnMezzanine" : {
+          "type" : "integer"
+        },
+        "nombreSuites" : {
+          "type" : "integer"
+        },
+        "nombreLitsDoubles" : {
+          "type" : "integer"
+        },
+        "nombreLitsSimples" : {
+          "type" : "integer"
+        },
+        "surface" : {
+          "type" : "integer"
+        },
+        "nombrePieces" : {
+          "type" : "integer"
+        },
+        "nombreChambres" : {
+          "type" : "integer"
+        },
+        "nombreEtages" : {
+          "type" : "integer"
+        },
+        "numeroEtage" : {
+          "type" : "string"
+        }
+      }
+    },
+    "dureeMinimumEnJours" : {
+      "type" : "integer"
+    },
+    "agrements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "hebergementLocatifAgrement",
+        "additionalProperties" : false,
+        "properties" : {
+          "type" : {
+            "type" : "object",
+            "id" : "HebergementLocatifAgrementTypeLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "HebergementLocatifAgrementType" ]
+              },
+              "id" : {
+                "type" : "integer"
+              }
+            }
+          },
+          "numero" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

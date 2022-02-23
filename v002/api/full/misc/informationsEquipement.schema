@@ -1,0 +1,655 @@
+{
+  "type" : "object",
+  "id" : "informationsEquipement",
+  "additionalProperties" : false,
+  "properties" : {
+    "rubrique" : {
+      "type" : "object",
+      "id" : "EquipementRubrique",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "EquipementRubrique" ]
+        },
+        "id" : {
+          "type" : "integer"
+        },
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "ordre" : {
+          "type" : "integer"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        },
+        "familleCritere" : {
+          "type" : "object",
+          "id" : "familleCritereLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "FamilleCritere" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "parent" : {
+          "type" : "object",
+          "id" : "elementReferenceLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "elementReferenceType" : {
+              "type" : "string",
+              "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "ordre" : {
+              "type" : "integer"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "activites" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "EquipementActivite",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "EquipementActivite" ]
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "libelleFr" : {
+            "type" : "string"
+          },
+          "libelleEn" : {
+            "type" : "string"
+          },
+          "libelleEs" : {
+            "type" : "string"
+          },
+          "libelleIt" : {
+            "type" : "string"
+          },
+          "libelleDe" : {
+            "type" : "string"
+          },
+          "libelleNl" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "libelleRu" : {
+            "type" : "string"
+          },
+          "libelleZh" : {
+            "type" : "string"
+          },
+          "libellePtBR" : {
+            "type" : "string"
+          },
+          "libelleJa" : {
+            "type" : "string"
+          },
+          "familleCritere" : {
+            "type" : "object",
+            "id" : "familleCritereLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "FamilleCritere" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          },
+          "parent" : {
+            "type" : "object",
+            "id" : "elementReferenceLink",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "itineraire" : {
+      "type" : "object",
+      "id" : "itineraire",
+      "additionalProperties" : false,
+      "properties" : {
+        "denivellationPositive" : {
+          "type" : "integer"
+        },
+        "denivellationNegative" : {
+          "type" : "integer"
+        },
+        "penteMoyenne" : {
+          "type" : "integer"
+        },
+        "distance" : {
+          "type" : "number"
+        },
+        "dureeJournaliere" : {
+          "type" : "integer"
+        },
+        "dureeItinerance" : {
+          "type" : "number"
+        },
+        "referencesCartographiques" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "referencesTopoguides" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "passagesDelicats" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "altitudeMoyenne" : {
+          "type" : "integer"
+        },
+        "altitudeMaximum" : {
+          "type" : "integer"
+        },
+        "itineraireType" : {
+          "type" : "string",
+          "enum" : [ "ALLER_ITINERANCE", "ALLER_RETOUR", "BOUCLE" ]
+        },
+        "itineraireBalise" : {
+          "type" : "string",
+          "enum" : [ "BALISE", "NON_BALISE", "NON_DISPONIBLE" ]
+        },
+        "precisionsBalisage" : {
+          "type" : "object",
+          "id" : "traductionLibelle",
+          "additionalProperties" : false,
+          "properties" : {
+            "libelleFr" : {
+              "type" : "string"
+            },
+            "libelleEn" : {
+              "type" : "string"
+            },
+            "libelleEs" : {
+              "type" : "string"
+            },
+            "libelleIt" : {
+              "type" : "string"
+            },
+            "libelleDe" : {
+              "type" : "string"
+            },
+            "libelleNl" : {
+              "type" : "string"
+            },
+            "libelleRu" : {
+              "type" : "string"
+            },
+            "libelleZh" : {
+              "type" : "string"
+            },
+            "libellePtBR" : {
+              "type" : "string"
+            },
+            "libelleJa" : {
+              "type" : "string"
+            }
+          }
+        },
+        "naturesTerrain" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "NatureTerrain",
+            "additionalProperties" : false,
+            "properties" : {
+              "elementReferenceType" : {
+                "type" : "string",
+                "enum" : [ "NatureTerrain" ]
+              },
+              "id" : {
+                "type" : "integer"
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              },
+              "familleCritere" : {
+                "type" : "object",
+                "id" : "familleCritereLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "FamilleCritere" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  },
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "ordre" : {
+                    "type" : "integer"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "parent" : {
+                "type" : "object",
+                "id" : "elementReferenceLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassement", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TarifTypePeriode", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  },
+                  "libelleFr" : {
+                    "type" : "string"
+                  },
+                  "libelleEn" : {
+                    "type" : "string"
+                  },
+                  "libelleEs" : {
+                    "type" : "string"
+                  },
+                  "libelleIt" : {
+                    "type" : "string"
+                  },
+                  "libelleDe" : {
+                    "type" : "string"
+                  },
+                  "libelleNl" : {
+                    "type" : "string"
+                  },
+                  "ordre" : {
+                    "type" : "integer"
+                  },
+                  "description" : {
+                    "type" : "string"
+                  },
+                  "libelleRu" : {
+                    "type" : "string"
+                  },
+                  "libelleZh" : {
+                    "type" : "string"
+                  },
+                  "libellePtBR" : {
+                    "type" : "string"
+                  },
+                  "libelleJa" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "denivellation" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

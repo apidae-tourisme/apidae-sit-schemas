@@ -1,0 +1,67 @@
+{
+  "type" : "object",
+  "id" : "prestataireActivites",
+  "additionalProperties" : false,
+  "properties" : {
+    "prestataireActivites" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "activitesSportives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesSportivesAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesSportivesRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink"
+      }
+    },
+    "activitesCulturelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    },
+    "activitesCulturellesAdd" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    },
+    "activitesCulturellesRemove" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink"
+      }
+    },
+    "habilitationsPrestataires" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "StructureHabilitationPrestataireLink"
+      }
+    }
+  }
+}

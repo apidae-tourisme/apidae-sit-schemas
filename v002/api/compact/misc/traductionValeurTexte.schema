@@ -1,0 +1,37 @@
+{
+  "type" : "object",
+  "id" : "traductionValeurTexte",
+  "additionalProperties" : false,
+  "properties" : {
+    "fr" : {
+      "type" : "string"
+    },
+    "en" : {
+      "type" : "string"
+    },
+    "es" : {
+      "type" : "string"
+    },
+    "it" : {
+      "type" : "string"
+    },
+    "de" : {
+      "type" : "string"
+    },
+    "nl" : {
+      "type" : "string"
+    },
+    "ru" : {
+      "type" : "string"
+    },
+    "zh" : {
+      "type" : "string"
+    },
+    "ptBR" : {
+      "type" : "string"
+    },
+    "ja" : {
+      "type" : "string"
+    }
+  }
+}

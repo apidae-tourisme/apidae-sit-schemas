@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PrestationEquipementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "PrestationEquipement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

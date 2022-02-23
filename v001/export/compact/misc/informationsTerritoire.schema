@@ -1,0 +1,61 @@
+{
+  "type" : "object",
+  "id" : "informationsTerritoire",
+  "additionalProperties" : false,
+  "properties" : {
+    "territoireType" : {
+      "type" : "object",
+      "id" : "TerritoireTypeLink"
+    },
+    "destination" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "nombreCommerces" : {
+      "type" : "integer"
+    },
+    "nombreRestaurants" : {
+      "type" : "integer"
+    },
+    "descriptifCourtHiver" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "descriptifDetailleHiver" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "zoneLabels" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TerritoireZoneLabelLink"
+      }
+    },
+    "zoneClassements" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "TerritoireZoneClassementLink"
+      }
+    },
+    "sportsHiver" : {
+      "type" : "object",
+      "id" : "territoireSportsHiver"
+    },
+    "hebergement" : {
+      "type" : "object",
+      "id" : "territoireHebergement"
+    },
+    "zone" : {
+      "type" : "object",
+      "id" : "multimedia"
+    },
+    "contour" : {
+      "type" : "object",
+      "id" : "multimedia"
+    }
+  }
+}

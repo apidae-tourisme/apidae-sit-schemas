@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ActiviteCulturellePrestationLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ActiviteCulturellePrestation" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

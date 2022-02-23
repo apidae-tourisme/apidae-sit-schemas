@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "EnvironnementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "Environnement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type" : "object",
+  "id" : "selectionExport",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "libelle" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
+    },
+    "nom" : {
+      "type" : "string"
+    }
+  }
+}

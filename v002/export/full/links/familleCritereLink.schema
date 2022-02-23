@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "familleCritereLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "FamilleCritere" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

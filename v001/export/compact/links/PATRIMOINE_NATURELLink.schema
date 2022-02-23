@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "PATRIMOINE_NATURELLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : [ "PATRIMOINE_NATUREL" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

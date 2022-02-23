@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "SalleHebergementLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "SalleHebergement" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

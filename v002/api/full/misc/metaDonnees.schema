@@ -1,0 +1,30 @@
+{
+  "type" : "object",
+  "id" : "metaDonnees",
+  "additionalProperties" : false,
+  "properties" : {
+    "noeudId" : {
+      "type" : "string"
+    },
+    "contenus" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "metaDonneeContenu",
+        "additionalProperties" : false,
+        "properties" : {
+          "cible" : {
+            "type" : "string"
+          },
+          "metadonnee" : {
+            "type" : "any"
+          },
+          "xmlMetadonnee" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

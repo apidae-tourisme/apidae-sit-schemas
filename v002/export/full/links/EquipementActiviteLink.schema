@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "EquipementActiviteLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "EquipementActivite" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

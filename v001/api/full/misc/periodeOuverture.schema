@@ -1,0 +1,162 @@
+{
+  "type" : "object",
+  "id" : "periodeOuverture",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiant" : {
+      "type" : "integer"
+    },
+    "dateDebut" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateFin" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "complementHoraire" : {
+      "type" : "object",
+      "id" : "traductionLibelle",
+      "additionalProperties" : false,
+      "properties" : {
+        "libelleFr" : {
+          "type" : "string"
+        },
+        "libelleEn" : {
+          "type" : "string"
+        },
+        "libelleEs" : {
+          "type" : "string"
+        },
+        "libelleIt" : {
+          "type" : "string"
+        },
+        "libelleDe" : {
+          "type" : "string"
+        },
+        "libelleNl" : {
+          "type" : "string"
+        },
+        "libelleRu" : {
+          "type" : "string"
+        },
+        "libelleZh" : {
+          "type" : "string"
+        },
+        "libellePtBR" : {
+          "type" : "string"
+        },
+        "libelleJa" : {
+          "type" : "string"
+        }
+      }
+    },
+    "horaireOuverture" : {
+      "type" : "string",
+      "format" : "time"
+    },
+    "horaireFermeture" : {
+      "type" : "string",
+      "format" : "time"
+    },
+    "type" : {
+      "type" : "string",
+      "enum" : [ "OUVERTURE_TOUS_LES_JOURS", "OUVERTURE_SAUF", "OUVERTURE_SEMAINE", "OUVERTURE_MOIS" ]
+    },
+    "tousLesAns" : {
+      "type" : "boolean"
+    },
+    "ouverturesExceptionnelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ouvertureExceptionnelle",
+        "additionalProperties" : false,
+        "properties" : {
+          "dateOuverture" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        }
+      }
+    },
+    "ouverturesJourDuMois" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ouvertureJourDuMois",
+        "additionalProperties" : false,
+        "properties" : {
+          "jourDuMois" : {
+            "type" : "string",
+            "enum" : [ "D_1ER", "D_2EME", "D_3EME", "D_4EME", "D_DERNIER" ]
+          },
+          "jour" : {
+            "type" : "string",
+            "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+          }
+        }
+      }
+    },
+    "ouverturesJournalieres" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ouvertureJournaliere",
+        "additionalProperties" : false,
+        "properties" : {
+          "jour" : {
+            "type" : "string",
+            "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
+          }
+        }
+      }
+    },
+    "identifiantTemporaire" : {
+      "type" : "integer"
+    },
+    "identifiantTechnique" : {
+      "type" : "integer"
+    }
+  }
+}

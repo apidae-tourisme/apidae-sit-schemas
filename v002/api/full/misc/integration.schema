@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "integration",
+  "additionalProperties" : false,
+  "properties" : {
+    "source" : {
+      "type" : "string",
+      "enum" : [ "GITES_DE_FRANCE_AIN", "GITES_DE_FRANCE_ARDECHE", "GITES_DE_FRANCE_DROME", "GITES_DE_FRANCE_HAUTES_ALPES", "GITES_DE_FRANCE_HAUTE_SAVOIE", "GITES_DE_FRANCE_ISERE", "GITES_DE_FRANCE_LOIRE", "GITES_DE_FRANCE_RHONE", "GITES_DE_FRANCE_SAVOIE", "GITES_DE_FRANCE_TARN", "GITES_DE_FRANCE_SEINE_ET_MARNE", "GITES_DE_FRANCE_VAUCLUSE", "GITES_DE_FRANCE_ALLIER", "TARN", "CLEVACANCES_AIN", "CLEVACANCES_ARDECHE", "CLEVACANCES_DROME", "CLEVACANCES_HAUTES_ALPES", "CLEVACANCES_ISERE", "CLEVACANCES_LOIRE", "CLEVACANCES_RHONE", "CLEVACANCES_SAVOIE_MONT_BLANC", "CLEVACANCES_TARN", "CLEVACANCES_VAUCLUSE" ]
+    },
+    "enableLocks" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "integresObjetTouristiqueFields" : {
+      "type" : "string"
+    },
+    "lockedElementsReferences" : {
+      "type" : "string"
+    },
+    "integrationBonusField" : {
+      "type" : "string"
+    }
+  }
+}

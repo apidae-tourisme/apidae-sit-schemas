@@ -1,0 +1,56 @@
+{
+  "type" : "object",
+  "id" : "informationsFeteEtManifestation",
+  "additionalProperties" : false,
+  "properties" : {
+    "typesManifestation" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "FeteEtManifestationTypeLink"
+      }
+    },
+    "categories" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "FeteEtManifestationCategorieLink"
+      }
+    },
+    "themes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "FeteEtManifestationThemeLink"
+      }
+    },
+    "evenementGenerique" : {
+      "type" : "object",
+      "id" : "FeteEtManifestationGeneriqueLink"
+    },
+    "portee" : {
+      "type" : "object",
+      "id" : "FeteEtManifestationPorteeLink"
+    },
+    "nbParticipantsAttendu" : {
+      "type" : "integer"
+    },
+    "nbVisiteursAttendu" : {
+      "type" : "integer"
+    },
+    "languesDocumentationAudio" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "LangueLink"
+      }
+    },
+    "nomLieu" : {
+      "type" : "string"
+    }
+  }
+}

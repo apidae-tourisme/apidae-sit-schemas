@@ -1,0 +1,112 @@
+{
+  "type" : "object",
+  "id" : "informationsActivite",
+  "additionalProperties" : false,
+  "properties" : {
+    "nomLieu" : {
+      "type" : "string"
+    },
+    "dureeSeance" : {
+      "type" : "integer"
+    },
+    "nombreJours" : {
+      "type" : "integer"
+    },
+    "activiteType" : {
+      "type" : "object",
+      "id" : "ActiviteTypeLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "ActiviteType" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "categories" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCategorieLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "ActiviteCategorie" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "activitesSportives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteSportivePrestationLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "ActiviteSportivePrestation" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "activitesCulturelles" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "ActiviteCulturellePrestationLink",
+        "additionalProperties" : false,
+        "properties" : {
+          "elementReferenceType" : {
+            "type" : "string",
+            "enum" : [ "ActiviteCulturellePrestation" ]
+          },
+          "id" : {
+            "type" : "integer"
+          }
+        }
+      }
+    },
+    "prestataireActivites" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "commerceEtServicePrestataire" : {
+      "type" : "object",
+      "id" : "objetTouristiqueLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "type" : {
+          "type" : "string",
+          "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

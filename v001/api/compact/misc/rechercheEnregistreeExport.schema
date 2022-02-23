@@ -1,0 +1,28 @@
+{
+  "type" : "object",
+  "id" : "rechercheEnregistreeExport",
+  "additionalProperties" : false,
+  "properties" : {
+    "memberId" : {
+      "type" : "integer"
+    },
+    "searchId" : {
+      "type" : "integer"
+    },
+    "searchLabel" : {
+      "type" : "string"
+    },
+    "searchIntuitiveCriteriaJson" : {
+      "type" : "object",
+      "id" : "rechercheIntuitiveExport"
+    },
+    "searchAdvancedCriteriaJson" : {
+      "type" : "object",
+      "id" : "rechercheAvanceeExport"
+    },
+    "searchCreatedAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    }
+  }
+}

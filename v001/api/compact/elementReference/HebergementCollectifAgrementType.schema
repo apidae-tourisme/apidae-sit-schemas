@@ -1,0 +1,58 @@
+{
+  "type" : "object",
+  "id" : "HebergementCollectifAgrementType",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HebergementCollectifAgrementType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "libelleFr" : {
+      "type" : "string"
+    },
+    "libelleEn" : {
+      "type" : "string"
+    },
+    "libelleEs" : {
+      "type" : "string"
+    },
+    "libelleIt" : {
+      "type" : "string"
+    },
+    "libelleDe" : {
+      "type" : "string"
+    },
+    "libelleNl" : {
+      "type" : "string"
+    },
+    "ordre" : {
+      "type" : "integer"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "libelleRu" : {
+      "type" : "string"
+    },
+    "libelleZh" : {
+      "type" : "string"
+    },
+    "libellePtBR" : {
+      "type" : "string"
+    },
+    "libelleJa" : {
+      "type" : "string"
+    },
+    "familleCritere" : {
+      "type" : "object",
+      "id" : "familleCritereLink"
+    },
+    "parent" : {
+      "type" : "object",
+      "id" : "elementReferenceLink"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HotellerieLabelLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HotellerieLabel" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

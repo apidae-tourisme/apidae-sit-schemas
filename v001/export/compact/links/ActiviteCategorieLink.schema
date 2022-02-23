@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "ActiviteCategorieLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "ActiviteCategorie" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

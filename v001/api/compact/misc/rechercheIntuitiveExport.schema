@@ -1,0 +1,162 @@
+{
+  "type" : "object",
+  "id" : "rechercheIntuitiveExport",
+  "additionalProperties" : false,
+  "properties" : {
+    "quoi" : {
+      "type" : "string"
+    },
+    "geographyItems" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "GeographyItem"
+      }
+    },
+    "criteres" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "label" : {
+            "type" : "string"
+          },
+          "elementReferenceFictif" : {
+            "type" : "string"
+          },
+          "critereInterne" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "CRITERE_INTERNE", "ELEMENT_REFERENCE", "ELEMENT_REFERENCE_FICTIF" ]
+          },
+          "elementsReference" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "ouCriteres" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "debutOuverture" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "finOuverture" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "periode" : {
+      "type" : "string",
+      "enum" : [ "AUJOURDHUI", "DEMAIN", "_3_JOURS", "WEEK_END_PROCHAIN", "_8_JOURS", "_15_JOURS", "_1_MOIS", "_3_MOIS", "_6_MOIS", "A_VENIR" ]
+    },
+    "ongletsInformations" : {
+      "type" : "object",
+      "additionalProperties" : {
+        "type" : "object",
+        "additionalProperties" : false,
+        "properties" : {
+          "tri" : {
+            "type" : "string",
+            "enum" : [ "DISTANCE", "PERTINENCE", "NOM", "STRUCTURE", "COMMUNE", "DEPARTEMENT", "CLASSEMENT_CROISSANT", "CLASSEMENT_DECROISSANT" ]
+          },
+          "facetFilters" : {
+            "type" : "object",
+            "additionalProperties" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "and" : {
+                  "type" : "boolean",
+                  "required" : true
+                },
+                "fieldName" : {
+                  "type" : "string"
+                },
+                "query" : {
+                  "type" : "boolean",
+                  "required" : true
+                },
+                "aggregating" : {
+                  "type" : "boolean",
+                  "required" : true
+                },
+                "facetFilterValues" : {
+                  "type" : "array",
+                  "additionalItems" : false,
+                  "items" : {
+                    "type" : "object",
+                    "additionalProperties" : false,
+                    "properties" : {
+                      "positive" : {
+                        "type" : "boolean",
+                        "required" : true
+                      },
+                      "value" : {
+                        "type" : "object",
+                        "id" : "com.rhonealpestourisme.sitra.core.common.indexation.model.objettouristique.facet.IFacetValue",
+                        "additionalProperties" : false
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "count" : {
+            "type" : "integer"
+          },
+          "lastDisplayedPage" : {
+            "type" : "integer",
+            "required" : true
+          },
+          "capaciteMinimum" : {
+            "type" : "integer"
+          },
+          "capaciteMaximum" : {
+            "type" : "integer"
+          },
+          "tarifMinimum" : {
+            "type" : "integer"
+          },
+          "tarifMaximum" : {
+            "type" : "integer"
+          },
+          "tarifDevise" : {
+            "type" : "string",
+            "enum" : [ "EUR", "CHF", "CFP" ]
+          }
+        }
+      }
+    },
+    "ongletCourant" : {
+      "type" : "string",
+      "enum" : [ "AGENDA", "MANGER_DEGUSTER", "DORMIR", "A_VOIR_A_FAIRE", "SERVICES_PRATIQUES", "SEJOURS_PACKAGES", "DESTINATIONS", "TOUT" ]
+    },
+    "aspectName" : {
+      "type" : "string",
+      "enum" : [ "STANDARD", "HIVER", "ETE", "HANDICAP", "GROUPES", "TOURISME_AFFAIRES", "PRESTATAIRE_ACTIVITES" ]
+    },
+    "boostAdherent" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "niveauDiffusion" : {
+      "type" : "string",
+      "enum" : [ "STANDARD", "OPEN_DATA" ]
+    }
+  }
+}
