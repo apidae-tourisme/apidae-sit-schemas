@@ -1,0 +1,24 @@
+{
+  "type" : "object",
+  "id" : "apiChannelManagerRechercheEnregistreeMembreObjetsResultat",
+  "additionalProperties" : false,
+  "properties" : {
+    "membres" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "apiChannelManagerMembre",
+        "additionalProperties" : false,
+        "properties" : {
+          "membreProprietaireId" : {
+            "type" : "integer"
+          },
+          "numFound" : {
+            "type" : "integer"
+          }
+        }
+      }
+    }
+  }
+}

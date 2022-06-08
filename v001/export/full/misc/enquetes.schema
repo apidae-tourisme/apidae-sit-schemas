@@ -1,0 +1,37 @@
+{
+  "type" : "object",
+  "id" : "enquetes",
+  "additionalProperties" : false,
+  "properties" : {
+    "identifiant" : {
+      "type" : "integer"
+    },
+    "annee" : {
+      "type" : "integer"
+    },
+    "retour" : {
+      "type" : "boolean",
+      "required" : true
+    },
+    "titre" : {
+      "type" : "object",
+      "id" : "EnqueteTitreLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "EnqueteTitre" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "identifiantTemporaire" : {
+      "type" : "integer"
+    },
+    "idEnqueteV1" : {
+      "type" : "integer"
+    }
+  }
+}

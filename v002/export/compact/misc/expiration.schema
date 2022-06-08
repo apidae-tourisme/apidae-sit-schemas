@@ -1,0 +1,15 @@
+{
+  "type" : "object",
+  "id" : "expiration",
+  "additionalProperties" : false,
+  "properties" : {
+    "dateExpiration" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "expirationAction" : {
+      "type" : "string",
+      "enum" : [ "TRAITE", "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+    }
+  }
+}

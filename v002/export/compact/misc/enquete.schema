@@ -1,0 +1,15 @@
+{
+  "type" : "object",
+  "id" : "enquete",
+  "additionalProperties" : false,
+  "properties" : {
+    "enquetes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "enquetes"
+      }
+    }
+  }
+}
