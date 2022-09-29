@@ -120,6 +120,14 @@
     "formatVersion" : {
       "type" : "string"
     },
+    "expiration" : {
+      "type" : "object",
+      "id" : "expiration"
+    },
+    "enquete" : {
+      "type" : "object",
+      "id" : "enquete"
+    },
     "donneesPrivees" : {
       "type" : "array",
       "additionalItems" : false,

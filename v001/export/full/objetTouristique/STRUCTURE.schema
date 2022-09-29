@@ -1623,6 +1623,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -1842,6 +1845,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -2056,6 +2062,9 @@
                 "type" : "string"
               },
               "urlDiaporama" : {
+                "type" : "string"
+              },
+              "urlQHD" : {
                 "type" : "string"
               },
               "extension" : {
@@ -2276,6 +2285,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -2490,6 +2502,9 @@
                 "type" : "string"
               },
               "urlDiaporama" : {
+                "type" : "string"
+              },
+              "urlQHD" : {
                 "type" : "string"
               },
               "extension" : {
@@ -2708,6 +2723,9 @@
                   "type" : "string"
                 },
                 "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "urlQHD" : {
                   "type" : "string"
                 },
                 "extension" : {
@@ -2929,6 +2947,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3148,6 +3169,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3314,6 +3338,69 @@
     },
     "formatVersion" : {
       "type" : "string"
+    },
+    "expiration" : {
+      "type" : "object",
+      "id" : "expiration",
+      "additionalProperties" : false,
+      "properties" : {
+        "dateExpiration" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "expirationAction" : {
+          "type" : "string",
+          "enum" : [ "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+        }
+      }
+    },
+    "enquete" : {
+      "type" : "object",
+      "id" : "enquete",
+      "additionalProperties" : false,
+      "properties" : {
+        "enquetes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "enquetes",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "annee" : {
+                "type" : "integer"
+              },
+              "retour" : {
+                "type" : "boolean",
+                "required" : true
+              },
+              "titre" : {
+                "type" : "object",
+                "id" : "EnqueteTitreLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "EnqueteTitre" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "idEnqueteV1" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
     },
     "prestationsList" : {
       "type" : "array",

@@ -380,6 +380,14 @@
             "type" : "object",
             "additionalProperties" : false,
             "properties" : {
+              "dateDisponibilite" : {
+                "type" : "string",
+                "format" : "date-time"
+              },
+              "dateLimiteDePublication" : {
+                "type" : "string",
+                "format" : "date-time"
+              },
               "theme" : {
                 "type" : "object",
                 "id" : "DescriptifThemeLink",
@@ -784,6 +792,36 @@
               "type" : {
                 "type" : "string",
                 "enum" : [ "DEFAUT", "SUR_PLACE", "ADRESSE_UTILE", "ORGANISATEUR_PROGRAMME", "PROGRAMME_ORGANISATEUR", "CADRE_OFFRE_SPECIALE", "OFFRE_SPECIALE_CADRE", "PACKAGE_OBJET", "OBJET_PACKAGE", "AU_DEPART_DE", "A_L_ARRIVEE_DE", "SUR_LE_PARCOURS_DE", "PARCOURS_ETAPE", "ETAPE_PARCOURS", "COUPS_DE_COEUR_INCONTOURNABLES", "VISITE_ORGANISATEUR", "ORGANISATEUR_VISITE", "VEND_ICI", "PROPOSE_PRODUIT_DE", "PERMET_ACCEDER_A", "EST_ACCESSIBLE_PAR", "EST_SITUE_DANS", "A_DANS_SON_PERIMETRE", "OFFRE_SIMILAIRE_PROXIMITE", "SUGGESTION_A_PROXIMITE" ]
+              },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
               },
               "objetTouristique" : {
                 "type" : "object",
@@ -2778,6 +2816,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3013,6 +3054,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3062,7 +3106,7 @@
       "properties" : {
         "source" : {
           "type" : "string",
-          "enum" : [ "GITES_DE_FRANCE_AIN", "GITES_DE_FRANCE_ARDECHE", "GITES_DE_FRANCE_DROME", "GITES_DE_FRANCE_HAUTES_ALPES", "GITES_DE_FRANCE_HAUTE_SAVOIE", "GITES_DE_FRANCE_ISERE", "GITES_DE_FRANCE_LOIRE", "GITES_DE_FRANCE_RHONE", "GITES_DE_FRANCE_SAVOIE", "GITES_DE_FRANCE_TARN", "GITES_DE_FRANCE_SEINE_ET_MARNE", "GITES_DE_FRANCE_VAUCLUSE", "GITES_DE_FRANCE_ALLIER", "TARN", "CLEVACANCES_AIN", "CLEVACANCES_ARDECHE", "CLEVACANCES_DROME", "CLEVACANCES_HAUTES_ALPES", "CLEVACANCES_ISERE", "CLEVACANCES_LOIRE", "CLEVACANCES_RHONE", "CLEVACANCES_SAVOIE_MONT_BLANC", "CLEVACANCES_TARN", "CLEVACANCES_VAUCLUSE" ]
+          "enum" : [ "GITES_DE_FRANCE_AIN", "GITES_DE_FRANCE_ARDECHE", "GITES_DE_FRANCE_DROME", "GITES_DE_FRANCE_HAUTES_ALPES", "GITES_DE_FRANCE_HAUTE_SAVOIE", "GITES_DE_FRANCE_ISERE", "GITES_DE_FRANCE_LOIRE", "GITES_DE_FRANCE_RHONE", "GITES_DE_FRANCE_SAVOIE", "GITES_DE_FRANCE_TARN", "GITES_DE_FRANCE_SEINE_ET_MARNE", "GITES_DE_FRANCE_VAUCLUSE", "GITES_DE_FRANCE_ALLIER", "GITES_DE_FRANCE_ARIEGE", "GITES_DE_FRANCE_BDR", "TARN", "CLEVACANCES_AIN", "CLEVACANCES_ARDECHE", "CLEVACANCES_DROME", "CLEVACANCES_HAUTES_ALPES", "CLEVACANCES_ISERE", "CLEVACANCES_LOIRE", "CLEVACANCES_RHONE", "CLEVACANCES_SAVOIE_MONT_BLANC", "CLEVACANCES_TARN", "CLEVACANCES_VAUCLUSE", "CLEVACANCES_GARD", "CLEVACANCES_ARIEGE" ]
         },
         "enableLocks" : {
           "type" : "boolean",
@@ -3287,6 +3331,69 @@
     },
     "formatVersion" : {
       "type" : "string"
+    },
+    "expiration" : {
+      "type" : "object",
+      "id" : "expiration",
+      "additionalProperties" : false,
+      "properties" : {
+        "dateExpiration" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "expirationAction" : {
+          "type" : "string",
+          "enum" : [ "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+        }
+      }
+    },
+    "enquete" : {
+      "type" : "object",
+      "id" : "enquete",
+      "additionalProperties" : false,
+      "properties" : {
+        "enquetes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "enquetes",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "annee" : {
+                "type" : "integer"
+              },
+              "retour" : {
+                "type" : "boolean",
+                "required" : true
+              },
+              "titre" : {
+                "type" : "object",
+                "id" : "EnqueteTitreLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "EnqueteTitre" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "idEnqueteV1" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
     },
     "donneesPrivees" : {
       "type" : "array",
@@ -3641,6 +3748,14 @@
                   "type" : "object",
                   "additionalProperties" : false,
                   "properties" : {
+                    "dateDisponibilite" : {
+                      "type" : "string",
+                      "format" : "date-time"
+                    },
+                    "dateLimiteDePublication" : {
+                      "type" : "string",
+                      "format" : "date-time"
+                    },
                     "theme" : {
                       "type" : "object",
                       "id" : "DescriptifThemeLink",
@@ -4045,6 +4160,36 @@
                     "type" : {
                       "type" : "string",
                       "enum" : [ "DEFAUT", "SUR_PLACE", "ADRESSE_UTILE", "ORGANISATEUR_PROGRAMME", "PROGRAMME_ORGANISATEUR", "CADRE_OFFRE_SPECIALE", "OFFRE_SPECIALE_CADRE", "PACKAGE_OBJET", "OBJET_PACKAGE", "AU_DEPART_DE", "A_L_ARRIVEE_DE", "SUR_LE_PARCOURS_DE", "PARCOURS_ETAPE", "ETAPE_PARCOURS", "COUPS_DE_COEUR_INCONTOURNABLES", "VISITE_ORGANISATEUR", "ORGANISATEUR_VISITE", "VEND_ICI", "PROPOSE_PRODUIT_DE", "PERMET_ACCEDER_A", "EST_ACCESSIBLE_PAR", "EST_SITUE_DANS", "A_DANS_SON_PERIMETRE", "OFFRE_SIMILAIRE_PROXIMITE", "SUGGESTION_A_PROXIMITE" ]
+                    },
+                    "libelleFr" : {
+                      "type" : "string"
+                    },
+                    "libelleEn" : {
+                      "type" : "string"
+                    },
+                    "libelleEs" : {
+                      "type" : "string"
+                    },
+                    "libelleIt" : {
+                      "type" : "string"
+                    },
+                    "libelleDe" : {
+                      "type" : "string"
+                    },
+                    "libelleNl" : {
+                      "type" : "string"
+                    },
+                    "libelleRu" : {
+                      "type" : "string"
+                    },
+                    "libelleZh" : {
+                      "type" : "string"
+                    },
+                    "libellePtBR" : {
+                      "type" : "string"
+                    },
+                    "libelleJa" : {
+                      "type" : "string"
                     },
                     "objetTouristique" : {
                       "type" : "object",
@@ -5831,6 +5976,9 @@
                       "urlDiaporama" : {
                         "type" : "string"
                       },
+                      "urlQHD" : {
+                        "type" : "string"
+                      },
                       "extension" : {
                         "type" : "string"
                       },
@@ -6064,6 +6212,9 @@
                         "type" : "string"
                       },
                       "urlDiaporama" : {
+                        "type" : "string"
+                      },
+                      "urlQHD" : {
                         "type" : "string"
                       },
                       "extension" : {
@@ -7672,9 +7823,6 @@
                   }
                 }
               },
-              "dureeMinimumEnJours" : {
-                "type" : "integer"
-              },
               "agrements" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -9009,6 +9157,9 @@
                         "urlDiaporama" : {
                           "type" : "string"
                         },
+                        "urlQHD" : {
+                          "type" : "string"
+                        },
                         "extension" : {
                           "type" : "string"
                         },
@@ -9238,6 +9389,9 @@
                           "type" : "string"
                         },
                         "urlDiaporama" : {
+                          "type" : "string"
+                        },
+                        "urlQHD" : {
                           "type" : "string"
                         },
                         "extension" : {

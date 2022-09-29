@@ -9,7 +9,7 @@
     },
     "expirationAction" : {
       "type" : "string",
-      "enum" : [ "TRAITE", "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+      "enum" : [ "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
     }
   }
 }

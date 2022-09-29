@@ -148,9 +148,6 @@
         }
       }
     },
-    "dureeMinimumEnJours" : {
-      "type" : "integer"
-    },
     "agrements" : {
       "type" : "array",
       "additionalItems" : false,

@@ -522,6 +522,9 @@
               "urlDiaporama" : {
                 "type" : "string"
               },
+              "urlQHD" : {
+                "type" : "string"
+              },
               "extension" : {
                 "type" : "string"
               },
@@ -751,6 +754,9 @@
                 "type" : "string"
               },
               "urlDiaporama" : {
+                "type" : "string"
+              },
+              "urlQHD" : {
                 "type" : "string"
               },
               "extension" : {

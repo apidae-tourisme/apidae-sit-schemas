@@ -9,7 +9,7 @@
     },
     "gratuit" : {
       "type" : "boolean",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION"
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION"
     },
     "tarifsEnClair" : {
       "type" : "object",
@@ -21,12 +21,10 @@
     },
     "complement" : {
       "type" : "object",
-      "id" : "traductionLibelle",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
+      "id" : "traductionLibelle"
     },
     "periodes" : {
       "type" : "array",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
       "additionalItems" : false,
       "items" : {
         "type" : "object",

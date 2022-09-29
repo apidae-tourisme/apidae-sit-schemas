@@ -667,6 +667,36 @@
                 "type" : "string",
                 "enum" : [ "DEFAUT", "SUR_PLACE", "ADRESSE_UTILE", "ORGANISATEUR_PROGRAMME", "PROGRAMME_ORGANISATEUR", "CADRE_OFFRE_SPECIALE", "OFFRE_SPECIALE_CADRE", "PACKAGE_OBJET", "OBJET_PACKAGE", "AU_DEPART_DE", "A_L_ARRIVEE_DE", "SUR_LE_PARCOURS_DE", "PARCOURS_ETAPE", "ETAPE_PARCOURS", "COUPS_DE_COEUR_INCONTOURNABLES", "VISITE_ORGANISATEUR", "ORGANISATEUR_VISITE", "VEND_ICI", "PROPOSE_PRODUIT_DE", "PERMET_ACCEDER_A", "EST_ACCESSIBLE_PAR", "EST_SITUE_DANS", "A_DANS_SON_PERIMETRE", "OFFRE_SIMILAIRE_PROXIMITE", "SUGGESTION_A_PROXIMITE" ]
               },
+              "libelleFr" : {
+                "type" : "string"
+              },
+              "libelleEn" : {
+                "type" : "string"
+              },
+              "libelleEs" : {
+                "type" : "string"
+              },
+              "libelleIt" : {
+                "type" : "string"
+              },
+              "libelleDe" : {
+                "type" : "string"
+              },
+              "libelleNl" : {
+                "type" : "string"
+              },
+              "libelleRu" : {
+                "type" : "string"
+              },
+              "libelleZh" : {
+                "type" : "string"
+              },
+              "libellePtBR" : {
+                "type" : "string"
+              },
+              "libelleJa" : {
+                "type" : "string"
+              },
               "objetTouristique" : {
                 "type" : "object",
                 "id" : "objetTouristiqueLink",
@@ -2385,6 +2415,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -2604,6 +2637,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -2818,6 +2854,9 @@
                 "type" : "string"
               },
               "urlDiaporama" : {
+                "type" : "string"
+              },
+              "urlQHD" : {
                 "type" : "string"
               },
               "extension" : {
@@ -3038,6 +3077,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3252,6 +3294,9 @@
                 "type" : "string"
               },
               "urlDiaporama" : {
+                "type" : "string"
+              },
+              "urlQHD" : {
                 "type" : "string"
               },
               "extension" : {
@@ -3470,6 +3515,9 @@
                   "type" : "string"
                 },
                 "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "urlQHD" : {
                   "type" : "string"
                 },
                 "extension" : {
@@ -3691,6 +3739,9 @@
                 "urlDiaporama" : {
                   "type" : "string"
                 },
+                "urlQHD" : {
+                  "type" : "string"
+                },
                 "extension" : {
                   "type" : "string"
                 },
@@ -3908,6 +3959,9 @@
                   "type" : "string"
                 },
                 "urlDiaporama" : {
+                  "type" : "string"
+                },
+                "urlQHD" : {
                   "type" : "string"
                 },
                 "extension" : {
@@ -4590,6 +4644,21 @@
     "formatVersion" : {
       "type" : "string"
     },
+    "expiration" : {
+      "type" : "object",
+      "id" : "expiration",
+      "additionalProperties" : false,
+      "properties" : {
+        "dateExpiration" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "expirationAction" : {
+          "type" : "string",
+          "enum" : [ "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+        }
+      }
+    },
     "informationsPrestataireActivites" : {
       "type" : "object",
       "id" : "prestataireActivites",
@@ -4720,6 +4789,54 @@
                 "enum" : [ "StructureHabilitationPrestataire" ]
               },
               "id" : {
+                "type" : "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "enquete" : {
+      "type" : "object",
+      "id" : "enquete",
+      "additionalProperties" : false,
+      "properties" : {
+        "enquetes" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "enquetes",
+            "additionalProperties" : false,
+            "properties" : {
+              "identifiant" : {
+                "type" : "integer"
+              },
+              "annee" : {
+                "type" : "integer"
+              },
+              "retour" : {
+                "type" : "boolean",
+                "required" : true
+              },
+              "titre" : {
+                "type" : "object",
+                "id" : "EnqueteTitreLink",
+                "additionalProperties" : false,
+                "properties" : {
+                  "elementReferenceType" : {
+                    "type" : "string",
+                    "enum" : [ "EnqueteTitre" ]
+                  },
+                  "id" : {
+                    "type" : "integer"
+                  }
+                }
+              },
+              "identifiantTemporaire" : {
+                "type" : "integer"
+              },
+              "idEnqueteV1" : {
                 "type" : "integer"
               }
             }

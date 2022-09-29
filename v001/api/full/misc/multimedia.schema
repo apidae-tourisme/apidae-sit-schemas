@@ -182,6 +182,9 @@
           "urlDiaporama" : {
             "type" : "string"
           },
+          "urlQHD" : {
+            "type" : "string"
+          },
           "extension" : {
             "type" : "string"
           },

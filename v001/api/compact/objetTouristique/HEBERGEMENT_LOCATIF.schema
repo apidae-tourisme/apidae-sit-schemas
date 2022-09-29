@@ -156,9 +156,17 @@
     "formatVersion" : {
       "type" : "string"
     },
+    "expiration" : {
+      "type" : "object",
+      "id" : "expiration"
+    },
     "informationsPrestataireActivites" : {
       "type" : "object",
       "id" : "prestataireActivites"
+    },
+    "enquete" : {
+      "type" : "object",
+      "id" : "enquete"
     },
     "prestationsList" : {
       "type" : "array",

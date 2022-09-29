@@ -19,6 +19,14 @@
         "type" : "object",
         "additionalProperties" : false,
         "properties" : {
+          "dateDisponibilite" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "dateLimiteDePublication" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
           "theme" : {
             "type" : "object",
             "id" : "DescriptifThemeLink"

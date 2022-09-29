@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "apiObjetsTouristiquesGetByIdRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "apiKey" : {
+      "type" : "string"
+    },
+    "projetId" : {
+      "type" : "integer"
+    },
+    "responseFields" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "locales" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

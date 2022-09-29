@@ -6,9 +6,6 @@
     "apiKey" : {
       "type" : "string"
     },
-    "projetId" : {
-      "type" : "integer"
-    },
     "membreId" : {
       "type" : "integer"
     },
