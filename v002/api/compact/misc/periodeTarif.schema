@@ -22,10 +22,6 @@
         "id" : "tarif"
       }
     },
-    "type" : {
-      "type" : "object",
-      "id" : "TarifTypePeriode"
-    },
     "identifiantTemporaire" : {
       "type" : "integer"
     }

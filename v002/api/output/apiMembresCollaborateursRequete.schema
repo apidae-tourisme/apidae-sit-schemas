@@ -1,0 +1,20 @@
+{
+  "type" : "object",
+  "id" : "apiMembresCollaborateursRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "apiKey" : {
+      "type" : "string"
+    },
+    "projetId" : {
+      "type" : "integer"
+    },
+    "referenceIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    }
+  }
+}

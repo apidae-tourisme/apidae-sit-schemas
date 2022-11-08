@@ -1,0 +1,24 @@
+{
+  "type" : "array",
+  "id" : "apiMembresCollaborateursResultat",
+  "items" : [ {
+    "type" : "object",
+    "id" : "collaborateurs",
+    "additionalProperties" : false,
+    "properties" : {
+      "referenceId" : {
+        "type" : "integer"
+      },
+      "membreProprietaire" : {
+        "type" : "integer"
+      },
+      "membresCollaborateurs" : {
+        "type" : "array",
+        "additionalItems" : false,
+        "items" : {
+          "type" : "integer"
+        }
+      }
+    }
+  } ]
+}

@@ -1932,20 +1932,6 @@
                   }
                 }
               },
-              "type" : {
-                "type" : "object",
-                "id" : "TarifTypePeriodeLink",
-                "additionalProperties" : false,
-                "properties" : {
-                  "elementReferenceType" : {
-                    "type" : "string",
-                    "enum" : [ "TarifTypePeriode" ]
-                  },
-                  "id" : {
-                    "type" : "integer"
-                  }
-                }
-              },
               "identifiantTemporaire" : {
                 "type" : "integer"
               }
@@ -5329,20 +5315,6 @@
                               }
                             }
                           }
-                        }
-                      }
-                    },
-                    "type" : {
-                      "type" : "object",
-                      "id" : "TarifTypePeriodeLink",
-                      "additionalProperties" : false,
-                      "properties" : {
-                        "elementReferenceType" : {
-                          "type" : "string",
-                          "enum" : [ "TarifTypePeriode" ]
-                        },
-                        "id" : {
-                          "type" : "integer"
                         }
                       }
                     },
