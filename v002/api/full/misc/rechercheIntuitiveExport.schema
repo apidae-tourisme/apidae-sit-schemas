@@ -162,10 +162,6 @@
     "boostAdherent" : {
       "type" : "boolean",
       "required" : true
-    },
-    "niveauDiffusion" : {
-      "type" : "string",
-      "enum" : [ "STANDARD", "OPEN_DATA" ]
     }
   }
 }

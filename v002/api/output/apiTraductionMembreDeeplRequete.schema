@@ -1,0 +1,18 @@
+{
+  "type" : "object",
+  "id" : "apiTraductionMembreDeeplRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "membreId" : {
+      "type" : "integer"
+    },
+    "credit" : {
+      "type" : "integer",
+      "required" : true
+    },
+    "dateValidite" : {
+      "type" : "string",
+      "format" : "date-time"
+    }
+  }
+}

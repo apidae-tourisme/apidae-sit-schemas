@@ -483,7 +483,7 @@
             },
             "state" : {
               "type" : "string",
-              "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+              "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
             },
             "adresse" : {
               "type" : "object",
@@ -826,7 +826,7 @@
             },
             "state" : {
               "type" : "string",
-              "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+              "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
             },
             "adresse" : {
               "type" : "object",
@@ -2586,7 +2586,7 @@
             },
             "state" : {
               "type" : "string",
-              "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+              "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
             },
             "adresse" : {
               "type" : "object",
@@ -2932,7 +2932,7 @@
               },
               "state" : {
                 "type" : "string",
-                "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
               }
             }
           }
@@ -3077,7 +3077,7 @@
                   },
                   "state" : {
                     "type" : "string",
-                    "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                    "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                   },
                   "adresse" : {
                     "type" : "object",
@@ -8846,7 +8846,7 @@
                   },
                   "state" : {
                     "type" : "string",
-                    "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                    "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                   },
                   "adresse" : {
                     "type" : "object",
@@ -10767,7 +10767,7 @@
             },
             "state" : {
               "type" : "string",
-              "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+              "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
             },
             "adresse" : {
               "type" : "object",
@@ -11110,7 +11110,7 @@
             },
             "state" : {
               "type" : "string",
-              "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+              "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
             },
             "adresse" : {
               "type" : "object",
@@ -13124,7 +13124,7 @@
                   },
                   "state" : {
                     "type" : "string",
-                    "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                    "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                   },
                   "adresse" : {
                     "type" : "object",
@@ -13481,7 +13481,7 @@
                   },
                   "state" : {
                     "type" : "string",
-                    "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                    "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                   },
                   "adresse" : {
                     "type" : "object",
@@ -13838,7 +13838,7 @@
                   },
                   "state" : {
                     "type" : "string",
-                    "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                    "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                   },
                   "adresse" : {
                     "type" : "object",
@@ -24205,7 +24205,7 @@
                       },
                       "state" : {
                         "type" : "string",
-                        "enum" : [ "DEMONSTRATION", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+                        "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
                       },
                       "adresse" : {
                         "type" : "object",
