@@ -117,7 +117,7 @@
               "properties" : {
                 "devise" : {
                   "type" : "string",
-                  "enum" : [ "EUR", "CHF", "CFP" ]
+                  "enum" : [ "EUR", "CHF", "XPF" ]
                 },
                 "minimum" : {
                   "type" : "number"
@@ -241,7 +241,7 @@
     },
     "devise" : {
       "type" : "string",
-      "enum" : [ "EUR", "CHF", "CFP" ]
+      "enum" : [ "EUR", "CHF", "XPF" ]
     },
     "taxeDeSejourIncluse" : {
       "type" : "string",

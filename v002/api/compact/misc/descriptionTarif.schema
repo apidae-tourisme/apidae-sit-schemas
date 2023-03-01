@@ -57,7 +57,7 @@
     },
     "devise" : {
       "type" : "string",
-      "enum" : [ "EUR", "CHF", "CFP" ]
+      "enum" : [ "EUR", "CHF", "XPF" ]
     },
     "taxeDeSejourIncluse" : {
       "type" : "string",

@@ -7645,7 +7645,7 @@
               },
               "dateSpeciale" : {
                 "type" : "string",
-                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
               }
             }
           }
@@ -7930,7 +7930,7 @@
                   "properties" : {
                     "devise" : {
                       "type" : "string",
-                      "enum" : [ "EUR", "CHF", "CFP" ]
+                      "enum" : [ "EUR", "CHF", "XPF" ]
                     },
                     "minimum" : {
                       "type" : "number"
@@ -8598,7 +8598,7 @@
         },
         "devise" : {
           "type" : "string",
-          "enum" : [ "EUR", "CHF", "CFP" ]
+          "enum" : [ "EUR", "CHF", "XPF" ]
         },
         "taxeDeSejourIncluse" : {
           "type" : "string",
@@ -20073,7 +20073,7 @@
                     },
                     "dateSpeciale" : {
                       "type" : "string",
-                      "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                      "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
                     }
                   }
                 }
@@ -20361,7 +20361,7 @@
                         "properties" : {
                           "devise" : {
                             "type" : "string",
-                            "enum" : [ "EUR", "CHF", "CFP" ]
+                            "enum" : [ "EUR", "CHF", "XPF" ]
                           },
                           "minimum" : {
                             "type" : "number"
@@ -21029,7 +21029,7 @@
               },
               "devise" : {
                 "type" : "string",
-                "enum" : [ "EUR", "CHF", "CFP" ]
+                "enum" : [ "EUR", "CHF", "XPF" ]
               },
               "taxeDeSejourIncluse" : {
                 "type" : "string",
