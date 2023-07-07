@@ -215,7 +215,7 @@
     },
     "dateLimiteDePublication" : {
       "type" : "string",
-      "format" : "date-time"
+      "format" : "date"
     },
     "locked" : {
       "type" : "boolean"

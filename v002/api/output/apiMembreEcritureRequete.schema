@@ -1,0 +1,36 @@
+{
+  "type" : "object",
+  "id" : "apiMembreEcritureRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "descriptifCourt" : {
+      "type" : "string"
+    },
+    "devise" : {
+      "type" : "string",
+      "enum" : [ "EUR", "CHF", "XPF" ]
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "proprietaireId" : {
+      "type" : "integer"
+    },
+    "secteurId" : {
+      "type" : "integer"
+    },
+    "siteWeb" : {
+      "type" : "string"
+    },
+    "structureId" : {
+      "type" : "integer"
+    },
+    "typeId" : {
+      "type" : "integer"
+    },
+    "zoneDatesSpeciales" : {
+      "type" : "string",
+      "enum" : [ "FRANCE", "SUISSE", "SUISSE_CANTON_VALAIS" ]
+    }
+  }
+}

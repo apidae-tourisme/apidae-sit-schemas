@@ -13,10 +13,6 @@
       "type" : "object",
       "id" : "RestaurationType"
     },
-    "classement" : {
-      "type" : "object",
-      "id" : "RestaurationClassement"
-    },
     "specialites" : {
       "type" : "array",
       "additionalItems" : false,

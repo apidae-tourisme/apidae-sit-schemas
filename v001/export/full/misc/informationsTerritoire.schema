@@ -617,7 +617,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "source" : {
           "type" : "string"
@@ -835,7 +835,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "source" : {
           "type" : "string"
