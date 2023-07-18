@@ -5,6 +5,10 @@
   "properties" : {
     "id" : {
       "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "traductionLibelle"
     }
   }
 }

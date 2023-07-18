@@ -86,11 +86,11 @@
         "properties" : {
           "dateDisponibilite" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "theme" : {
             "type" : "object",

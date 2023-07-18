@@ -5,7 +5,7 @@
   "properties" : {
     "dateExpiration" : {
       "type" : "string",
-      "format" : "date-time"
+      "format" : "date"
     },
     "expirationAction" : {
       "type" : "string",

@@ -549,7 +549,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "locked" : {
           "type" : "boolean"
@@ -783,7 +783,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "locked" : {
           "type" : "boolean"

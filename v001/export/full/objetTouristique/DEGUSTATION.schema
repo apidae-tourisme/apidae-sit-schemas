@@ -52,7 +52,7 @@
     },
     "state" : {
       "type" : "string",
-      "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+      "enum" : [ "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
     },
     "gestion" : {
       "type" : "object",
@@ -2414,7 +2414,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -2636,7 +2636,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -2855,7 +2855,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "source" : {
           "type" : "string"
@@ -3076,7 +3076,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -3295,7 +3295,7 @@
         },
         "dateLimiteDePublication" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "source" : {
           "type" : "string"
@@ -3516,7 +3516,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -3738,7 +3738,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -3960,7 +3960,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "source" : {
             "type" : "string"
@@ -4533,7 +4533,7 @@
       "properties" : {
         "dateExpiration" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "expirationAction" : {
           "type" : "string",

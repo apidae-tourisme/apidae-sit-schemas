@@ -65,11 +65,13 @@
     },
     "leTarifComprend" : {
       "type" : "object",
-      "id" : "traductionLibelle"
+      "id" : "traductionLibelle",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
     },
     "leTarifNeComprendPas" : {
       "type" : "object",
-      "id" : "traductionLibelle"
+      "id" : "traductionLibelle",
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
     },
     "conditions" : {
       "type" : "object",

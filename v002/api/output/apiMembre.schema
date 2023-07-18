@@ -1,0 +1,606 @@
+{
+  "type" : "object",
+  "id" : "apiMembre",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "urlLogo" : {
+      "type" : "string"
+    },
+    "descriptifCommercial" : {
+      "type" : "string"
+    },
+    "joursFeries" : {
+      "type" : "string"
+    },
+    "devise" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "object",
+      "id" : "type",
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        },
+        "nom" : {
+          "type" : "string"
+        }
+      }
+    },
+    "secteur" : {
+      "type" : "object",
+      "id" : "secteur",
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        },
+        "nom" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "relations" : {
+      "type" : "object",
+      "id" : "relations",
+      "additionalProperties" : false,
+      "properties" : {
+        "idParrain" : {
+          "type" : "integer"
+        },
+        "nomParrain" : {
+          "type" : "string"
+        },
+        "parraines" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "idMembre" : {
+                "type" : "integer"
+              },
+              "nomMembre" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "notifications" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "notificationsApiExports" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "eMails" : {
+              "type" : "string"
+            },
+            "nomUtilisateurs" : {
+              "type" : "array",
+              "additionalItems" : false,
+              "items" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "notificationsGestionObjets" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "eMails" : {
+              "type" : "string"
+            },
+            "nomUtilisateurs" : {
+              "type" : "array",
+              "additionalItems" : false,
+              "items" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "permissions" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "typesGeres" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "typeObjet",
+        "additionalProperties" : false,
+        "properties" : {
+          "nom" : {
+            "type" : "string"
+          },
+          "codeV1" : {
+            "type" : "string"
+          },
+          "codeTif" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "metadonnees" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "metadonneesMembre",
+        "additionalProperties" : false,
+        "properties" : {
+          "nodeId" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "tags" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "services",
+        "additionalProperties" : false,
+        "properties" : {
+          "idCategorie" : {
+            "type" : "integer"
+          },
+          "nomCategorie" : {
+            "type" : "string"
+          },
+          "tagsDetails" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "idTag" : {
+                  "type" : "integer"
+                },
+                "nomTag" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "entitesJuridiques" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "entiteJuridique",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "identifier" : {
+            "type" : "string"
+          },
+          "entitePrincipale" : {
+            "type" : "boolean"
+          }
+        }
+      }
+    },
+    "utilisateurs" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "utilisateur",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "prenom" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string",
+            "enum" : [ "FREEMIUM", "PREMIUM_CONSULTATION", "PREMIUM_SAISIE", "MEMBRE" ]
+          },
+          "photo" : {
+            "type" : "string"
+          },
+          "profession" : {
+            "type" : "string"
+          },
+          "presentation" : {
+            "type" : "string"
+          },
+          "permissions" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "adresse" : {
+            "type" : "object",
+            "id" : "adresseUtilisateur",
+            "additionalProperties" : false,
+            "properties" : {
+              "adresse1" : {
+                "type" : "string"
+              },
+              "adresse2" : {
+                "type" : "string"
+              },
+              "adresse3" : {
+                "type" : "string"
+              },
+              "codePostal" : {
+                "type" : "string"
+              },
+              "commune" : {
+                "type" : "string"
+              },
+              "complement" : {
+                "type" : "string"
+              }
+            }
+          },
+          "membre" : {
+            "type" : "object",
+            "id" : "membreUtilisateur",
+            "additionalProperties" : false,
+            "properties" : {
+              "id" : {
+                "type" : "integer"
+              },
+              "nomMembre" : {
+                "type" : "string"
+              }
+            }
+          },
+          "entite" : {
+            "type" : "object",
+            "id" : "entiteUtilisateur",
+            "additionalProperties" : false,
+            "properties" : {
+              "id" : {
+                "type" : "integer"
+              },
+              "nomEntite" : {
+                "type" : "string"
+              }
+            }
+          },
+          "informationsEdition" : {
+            "type" : "object",
+            "id" : "informationsEditionUtilisateur",
+            "additionalProperties" : false,
+            "properties" : {
+              "dateCreation" : {
+                "type" : "string",
+                "format" : "date-time"
+              },
+              "dateModification" : {
+                "type" : "string",
+                "format" : "date-time"
+              },
+              "utilisateurCreation" : {
+                "type" : "object",
+                "id" : "utlisateurEditionUtilisateur",
+                "additionalProperties" : false,
+                "properties" : {
+                  "idUtilisateur" : {
+                    "type" : "integer"
+                  },
+                  "nomUtilisateur" : {
+                    "type" : "string"
+                  },
+                  "prenomUtilisateur" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "utilisateurModification" : {
+                "type" : "object",
+                "id" : "utlisateurEditionUtilisateur",
+                "additionalProperties" : false,
+                "properties" : {
+                  "idUtilisateur" : {
+                    "type" : "integer"
+                  },
+                  "nomUtilisateur" : {
+                    "type" : "string"
+                  },
+                  "prenomUtilisateur" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          },
+          "dateDerniereConnexion" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "statut" : {
+            "type" : "string"
+          },
+          "eMail" : {
+            "type" : "string"
+          },
+          "telephone" : {
+            "type" : "string"
+          },
+          "portable" : {
+            "type" : "string"
+          },
+          "parraine" : {
+            "type" : "boolean"
+          }
+        }
+      }
+    },
+    "communes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "commune",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "codePostal" : {
+            "type" : "string"
+          },
+          "codeInsee" : {
+            "type" : "string"
+          },
+          "complement" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "projets" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "projet",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "etat" : {
+            "type" : "string"
+          },
+          "statut" : {
+            "type" : "string"
+          },
+          "statuts" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "dateDerniereGeneration" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "statutDernierExport" : {
+            "type" : "string"
+          },
+          "identifier" : {
+            "type" : "integer"
+          },
+          "technologies" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "objetsGeres" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetGere",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "identifier" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "traductions" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "traductions",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "nom" : {
+            "type" : "string"
+          },
+          "langue" : {
+            "type" : "string"
+          },
+          "traducteur" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "idMembre" : {
+                "type" : "integer"
+              },
+              "nomMembre" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "informationsEdition" : {
+      "type" : "object",
+      "id" : "informationsEdition",
+      "additionalProperties" : false,
+      "properties" : {
+        "dateCreation" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "dateDesactivation" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "dateModification" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "utilisateurCreation" : {
+          "type" : "object",
+          "id" : "utlisateurEditionUtilisateur",
+          "additionalProperties" : false,
+          "properties" : {
+            "idUtilisateur" : {
+              "type" : "integer"
+            },
+            "nomUtilisateur" : {
+              "type" : "string"
+            },
+            "prenomUtilisateur" : {
+              "type" : "string"
+            }
+          }
+        },
+        "utilisateurDesactivation" : {
+          "type" : "object",
+          "id" : "utlisateurEditionUtilisateur",
+          "additionalProperties" : false,
+          "properties" : {
+            "idUtilisateur" : {
+              "type" : "integer"
+            },
+            "nomUtilisateur" : {
+              "type" : "string"
+            },
+            "prenomUtilisateur" : {
+              "type" : "string"
+            }
+          }
+        },
+        "utilisateurModification" : {
+          "type" : "object",
+          "id" : "utlisateurEditionUtilisateur",
+          "additionalProperties" : false,
+          "properties" : {
+            "idUtilisateur" : {
+              "type" : "integer"
+            },
+            "nomUtilisateur" : {
+              "type" : "string"
+            },
+            "prenomUtilisateur" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "criteresInternes" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "critereInterneMembre",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "libelle" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "parrain" : {
+      "type" : "object",
+      "id" : "parrain",
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        },
+        "nom" : {
+          "type" : "string"
+        }
+      }
+    },
+    "actif" : {
+      "type" : "boolean"
+    }
+  }
+}

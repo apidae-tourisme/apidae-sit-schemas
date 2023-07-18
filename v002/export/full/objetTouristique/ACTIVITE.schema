@@ -52,7 +52,7 @@
     },
     "state" : {
       "type" : "string",
-      "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+      "enum" : [ "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
     },
     "gestion" : {
       "type" : "object",
@@ -382,11 +382,11 @@
             "properties" : {
               "dateDisponibilite" : {
                 "type" : "string",
-                "format" : "date-time"
+                "format" : "date"
               },
               "dateLimiteDePublication" : {
                 "type" : "string",
-                "format" : "date-time"
+                "format" : "date"
               },
               "theme" : {
                 "type" : "object",
@@ -702,6 +702,43 @@
           "properties" : {
             "id" : {
               "type" : "integer"
+            },
+            "nom" : {
+              "type" : "object",
+              "id" : "traductionLibelle",
+              "additionalProperties" : false,
+              "properties" : {
+                "libelleFr" : {
+                  "type" : "string"
+                },
+                "libelleEn" : {
+                  "type" : "string"
+                },
+                "libelleEs" : {
+                  "type" : "string"
+                },
+                "libelleIt" : {
+                  "type" : "string"
+                },
+                "libelleDe" : {
+                  "type" : "string"
+                },
+                "libelleNl" : {
+                  "type" : "string"
+                },
+                "libelleRu" : {
+                  "type" : "string"
+                },
+                "libelleZh" : {
+                  "type" : "string"
+                },
+                "libellePtBR" : {
+                  "type" : "string"
+                },
+                "libelleJa" : {
+                  "type" : "string"
+                }
+              }
             }
           }
         },
@@ -2832,7 +2869,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "locked" : {
             "type" : "boolean"
@@ -3070,7 +3107,7 @@
           },
           "dateLimiteDePublication" : {
             "type" : "string",
-            "format" : "date-time"
+            "format" : "date"
           },
           "locked" : {
             "type" : "boolean"
@@ -3488,7 +3525,7 @@
       "properties" : {
         "dateExpiration" : {
           "type" : "string",
-          "format" : "date-time"
+          "format" : "date"
         },
         "expirationAction" : {
           "type" : "string",
@@ -3899,11 +3936,11 @@
                   "properties" : {
                     "dateDisponibilite" : {
                       "type" : "string",
-                      "format" : "date-time"
+                      "format" : "date"
                     },
                     "dateLimiteDePublication" : {
                       "type" : "string",
-                      "format" : "date-time"
+                      "format" : "date"
                     },
                     "theme" : {
                       "type" : "object",
@@ -4219,6 +4256,43 @@
                 "properties" : {
                   "id" : {
                     "type" : "integer"
+                  },
+                  "nom" : {
+                    "type" : "object",
+                    "id" : "traductionLibelle",
+                    "additionalProperties" : false,
+                    "properties" : {
+                      "libelleFr" : {
+                        "type" : "string"
+                      },
+                      "libelleEn" : {
+                        "type" : "string"
+                      },
+                      "libelleEs" : {
+                        "type" : "string"
+                      },
+                      "libelleIt" : {
+                        "type" : "string"
+                      },
+                      "libelleDe" : {
+                        "type" : "string"
+                      },
+                      "libelleNl" : {
+                        "type" : "string"
+                      },
+                      "libelleRu" : {
+                        "type" : "string"
+                      },
+                      "libelleZh" : {
+                        "type" : "string"
+                      },
+                      "libellePtBR" : {
+                        "type" : "string"
+                      },
+                      "libelleJa" : {
+                        "type" : "string"
+                      }
+                    }
                   }
                 }
               },
@@ -6138,7 +6212,7 @@
                 },
                 "dateLimiteDePublication" : {
                   "type" : "string",
-                  "format" : "date-time"
+                  "format" : "date"
                 },
                 "locked" : {
                   "type" : "boolean"
@@ -6376,7 +6450,7 @@
                 },
                 "dateLimiteDePublication" : {
                   "type" : "string",
-                  "format" : "date-time"
+                  "format" : "date"
                 },
                 "locked" : {
                   "type" : "boolean"
@@ -8420,20 +8494,6 @@
                   }
                 }
               },
-              "classement" : {
-                "type" : "object",
-                "id" : "RestaurationClassementLink",
-                "additionalProperties" : false,
-                "properties" : {
-                  "elementReferenceType" : {
-                    "type" : "string",
-                    "enum" : [ "RestaurationClassement" ]
-                  },
-                  "id" : {
-                    "type" : "integer"
-                  }
-                }
-              },
               "specialites" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -9319,7 +9379,7 @@
                   },
                   "dateLimiteDePublication" : {
                     "type" : "string",
-                    "format" : "date-time"
+                    "format" : "date"
                   },
                   "locked" : {
                     "type" : "boolean"
@@ -9553,7 +9613,7 @@
                   },
                   "dateLimiteDePublication" : {
                     "type" : "string",
-                    "format" : "date-time"
+                    "format" : "date"
                   },
                   "locked" : {
                     "type" : "boolean"

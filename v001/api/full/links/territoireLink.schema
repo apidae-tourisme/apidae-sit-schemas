@@ -52,7 +52,7 @@
     },
     "state" : {
       "type" : "string",
-      "enum" : [ "DEMONSTRATION", "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+      "enum" : [ "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
     }
   }
 }
