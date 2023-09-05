@@ -1,1 +1,6 @@
 kafka/
+v002/api/output/apiProjetLecture.schema
+v002/api/output/apiProjetSearchQuery.schema
+v002/api/output/apiSiteWebExportContenu.schema
+v002/api/output/apiTache.schema
+v002/api/output/apiUtilisateurEcritureRequete.schema
