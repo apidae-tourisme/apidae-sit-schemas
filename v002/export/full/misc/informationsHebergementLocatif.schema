@@ -113,6 +113,9 @@
         "nombreSallesDeBain" : {
           "type" : "integer"
         },
+        "nombreSallesDEau" : {
+          "type" : "integer"
+        },
         "nombreWC" : {
           "type" : "integer"
         },

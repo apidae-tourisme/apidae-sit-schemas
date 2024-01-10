@@ -44,6 +44,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -185,6 +188,9 @@
                   },
                   "ja" : {
                     "type" : "string"
+                  },
+                  "ko" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -221,6 +227,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -333,6 +342,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -398,6 +410,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -527,6 +542,9 @@
                   "type" : "string"
                 },
                 "libelleJa" : {
+                  "type" : "string"
+                },
+                "libelleKo" : {
                   "type" : "string"
                 }
               }
@@ -680,6 +698,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         }
@@ -803,6 +824,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -1003,6 +1027,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -1023,6 +1050,10 @@
               }
             }
           }
+        },
+        "surchargeTourismesAdaptes" : {
+          "type" : "boolean",
+          "required" : true
         },
         "tourismesAdaptesAdd" : {
           "type" : "array",
@@ -1112,8 +1143,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapMoteur" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapAuditif" : {
           "type" : "object",
@@ -1149,8 +1187,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapAuditif" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapVisuel" : {
           "type" : "object",
@@ -1186,8 +1231,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapVisuel" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapMental" : {
           "type" : "object",
@@ -1223,11 +1275,22 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
+        "surchargeDescriptifHandicapMental" : {
+          "type" : "boolean",
+          "required" : true
+        },
         "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
           "type" : "integer"
+        },
+        "surchargeNombreFauteuilsRoulants" : {
+          "type" : "boolean",
+          "required" : true
         },
         "typesClienteleAdd" : {
           "type" : "array",
@@ -1305,6 +1368,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -1420,6 +1486,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -1456,6 +1525,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -1547,7 +1619,7 @@
               },
               "dateSpeciale" : {
                 "type" : "string",
-                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
               }
             }
           }
@@ -1663,6 +1735,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -1757,6 +1832,9 @@
                     },
                     "ja" : {
                       "type" : "string"
+                    },
+                    "ko" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -1793,6 +1871,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -1865,6 +1946,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -1901,6 +1985,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -1939,6 +2026,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -1975,6 +2065,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2103,6 +2196,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2139,6 +2235,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2177,6 +2276,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2213,6 +2315,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2292,7 +2397,7 @@
       "properties" : {
         "source" : {
           "type" : "string",
-          "enum" : [ "GITES_DE_FRANCE_AIN", "GITES_DE_FRANCE_ARDECHE", "GITES_DE_FRANCE_DROME", "GITES_DE_FRANCE_HAUTES_ALPES", "GITES_DE_FRANCE_HAUTE_SAVOIE", "GITES_DE_FRANCE_ISERE", "GITES_DE_FRANCE_LOIRE", "GITES_DE_FRANCE_RHONE", "GITES_DE_FRANCE_SAVOIE", "GITES_DE_FRANCE_TARN", "GITES_DE_FRANCE_SEINE_ET_MARNE", "GITES_DE_FRANCE_VAUCLUSE", "GITES_DE_FRANCE_ALLIER", "GITES_DE_FRANCE_ARIEGE", "GITES_DE_FRANCE_BDR", "CLEVACANCES_AIN", "CLEVACANCES_ARDECHE", "CLEVACANCES_DROME", "CLEVACANCES_HAUTES_ALPES", "CLEVACANCES_ISERE", "CLEVACANCES_LOIRE", "CLEVACANCES_RHONE", "CLEVACANCES_SAVOIE_MONT_BLANC", "CLEVACANCES_TARN", "CLEVACANCES_VAUCLUSE", "CLEVACANCES_GARD", "CLEVACANCES_ARIEGE" ]
+          "enum" : [ "GITES_DE_FRANCE_AIN", "GITES_DE_FRANCE_ALPESMARITIMES", "GITES_DE_FRANCE_ARDECHE", "GITES_DE_FRANCE_DROME", "GITES_DE_FRANCE_HAUTES_ALPES", "GITES_DE_FRANCE_HAUTE_SAVOIE", "GITES_DE_FRANCE_ISERE", "GITES_DE_FRANCE_LOIRE", "GITES_DE_FRANCE_RHONE", "GITES_DE_FRANCE_SAVOIE", "GITES_DE_FRANCE_TARN", "GITES_DE_FRANCE_SEINE_ET_MARNE", "GITES_DE_FRANCE_VAUCLUSE", "GITES_DE_FRANCE_ALLIER", "GITES_DE_FRANCE_ARIEGE", "GITES_DE_FRANCE_BDR", "CLEVACANCES_AIN", "CLEVACANCES_ARDECHE", "CLEVACANCES_DROME", "CLEVACANCES_HAUTES_ALPES", "CLEVACANCES_ISERE", "CLEVACANCES_LOIRE", "CLEVACANCES_RHONE", "CLEVACANCES_SAVOIE_MONT_BLANC", "CLEVACANCES_TARN", "CLEVACANCES_VAUCLUSE", "CLEVACANCES_GARD", "CLEVACANCES_ARIEGE" ]
         },
         "enableLocks" : {
           "type" : "boolean",
@@ -2476,6 +2581,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           }
@@ -2583,6 +2691,9 @@
                         },
                         "ja" : {
                           "type" : "string"
+                        },
+                        "ko" : {
+                          "type" : "string"
                         }
                       }
                     },
@@ -2619,6 +2730,9 @@
                           "type" : "string"
                         },
                         "libelleJa" : {
+                          "type" : "string"
+                        },
+                        "libelleKo" : {
                           "type" : "string"
                         }
                       }
@@ -2731,6 +2845,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -2767,6 +2884,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -2834,6 +2954,9 @@
                         },
                         "libelleJa" : {
                           "type" : "string"
+                        },
+                        "libelleKo" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -2891,6 +3014,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -2999,6 +3125,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -3135,6 +3264,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -3213,6 +3345,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -3256,6 +3391,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     },
                     "objetTouristique" : {
@@ -3395,6 +3533,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -3613,6 +3754,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -3633,6 +3777,10 @@
                     }
                   }
                 }
+              },
+              "surchargeTourismesAdaptes" : {
+                "type" : "boolean",
+                "required" : true
               },
               "tourismesAdaptesAdd" : {
                 "type" : "array",
@@ -3722,8 +3870,15 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
+              },
+              "surchargeDescriptifHandicapMoteur" : {
+                "type" : "boolean",
+                "required" : true
               },
               "descriptifHandicapAuditif" : {
                 "type" : "object",
@@ -3759,8 +3914,15 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
+              },
+              "surchargeDescriptifHandicapAuditif" : {
+                "type" : "boolean",
+                "required" : true
               },
               "descriptifHandicapVisuel" : {
                 "type" : "object",
@@ -3796,8 +3958,15 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
+              },
+              "surchargeDescriptifHandicapVisuel" : {
+                "type" : "boolean",
+                "required" : true
               },
               "descriptifHandicapMental" : {
                 "type" : "object",
@@ -3833,11 +4002,22 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
+              "surchargeDescriptifHandicapMental" : {
+                "type" : "boolean",
+                "required" : true
+              },
               "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
                 "type" : "integer"
+              },
+              "surchargeNombreFauteuilsRoulants" : {
+                "type" : "boolean",
+                "required" : true
               },
               "typesClientele" : {
                 "type" : "array",
@@ -3957,6 +4137,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -4071,6 +4254,9 @@
                         },
                         "libelleJa" : {
                           "type" : "string"
+                        },
+                        "libelleKo" : {
+                          "type" : "string"
                         }
                       }
                     },
@@ -4107,6 +4293,9 @@
                           "type" : "string"
                         },
                         "libelleJa" : {
+                          "type" : "string"
+                        },
+                        "libelleKo" : {
                           "type" : "string"
                         }
                       }
@@ -4198,7 +4387,7 @@
                     },
                     "dateSpeciale" : {
                       "type" : "string",
-                      "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                      "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
                     }
                   }
                 }
@@ -4277,6 +4466,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -4317,6 +4509,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -4391,6 +4586,9 @@
                                 "type" : "string"
                               },
                               "libelleJa" : {
+                                "type" : "string"
+                              },
+                              "libelleKo" : {
                                 "type" : "string"
                               }
                             }
@@ -4514,6 +4712,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -4550,6 +4751,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -4683,6 +4887,9 @@
                         },
                         "libelleJa" : {
                           "type" : "string"
+                        },
+                        "libelleKo" : {
+                          "type" : "string"
                         }
                       }
                     },
@@ -4745,6 +4952,9 @@
                               },
                               "ja" : {
                                 "type" : "string"
+                              },
+                              "ko" : {
+                                "type" : "string"
                               }
                             }
                           },
@@ -4781,6 +4991,9 @@
                                 "type" : "string"
                               },
                               "libelleJa" : {
+                                "type" : "string"
+                              },
+                              "libelleKo" : {
                                 "type" : "string"
                               }
                             }
@@ -4830,6 +5043,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -4892,6 +5108,9 @@
                     },
                     "libelleJa" : {
                       "type" : "string"
+                    },
+                    "libelleKo" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -4928,6 +5147,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -4966,6 +5188,9 @@
                     },
                     "libelleJa" : {
                       "type" : "string"
+                    },
+                    "libelleKo" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -5002,6 +5227,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -5130,6 +5358,9 @@
                     },
                     "libelleJa" : {
                       "type" : "string"
+                    },
+                    "libelleKo" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -5166,6 +5397,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -5204,6 +5438,9 @@
                     },
                     "libelleJa" : {
                       "type" : "string"
+                    },
+                    "libelleKo" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -5240,6 +5477,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -5540,6 +5780,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -5594,6 +5837,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -5707,6 +5953,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -5743,6 +5992,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -5781,6 +6033,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -5818,6 +6073,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -5854,6 +6112,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -6109,6 +6370,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -6146,6 +6410,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -6182,6 +6449,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -6233,6 +6503,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -6622,6 +6895,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -6658,6 +6934,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -6839,6 +7118,9 @@
                     "type" : "integer"
                   },
                   "nombreSallesDeBain" : {
+                    "type" : "integer"
+                  },
+                  "nombreSallesDEau" : {
                     "type" : "integer"
                   },
                   "nombreWC" : {
@@ -7449,6 +7731,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -7513,6 +7798,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -7549,6 +7837,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -7818,6 +8109,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -7854,6 +8148,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -7964,6 +8261,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -8000,6 +8300,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -8059,6 +8362,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -8095,6 +8401,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -8133,6 +8442,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -8169,6 +8481,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -8293,6 +8608,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -8329,6 +8647,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }
@@ -8367,6 +8688,9 @@
                       },
                       "libelleJa" : {
                         "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
                       }
                     }
                   },
@@ -8403,6 +8727,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }

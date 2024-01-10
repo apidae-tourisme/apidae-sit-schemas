@@ -82,6 +82,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -144,6 +147,9 @@
                     },
                     "ja" : {
                       "type" : "string"
+                    },
+                    "ko" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -180,6 +186,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -229,6 +238,9 @@
           "type" : "string"
         },
         "libelleJa" : {
+          "type" : "string"
+        },
+        "libelleKo" : {
           "type" : "string"
         }
       }

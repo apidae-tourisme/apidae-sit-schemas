@@ -44,6 +44,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -188,6 +191,9 @@
                   },
                   "ja" : {
                     "type" : "string"
+                  },
+                  "ko" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -224,6 +230,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -336,6 +345,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -372,6 +384,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -427,6 +442,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -535,6 +553,9 @@
                   "type" : "string"
                 },
                 "libelleJa" : {
+                  "type" : "string"
+                },
+                "libelleKo" : {
                   "type" : "string"
                 }
               }
@@ -648,6 +669,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -709,6 +733,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               },
               "objetTouristique" : {
@@ -813,6 +840,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -904,6 +934,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -924,6 +957,10 @@
               }
             }
           }
+        },
+        "surchargeTourismesAdaptes" : {
+          "type" : "boolean",
+          "required" : true
         },
         "labelsTourismeHandicap" : {
           "type" : "array",
@@ -977,8 +1014,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapMoteur" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapAuditif" : {
           "type" : "object",
@@ -1014,8 +1058,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapAuditif" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapVisuel" : {
           "type" : "object",
@@ -1051,8 +1102,15 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
+        },
+        "surchargeDescriptifHandicapVisuel" : {
+          "type" : "boolean",
+          "required" : true
         },
         "descriptifHandicapMental" : {
           "type" : "object",
@@ -1088,11 +1146,22 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
+        "surchargeDescriptifHandicapMental" : {
+          "type" : "boolean",
+          "required" : true
+        },
         "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
           "type" : "integer"
+        },
+        "surchargeNombreFauteuilsRoulants" : {
+          "type" : "boolean",
+          "required" : true
         },
         "typesClientele" : {
           "type" : "array",
@@ -1176,6 +1245,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -1250,6 +1322,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -1286,6 +1361,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -1377,7 +1455,7 @@
               },
               "dateSpeciale" : {
                 "type" : "string",
-                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
               }
             }
           }
@@ -1453,6 +1531,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -1489,6 +1570,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -1559,6 +1643,9 @@
                           "type" : "string"
                         },
                         "libelleJa" : {
+                          "type" : "string"
+                        },
+                        "libelleKo" : {
                           "type" : "string"
                         }
                       }
@@ -1674,6 +1761,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -1710,6 +1800,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -1843,6 +1936,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -1908,6 +2004,9 @@
                         },
                         "ja" : {
                           "type" : "string"
+                        },
+                        "ko" : {
+                          "type" : "string"
                         }
                       }
                     },
@@ -1944,6 +2043,9 @@
                           "type" : "string"
                         },
                         "libelleJa" : {
+                          "type" : "string"
+                        },
+                        "libelleKo" : {
                           "type" : "string"
                         }
                       }
@@ -1990,6 +2092,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -2078,6 +2183,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2176,6 +2284,9 @@
                     },
                     "ja" : {
                       "type" : "string"
+                    },
+                    "ko" : {
+                      "type" : "string"
                     }
                   }
                 },
@@ -2212,6 +2323,9 @@
                       "type" : "string"
                     },
                     "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
                       "type" : "string"
                     }
                   }
@@ -2278,6 +2392,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2314,6 +2431,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2352,6 +2472,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2388,6 +2511,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2500,6 +2626,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2536,6 +2665,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2574,6 +2706,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2610,6 +2745,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -2719,6 +2857,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -2755,6 +2896,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -2793,6 +2937,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -2829,6 +2976,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -2940,6 +3090,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -2976,6 +3129,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3014,6 +3170,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3050,6 +3209,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3159,6 +3321,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -3195,6 +3360,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -3233,6 +3401,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -3269,6 +3440,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }
@@ -3380,6 +3554,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3416,6 +3593,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3454,6 +3634,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3490,6 +3673,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3602,6 +3788,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3638,6 +3827,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3676,6 +3868,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3712,6 +3907,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3824,6 +4022,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3860,6 +4061,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -3898,6 +4102,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -3934,6 +4141,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -4067,6 +4277,9 @@
             },
             "libelleJa" : {
               "type" : "string"
+            },
+            "libelleKo" : {
+              "type" : "string"
             }
           }
         },
@@ -4103,6 +4316,9 @@
               "type" : "string"
             },
             "libelleJa" : {
+              "type" : "string"
+            },
+            "libelleKo" : {
               "type" : "string"
             }
           }

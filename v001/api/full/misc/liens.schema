@@ -37,6 +37,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -88,6 +91,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -172,12 +178,6 @@
                       "libelleNl" : {
                         "type" : "string"
                       },
-                      "ordre" : {
-                        "type" : "integer"
-                      },
-                      "description" : {
-                        "type" : "string"
-                      },
                       "libelleRu" : {
                         "type" : "string"
                       },
@@ -188,6 +188,15 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
+                        "type" : "string"
+                      },
+                      "ordre" : {
+                        "type" : "integer"
+                      },
+                      "description" : {
                         "type" : "string"
                       },
                       "familleCritere" : {
@@ -220,12 +229,6 @@
                           "libelleNl" : {
                             "type" : "string"
                           },
-                          "ordre" : {
-                            "type" : "integer"
-                          },
-                          "description" : {
-                            "type" : "string"
-                          },
                           "libelleRu" : {
                             "type" : "string"
                           },
@@ -236,6 +239,44 @@
                             "type" : "string"
                           },
                           "libelleJa" : {
+                            "type" : "string"
+                          },
+                          "libelleKo" : {
+                            "type" : "string"
+                          },
+                          "ordre" : {
+                            "type" : "integer"
+                          },
+                          "description" : {
+                            "type" : "string"
+                          }
+                        }
+                      },
+                      "critereDeprecie" : {
+                        "type" : "object",
+                        "additionalProperties" : false,
+                        "properties" : {
+                          "code" : {
+                            "type" : "string"
+                          },
+                          "message" : {
+                            "type" : "string"
+                          },
+                          "dateAlerte" : {
+                            "type" : "string",
+                            "format" : "date"
+                          },
+                          "dateDesactivation" : {
+                            "type" : "string",
+                            "format" : "date"
+                          },
+                          "critereSubstitutionId" : {
+                            "type" : "integer"
+                          },
+                          "champSubstitution" : {
+                            "type" : "string"
+                          },
+                          "url" : {
                             "type" : "string"
                           }
                         }
@@ -270,12 +311,6 @@
                           "libelleNl" : {
                             "type" : "string"
                           },
-                          "ordre" : {
-                            "type" : "integer"
-                          },
-                          "description" : {
-                            "type" : "string"
-                          },
                           "libelleRu" : {
                             "type" : "string"
                           },
@@ -286,6 +321,15 @@
                             "type" : "string"
                           },
                           "libelleJa" : {
+                            "type" : "string"
+                          },
+                          "libelleKo" : {
+                            "type" : "string"
+                          },
+                          "ordre" : {
+                            "type" : "integer"
+                          },
+                          "description" : {
                             "type" : "string"
                           }
                         }
@@ -359,6 +403,9 @@
                   },
                   "libelleJa" : {
                     "type" : "string"
+                  },
+                  "libelleKo" : {
+                    "type" : "string"
                   }
                 }
               },
@@ -429,6 +476,9 @@
           "libelleJa" : {
             "type" : "string"
           },
+          "libelleKo" : {
+            "type" : "string"
+          },
           "objetTouristique" : {
             "type" : "object",
             "id" : "objetTouristiqueLink",
@@ -474,6 +524,9 @@
                     "type" : "string"
                   },
                   "libelleJa" : {
+                    "type" : "string"
+                  },
+                  "libelleKo" : {
                     "type" : "string"
                   }
                 }
@@ -558,12 +611,6 @@
                           "libelleNl" : {
                             "type" : "string"
                           },
-                          "ordre" : {
-                            "type" : "integer"
-                          },
-                          "description" : {
-                            "type" : "string"
-                          },
                           "libelleRu" : {
                             "type" : "string"
                           },
@@ -574,6 +621,15 @@
                             "type" : "string"
                           },
                           "libelleJa" : {
+                            "type" : "string"
+                          },
+                          "libelleKo" : {
+                            "type" : "string"
+                          },
+                          "ordre" : {
+                            "type" : "integer"
+                          },
+                          "description" : {
                             "type" : "string"
                           },
                           "familleCritere" : {
@@ -606,12 +662,6 @@
                               "libelleNl" : {
                                 "type" : "string"
                               },
-                              "ordre" : {
-                                "type" : "integer"
-                              },
-                              "description" : {
-                                "type" : "string"
-                              },
                               "libelleRu" : {
                                 "type" : "string"
                               },
@@ -622,6 +672,44 @@
                                 "type" : "string"
                               },
                               "libelleJa" : {
+                                "type" : "string"
+                              },
+                              "libelleKo" : {
+                                "type" : "string"
+                              },
+                              "ordre" : {
+                                "type" : "integer"
+                              },
+                              "description" : {
+                                "type" : "string"
+                              }
+                            }
+                          },
+                          "critereDeprecie" : {
+                            "type" : "object",
+                            "additionalProperties" : false,
+                            "properties" : {
+                              "code" : {
+                                "type" : "string"
+                              },
+                              "message" : {
+                                "type" : "string"
+                              },
+                              "dateAlerte" : {
+                                "type" : "string",
+                                "format" : "date"
+                              },
+                              "dateDesactivation" : {
+                                "type" : "string",
+                                "format" : "date"
+                              },
+                              "critereSubstitutionId" : {
+                                "type" : "integer"
+                              },
+                              "champSubstitution" : {
+                                "type" : "string"
+                              },
+                              "url" : {
                                 "type" : "string"
                               }
                             }
@@ -656,12 +744,6 @@
                               "libelleNl" : {
                                 "type" : "string"
                               },
-                              "ordre" : {
-                                "type" : "integer"
-                              },
-                              "description" : {
-                                "type" : "string"
-                              },
                               "libelleRu" : {
                                 "type" : "string"
                               },
@@ -672,6 +754,15 @@
                                 "type" : "string"
                               },
                               "libelleJa" : {
+                                "type" : "string"
+                              },
+                              "libelleKo" : {
+                                "type" : "string"
+                              },
+                              "ordre" : {
+                                "type" : "integer"
+                              },
+                              "description" : {
                                 "type" : "string"
                               }
                             }
@@ -744,6 +835,9 @@
                         "type" : "string"
                       },
                       "libelleJa" : {
+                        "type" : "string"
+                      },
+                      "libelleKo" : {
                         "type" : "string"
                       }
                     }

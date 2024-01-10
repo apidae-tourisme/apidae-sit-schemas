@@ -37,6 +37,9 @@
     "libelleJa" : {
       "type" : "string"
     },
+    "libelleKo" : {
+      "type" : "string"
+    },
     "objetTouristique" : {
       "type" : "object",
       "id" : "objetTouristiqueLink",

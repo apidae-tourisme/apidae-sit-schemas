@@ -32,6 +32,9 @@
     },
     "ja" : {
       "type" : "string"
+    },
+    "ko" : {
+      "type" : "string"
     }
   }
 }

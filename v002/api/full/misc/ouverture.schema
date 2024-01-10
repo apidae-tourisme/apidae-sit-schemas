@@ -37,6 +37,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -77,12 +80,6 @@
           "libelleNl" : {
             "type" : "string"
           },
-          "ordre" : {
-            "type" : "integer"
-          },
-          "description" : {
-            "type" : "string"
-          },
           "libelleRu" : {
             "type" : "string"
           },
@@ -93,6 +90,15 @@
             "type" : "string"
           },
           "libelleJa" : {
+            "type" : "string"
+          },
+          "libelleKo" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
             "type" : "string"
           },
           "familleCritere" : {
@@ -125,12 +131,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -141,6 +141,44 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              }
+            }
+          },
+          "critereDeprecie" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "code" : {
+                "type" : "string"
+              },
+              "message" : {
+                "type" : "string"
+              },
+              "dateAlerte" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateDesactivation" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "critereSubstitutionId" : {
+                "type" : "integer"
+              },
+              "champSubstitution" : {
+                "type" : "string"
+              },
+              "url" : {
                 "type" : "string"
               }
             }
@@ -175,12 +213,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -191,6 +223,15 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
                 "type" : "string"
               }
             }
@@ -231,12 +272,6 @@
           "libelleNl" : {
             "type" : "string"
           },
-          "ordre" : {
-            "type" : "integer"
-          },
-          "description" : {
-            "type" : "string"
-          },
           "libelleRu" : {
             "type" : "string"
           },
@@ -247,6 +282,15 @@
             "type" : "string"
           },
           "libelleJa" : {
+            "type" : "string"
+          },
+          "libelleKo" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
             "type" : "string"
           },
           "familleCritere" : {
@@ -279,12 +323,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -295,6 +333,44 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              }
+            }
+          },
+          "critereDeprecie" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "code" : {
+                "type" : "string"
+              },
+              "message" : {
+                "type" : "string"
+              },
+              "dateAlerte" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateDesactivation" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "critereSubstitutionId" : {
+                "type" : "integer"
+              },
+              "champSubstitution" : {
+                "type" : "string"
+              },
+              "url" : {
                 "type" : "string"
               }
             }
@@ -329,12 +405,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -345,6 +415,15 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
                 "type" : "string"
               }
             }
@@ -385,12 +464,6 @@
           "libelleNl" : {
             "type" : "string"
           },
-          "ordre" : {
-            "type" : "integer"
-          },
-          "description" : {
-            "type" : "string"
-          },
           "libelleRu" : {
             "type" : "string"
           },
@@ -401,6 +474,15 @@
             "type" : "string"
           },
           "libelleJa" : {
+            "type" : "string"
+          },
+          "libelleKo" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
             "type" : "string"
           },
           "familleCritere" : {
@@ -433,12 +515,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -449,6 +525,44 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              }
+            }
+          },
+          "critereDeprecie" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "code" : {
+                "type" : "string"
+              },
+              "message" : {
+                "type" : "string"
+              },
+              "dateAlerte" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateDesactivation" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "critereSubstitutionId" : {
+                "type" : "integer"
+              },
+              "champSubstitution" : {
+                "type" : "string"
+              },
+              "url" : {
                 "type" : "string"
               }
             }
@@ -483,12 +597,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -499,6 +607,15 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
                 "type" : "string"
               }
             }
@@ -559,6 +676,9 @@
               },
               "libelleJa" : {
                 "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
               }
             }
           },
@@ -595,6 +715,9 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
                 "type" : "string"
               }
             }
@@ -686,7 +809,7 @@
           },
           "dateSpeciale" : {
             "type" : "string",
-            "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+            "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
           }
         }
       }
@@ -724,12 +847,6 @@
           "libelleNl" : {
             "type" : "string"
           },
-          "ordre" : {
-            "type" : "integer"
-          },
-          "description" : {
-            "type" : "string"
-          },
           "libelleRu" : {
             "type" : "string"
           },
@@ -740,6 +857,15 @@
             "type" : "string"
           },
           "libelleJa" : {
+            "type" : "string"
+          },
+          "libelleKo" : {
+            "type" : "string"
+          },
+          "ordre" : {
+            "type" : "integer"
+          },
+          "description" : {
             "type" : "string"
           },
           "familleCritere" : {
@@ -772,12 +898,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -788,6 +908,44 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
+                "type" : "string"
+              }
+            }
+          },
+          "critereDeprecie" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+              "code" : {
+                "type" : "string"
+              },
+              "message" : {
+                "type" : "string"
+              },
+              "dateAlerte" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "dateDesactivation" : {
+                "type" : "string",
+                "format" : "date"
+              },
+              "critereSubstitutionId" : {
+                "type" : "integer"
+              },
+              "champSubstitution" : {
+                "type" : "string"
+              },
+              "url" : {
                 "type" : "string"
               }
             }
@@ -822,12 +980,6 @@
               "libelleNl" : {
                 "type" : "string"
               },
-              "ordre" : {
-                "type" : "integer"
-              },
-              "description" : {
-                "type" : "string"
-              },
               "libelleRu" : {
                 "type" : "string"
               },
@@ -838,6 +990,15 @@
                 "type" : "string"
               },
               "libelleJa" : {
+                "type" : "string"
+              },
+              "libelleKo" : {
+                "type" : "string"
+              },
+              "ordre" : {
+                "type" : "integer"
+              },
+              "description" : {
                 "type" : "string"
               }
             }

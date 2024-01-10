@@ -1,0 +1,68 @@
+{
+  "type" : "array",
+  "id" : "apiMetadonneesRequete",
+  "items" : [ {
+    "type" : "object",
+    "id" : "apiMetadonneesInputBeanRequete",
+    "additionalProperties" : false,
+    "properties" : {
+      "referenceId" : {
+        "type" : "integer"
+      },
+      "node" : {
+        "type" : "string"
+      },
+      "action" : {
+        "type" : "string",
+        "enum" : [ "ADD", "REMOVE" ]
+      },
+      "metadata" : {
+        "type" : "object",
+        "additionalProperties" : false,
+        "properties" : {
+          "general" : {
+            "type" : "string"
+          },
+          "membres" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "targetId" : {
+                  "type" : "integer"
+                },
+                "jsonData" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "projets" : {
+            "type" : "array",
+            "additionalItems" : false,
+            "items" : {
+              "type" : "object",
+              "additionalProperties" : false,
+              "properties" : {
+                "targetId" : {
+                  "type" : "integer"
+                },
+                "jsonData" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "targetType" : {
+        "type" : "string"
+      },
+      "targetId" : {
+        "type" : "integer"
+      }
+    }
+  } ]
+}

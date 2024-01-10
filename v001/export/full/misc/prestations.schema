@@ -81,6 +81,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -190,6 +193,9 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
@@ -210,6 +216,10 @@
           }
         }
       }
+    },
+    "surchargeTourismesAdaptes" : {
+      "type" : "boolean",
+      "required" : true
     },
     "labelsTourismeHandicap" : {
       "type" : "array",
@@ -263,8 +273,15 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
+    },
+    "surchargeDescriptifHandicapMoteur" : {
+      "type" : "boolean",
+      "required" : true
     },
     "descriptifHandicapAuditif" : {
       "type" : "object",
@@ -300,8 +317,15 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
+    },
+    "surchargeDescriptifHandicapAuditif" : {
+      "type" : "boolean",
+      "required" : true
     },
     "descriptifHandicapVisuel" : {
       "type" : "object",
@@ -337,8 +361,15 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
+    },
+    "surchargeDescriptifHandicapVisuel" : {
+      "type" : "boolean",
+      "required" : true
     },
     "descriptifHandicapMental" : {
       "type" : "object",
@@ -374,11 +405,22 @@
         },
         "libelleJa" : {
           "type" : "string"
+        },
+        "libelleKo" : {
+          "type" : "string"
         }
       }
     },
+    "surchargeDescriptifHandicapMental" : {
+      "type" : "boolean",
+      "required" : true
+    },
     "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
       "type" : "integer"
+    },
+    "surchargeNombreFauteuilsRoulants" : {
+      "type" : "boolean",
+      "required" : true
     },
     "typesClientele" : {
       "type" : "array",

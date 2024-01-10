@@ -143,6 +143,10 @@
         "id" : "TourismeAdapte"
       }
     },
+    "surchargeTourismesAdaptes" : {
+      "type" : "boolean",
+      "required" : true
+    },
     "tourismesAdaptesAdd" : {
       "type" : "array",
       "additionalItems" : false,
@@ -171,20 +175,40 @@
       "type" : "object",
       "id" : "traductionLibelle"
     },
+    "surchargeDescriptifHandicapMoteur" : {
+      "type" : "boolean",
+      "required" : true
+    },
     "descriptifHandicapAuditif" : {
       "type" : "object",
       "id" : "traductionLibelle"
+    },
+    "surchargeDescriptifHandicapAuditif" : {
+      "type" : "boolean",
+      "required" : true
     },
     "descriptifHandicapVisuel" : {
       "type" : "object",
       "id" : "traductionLibelle"
     },
+    "surchargeDescriptifHandicapVisuel" : {
+      "type" : "boolean",
+      "required" : true
+    },
     "descriptifHandicapMental" : {
       "type" : "object",
       "id" : "traductionLibelle"
     },
+    "surchargeDescriptifHandicapMental" : {
+      "type" : "boolean",
+      "required" : true
+    },
     "nombrePersonnesEnFauteuilRoulantAccueilliesSimultanement" : {
       "type" : "integer"
+    },
+    "surchargeNombreFauteuilsRoulants" : {
+      "type" : "boolean",
+      "required" : true
     },
     "typesClientele" : {
       "type" : "array",
