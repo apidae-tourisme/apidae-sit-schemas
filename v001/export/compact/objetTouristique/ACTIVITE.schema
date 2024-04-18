@@ -129,10 +129,6 @@
         "id" : "multimedia"
       }
     },
-    "tourismeAffaires" : {
-      "type" : "object",
-      "id" : "tourismeAffaires"
-    },
     "territoires" : {
       "type" : "array",
       "additionalItems" : false,
