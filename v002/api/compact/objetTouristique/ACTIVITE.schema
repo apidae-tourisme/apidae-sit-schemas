@@ -89,10 +89,6 @@
         "id" : "multimedia"
       }
     },
-    "tourismeAffaires" : {
-      "type" : "object",
-      "id" : "tourismeAffaires"
-    },
     "integration" : {
       "type" : "object",
       "id" : "integration"

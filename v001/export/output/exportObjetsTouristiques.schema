@@ -1458,7 +1458,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -4212,237 +4212,6 @@
           }
         }
       },
-      "tourismeAffaires" : {
-        "type" : "object",
-        "id" : "tourismeAffaires",
-        "additionalProperties" : false,
-        "properties" : {
-          "tourismeAffairesEnabled" : {
-            "type" : "boolean",
-            "required" : true
-          },
-          "sallesEquipeesPour" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "SalleEquipeePourLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "SalleEquipeePour" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "sallesEquipement" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "SalleEquipementLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "SalleEquipement" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "sallesRestauration" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "SalleRestaurationLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "SalleRestauration" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "sallesHebergement" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "SalleHebergementLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "SalleHebergement" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "sallesReunion" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "salleReunion",
-              "additionalProperties" : false,
-              "properties" : {
-                "identifiant" : {
-                  "type" : "integer"
-                },
-                "nom" : {
-                  "type" : "string"
-                },
-                "description" : {
-                  "type" : "object",
-                  "id" : "traductionLibelle",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "libelleFr" : {
-                      "type" : "string"
-                    },
-                    "libelleEn" : {
-                      "type" : "string"
-                    },
-                    "libelleEs" : {
-                      "type" : "string"
-                    },
-                    "libelleIt" : {
-                      "type" : "string"
-                    },
-                    "libelleDe" : {
-                      "type" : "string"
-                    },
-                    "libelleNl" : {
-                      "type" : "string"
-                    },
-                    "libelleRu" : {
-                      "type" : "string"
-                    },
-                    "libelleZh" : {
-                      "type" : "string"
-                    },
-                    "libellePtBR" : {
-                      "type" : "string"
-                    },
-                    "libelleJa" : {
-                      "type" : "string"
-                    },
-                    "libelleKo" : {
-                      "type" : "string"
-                    }
-                  }
-                },
-                "capaciteMax" : {
-                  "type" : "integer"
-                },
-                "superficie" : {
-                  "type" : "integer"
-                },
-                "hauteur" : {
-                  "type" : "number"
-                },
-                "lumiereNaturelle" : {
-                  "type" : "boolean"
-                },
-                "tarifSalle" : {
-                  "type" : "object",
-                  "id" : "salleReunionTarif",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "minimum" : {
-                      "type" : "number"
-                    },
-                    "maximum" : {
-                      "type" : "number"
-                    }
-                  }
-                },
-                "tarifJournee" : {
-                  "type" : "object",
-                  "id" : "salleReunionTarif",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "minimum" : {
-                      "type" : "number"
-                    },
-                    "maximum" : {
-                      "type" : "number"
-                    }
-                  }
-                },
-                "tarifResident" : {
-                  "type" : "object",
-                  "id" : "salleReunionTarif",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "minimum" : {
-                      "type" : "number"
-                    },
-                    "maximum" : {
-                      "type" : "number"
-                    }
-                  }
-                },
-                "identifiantTemporaire" : {
-                  "type" : "integer"
-                },
-                "dispositions" : {
-                  "type" : "array",
-                  "additionalItems" : false,
-                  "items" : {
-                    "type" : "object",
-                    "id" : "salleReunionDisposition",
-                    "additionalProperties" : false,
-                    "properties" : {
-                      "capacite" : {
-                        "type" : "integer"
-                      },
-                      "disposition" : {
-                        "type" : "object",
-                        "id" : "SalleDispositionLink",
-                        "additionalProperties" : false,
-                        "properties" : {
-                          "elementReferenceType" : {
-                            "type" : "string",
-                            "enum" : [ "SalleDisposition" ]
-                          },
-                          "id" : {
-                            "type" : "integer"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "nombreSallesReunionEquipees" : {
-            "type" : "integer"
-          },
-          "capaciteMaxAccueil" : {
-            "type" : "integer"
-          },
-          "nombreSallesModulables" : {
-            "type" : "integer"
-          }
-        }
-      },
       "territoires" : {
         "type" : "array",
         "additionalItems" : false,
@@ -6123,7 +5892,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -10892,7 +10661,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -15837,7 +15606,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -20536,7 +20305,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -25632,7 +25401,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -30057,7 +29826,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -35085,7 +34854,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -39942,7 +39711,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -44767,7 +44536,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -49589,7 +49358,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -54466,7 +54235,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -58951,7 +58720,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -63796,7 +63565,7 @@
                 },
                 "dateSpeciale" : {
                   "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
+                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "MARDI_GRAS", "MERCREDI_DES_CENDRES", "JEUDI_MI_CAREME", "FETE_VICTOR_SCHOELCHER", "JOUR_DES_DEFUNTS", "ABOLITION_DE_LESCLAVAGE_GUADELOUPE", "ABOLITION_DE_LESCLAVAGE_MARTINIQUE", "VINGT_CINQ_DECEMBRE" ]
                 }
               }
             }
@@ -67834,288 +67603,6 @@
           "surchargeNombreFauteuilsRoulants" : {
             "type" : "boolean",
             "required" : true
-          }
-        }
-      },
-      "ouverture" : {
-        "type" : "object",
-        "id" : "ouverture",
-        "additionalProperties" : false,
-        "properties" : {
-          "periodeEnClair" : {
-            "type" : "object",
-            "id" : "traductionLibelle",
-            "additionalProperties" : false,
-            "properties" : {
-              "libelleFr" : {
-                "type" : "string"
-              },
-              "libelleEn" : {
-                "type" : "string"
-              },
-              "libelleEs" : {
-                "type" : "string"
-              },
-              "libelleIt" : {
-                "type" : "string"
-              },
-              "libelleDe" : {
-                "type" : "string"
-              },
-              "libelleNl" : {
-                "type" : "string"
-              },
-              "libelleRu" : {
-                "type" : "string"
-              },
-              "libelleZh" : {
-                "type" : "string"
-              },
-              "libellePtBR" : {
-                "type" : "string"
-              },
-              "libelleJa" : {
-                "type" : "string"
-              },
-              "libelleKo" : {
-                "type" : "string"
-              }
-            }
-          },
-          "indicationsPeriode" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "IndicationPeriodeLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "IndicationPeriode" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "periodesOuvertures" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "periodeOuverture",
-              "additionalProperties" : false,
-              "properties" : {
-                "identifiant" : {
-                  "type" : "integer"
-                },
-                "dateDebut" : {
-                  "type" : "string",
-                  "format" : "date"
-                },
-                "dateFin" : {
-                  "type" : "string",
-                  "format" : "date"
-                },
-                "nom" : {
-                  "type" : "object",
-                  "id" : "traductionLibelle",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "libelleFr" : {
-                      "type" : "string"
-                    },
-                    "libelleEn" : {
-                      "type" : "string"
-                    },
-                    "libelleEs" : {
-                      "type" : "string"
-                    },
-                    "libelleIt" : {
-                      "type" : "string"
-                    },
-                    "libelleDe" : {
-                      "type" : "string"
-                    },
-                    "libelleNl" : {
-                      "type" : "string"
-                    },
-                    "libelleRu" : {
-                      "type" : "string"
-                    },
-                    "libelleZh" : {
-                      "type" : "string"
-                    },
-                    "libellePtBR" : {
-                      "type" : "string"
-                    },
-                    "libelleJa" : {
-                      "type" : "string"
-                    },
-                    "libelleKo" : {
-                      "type" : "string"
-                    }
-                  }
-                },
-                "complementHoraire" : {
-                  "type" : "object",
-                  "id" : "traductionLibelle",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "libelleFr" : {
-                      "type" : "string"
-                    },
-                    "libelleEn" : {
-                      "type" : "string"
-                    },
-                    "libelleEs" : {
-                      "type" : "string"
-                    },
-                    "libelleIt" : {
-                      "type" : "string"
-                    },
-                    "libelleDe" : {
-                      "type" : "string"
-                    },
-                    "libelleNl" : {
-                      "type" : "string"
-                    },
-                    "libelleRu" : {
-                      "type" : "string"
-                    },
-                    "libelleZh" : {
-                      "type" : "string"
-                    },
-                    "libellePtBR" : {
-                      "type" : "string"
-                    },
-                    "libelleJa" : {
-                      "type" : "string"
-                    },
-                    "libelleKo" : {
-                      "type" : "string"
-                    }
-                  }
-                },
-                "horaireOuverture" : {
-                  "type" : "string",
-                  "format" : "time"
-                },
-                "horaireFermeture" : {
-                  "type" : "string",
-                  "format" : "time"
-                },
-                "type" : {
-                  "type" : "string",
-                  "enum" : [ "OUVERTURE_TOUS_LES_JOURS", "OUVERTURE_SAUF", "OUVERTURE_SEMAINE", "OUVERTURE_MOIS" ]
-                },
-                "tousLesAns" : {
-                  "type" : "boolean"
-                },
-                "ouverturesExceptionnelles" : {
-                  "type" : "array",
-                  "additionalItems" : false,
-                  "items" : {
-                    "type" : "object",
-                    "id" : "ouvertureExceptionnelle",
-                    "additionalProperties" : false,
-                    "properties" : {
-                      "dateOuverture" : {
-                        "type" : "string",
-                        "format" : "date"
-                      }
-                    }
-                  }
-                },
-                "ouverturesJourDuMois" : {
-                  "type" : "array",
-                  "additionalItems" : false,
-                  "items" : {
-                    "type" : "object",
-                    "id" : "ouvertureJourDuMois",
-                    "additionalProperties" : false,
-                    "properties" : {
-                      "jourDuMois" : {
-                        "type" : "string",
-                        "enum" : [ "D_1ER", "D_2EME", "D_3EME", "D_4EME", "D_DERNIER" ]
-                      },
-                      "jour" : {
-                        "type" : "string",
-                        "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
-                      }
-                    }
-                  }
-                },
-                "ouverturesJournalieres" : {
-                  "type" : "array",
-                  "additionalItems" : false,
-                  "items" : {
-                    "type" : "object",
-                    "id" : "ouvertureJournaliere",
-                    "additionalProperties" : false,
-                    "properties" : {
-                      "jour" : {
-                        "type" : "string",
-                        "enum" : [ "LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE", "TOUS" ]
-                      }
-                    }
-                  }
-                },
-                "identifiantTemporaire" : {
-                  "type" : "integer"
-                },
-                "identifiantTechnique" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "fermeturesExceptionnelles" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "fermetureExceptionnelle",
-              "additionalProperties" : false,
-              "properties" : {
-                "dateFermeture" : {
-                  "type" : "string",
-                  "format" : "date"
-                },
-                "dateSpeciale" : {
-                  "type" : "string",
-                  "enum" : [ "PREMIER_JANVIER", "BERCHTOLDSTAG", "SAINT_JOSEPH", "ARRIVEE_EVANGILE", "FETE_CITOYENNETE", "VENDREDI_SAINT", "LUNDI_PAQUES", "ASCENSION", "LUNDI_PENTECOTE", "PREMIER_MAI", "HUIT_MAI", "FETE_AUTONOMIE", "QUATORZE_JUILLET", "FETE_DIEU", "FETE_NATIONALE_SUISSE", "QUINZE_AOUT", "LUNDI_DU_JEUNE_FEDERAL", "PREMIER_NOVEMBRE", "ONZE_NOVEMBRE", "IMMACULEE_CONCEPTION", "VINGT_CINQ_DECEMBRE" ]
-                }
-              }
-            }
-          },
-          "ouverturesComplementaires" : {
-            "type" : "array",
-            "additionalItems" : false,
-            "items" : {
-              "type" : "object",
-              "id" : "OuvertureComplementaireLink",
-              "additionalProperties" : false,
-              "properties" : {
-                "elementReferenceType" : {
-                  "type" : "string",
-                  "enum" : [ "OuvertureComplementaire" ]
-                },
-                "id" : {
-                  "type" : "integer"
-                }
-              }
-            }
-          },
-          "ouvertTouteLAnnee" : {
-            "type" : "string",
-            "enum" : [ "OUVERT_TOUTE_L_ANNEE" ]
-          },
-          "fermeTemporairement" : {
-            "type" : "string",
-            "enum" : [ "FERME_TEMPORAIREMENT" ]
           }
         }
       },

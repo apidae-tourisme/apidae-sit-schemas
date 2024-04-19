@@ -45,10 +45,6 @@
       "type" : "object",
       "id" : "prestations"
     },
-    "ouverture" : {
-      "type" : "object",
-      "id" : "ouverture"
-    },
     "criteresInternes" : {
       "type" : "array",
       "additionalItems" : false,
