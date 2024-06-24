@@ -13,6 +13,13 @@
         "type" : "integer"
       }
     },
+    "membreProprietaireIdGmcs" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
     "listeEnregistreeId" : {
       "type" : "integer"
     }

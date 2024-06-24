@@ -625,6 +625,18 @@
     "fermeTemporairement" : {
       "type" : "string",
       "enum" : [ "FERME_TEMPORAIREMENT" ]
+    },
+    "nombreJours" : {
+      "type" : "integer"
+    },
+    "dureeSeance" : {
+      "type" : "integer"
+    },
+    "dureeSeanceGroupe" : {
+      "type" : "integer"
+    },
+    "nombreNuits" : {
+      "type" : "integer"
     }
   }
 }

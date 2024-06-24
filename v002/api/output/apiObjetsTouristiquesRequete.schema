@@ -122,8 +122,21 @@
         "type" : "integer"
       }
     },
+    "membreProprietaireIdGmcs" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
     "searchLocale" : {
       "type" : "string"
+    },
+    "dureeMin" : {
+      "type" : "integer"
+    },
+    "dureeMax" : {
+      "type" : "integer"
     }
   }
 }

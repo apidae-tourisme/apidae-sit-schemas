@@ -6,6 +6,9 @@
     "memberId" : {
       "type" : "integer"
     },
+    "memberIdGmc" : {
+      "type" : "integer"
+    },
     "searchId" : {
       "type" : "integer"
     },

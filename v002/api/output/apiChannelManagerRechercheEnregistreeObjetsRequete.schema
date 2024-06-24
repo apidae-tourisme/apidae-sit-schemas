@@ -9,6 +9,9 @@
     "membreId" : {
       "type" : "integer"
     },
+    "membreIdGmc" : {
+      "type" : "integer"
+    },
     "listeEnregistreeId" : {
       "type" : "array",
       "additionalItems" : false,
