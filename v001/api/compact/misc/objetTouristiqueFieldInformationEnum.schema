@@ -1,0 +1,13 @@
+{
+  "type" : "object",
+  "id" : "objetTouristiqueFieldInformationEnum",
+  "additionalProperties" : false,
+  "properties" : {
+    "nom" : {
+      "type" : "string"
+    },
+    "libelle" : {
+      "type" : "string"
+    }
+  }
+}
