@@ -1,0 +1,41 @@
+{
+  "type" : "object",
+  "id" : "objetTouristiqueFieldInformation",
+  "additionalProperties" : false,
+  "properties" : {
+    "path" : {
+      "type" : "string"
+    },
+    "nom" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string",
+      "enum" : [ "DEFAUT", "SAISIE", "RECHERCHE", "EXPORT_EXCEL" ]
+    },
+    "objetTouristiqueType" : {
+      "type" : "string",
+      "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DOMAINE_SKIABLE", "EQUIPEMENT", "STRUCTURE", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "DEGUSTATION", "RESTAURATION", "SEJOUR_PACKAGE", "TERRITOIRE" ]
+    },
+    "texteAideCourt" : {
+      "type" : "string"
+    },
+    "texteAideLong" : {
+      "type" : "string"
+    },
+    "dateCreation" : {
+      "type" : "string"
+    },
+    "dateDerniereModification" : {
+      "type" : "string"
+    },
+    "enums" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "objetTouristiqueFieldInformationEnum"
+      }
+    }
+  }
+}
