@@ -39,6 +39,9 @@
     "altitudeMaximum" : {
       "type" : "integer"
     },
+    "altitudeMinimum" : {
+      "type" : "integer"
+    },
     "itineraireType" : {
       "type" : "string",
       "enum" : [ "ALLER_ITINERANCE", "ALLER_RETOUR", "BOUCLE" ]

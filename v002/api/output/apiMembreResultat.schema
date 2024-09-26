@@ -437,9 +437,6 @@
             "statutDernierExport" : {
               "type" : "string"
             },
-            "identifier" : {
-              "type" : "integer"
-            },
             "technologies" : {
               "type" : "array",
               "additionalItems" : false,
