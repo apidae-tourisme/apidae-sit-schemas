@@ -65,6 +65,9 @@
         "nomDuLieu" : {
           "type" : "string"
         },
+        "surchargeNomDuLieu" : {
+          "type" : "boolean"
+        },
         "adresse1" : {
           "type" : "string"
         },

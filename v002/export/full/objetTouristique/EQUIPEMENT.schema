@@ -533,6 +533,9 @@
             "nomDuLieu" : {
               "type" : "string"
             },
+            "surchargeNomDuLieu" : {
+              "type" : "boolean"
+            },
             "adresse1" : {
               "type" : "string"
             },
@@ -3748,6 +3751,9 @@
             "altitudeMaximum" : {
               "type" : "integer"
             },
+            "altitudeMinimum" : {
+              "type" : "integer"
+            },
             "itineraireType" : {
               "type" : "string",
               "enum" : [ "ALLER_ITINERANCE", "ALLER_RETOUR", "BOUCLE" ]
@@ -4529,6 +4535,9 @@
                 "properties" : {
                   "nomDuLieu" : {
                     "type" : "string"
+                  },
+                  "surchargeNomDuLieu" : {
+                    "type" : "boolean"
                   },
                   "adresse1" : {
                     "type" : "string"
@@ -7966,6 +7975,9 @@
                     "type" : "integer"
                   },
                   "altitudeMaximum" : {
+                    "type" : "integer"
+                  },
+                  "altitudeMinimum" : {
                     "type" : "integer"
                   },
                   "itineraireType" : {

@@ -533,6 +533,9 @@
             "nomDuLieu" : {
               "type" : "string"
             },
+            "surchargeNomDuLieu" : {
+              "type" : "boolean"
+            },
             "adresse1" : {
               "type" : "string"
             },
@@ -4265,6 +4268,9 @@
                   "nomDuLieu" : {
                     "type" : "string"
                   },
+                  "surchargeNomDuLieu" : {
+                    "type" : "boolean"
+                  },
                   "adresse1" : {
                     "type" : "string"
                   },
@@ -7701,6 +7707,9 @@
                     "type" : "integer"
                   },
                   "altitudeMaximum" : {
+                    "type" : "integer"
+                  },
+                  "altitudeMinimum" : {
                     "type" : "integer"
                   },
                   "itineraireType" : {
