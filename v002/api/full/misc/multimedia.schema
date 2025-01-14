@@ -221,6 +221,9 @@
           "lastModifiedDate" : {
             "type" : "string",
             "format" : "date-time"
+          },
+          "checksum" : {
+            "type" : "string"
           }
         }
       }

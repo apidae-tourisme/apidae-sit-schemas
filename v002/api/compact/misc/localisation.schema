@@ -46,19 +46,19 @@
     "lieu" : {
       "type" : "object",
       "id" : "lieu",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_LOCATIF, PATRIMOINE_CULTUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
     },
     "lieuObjetTouristique" : {
       "type" : "object",
       "id" : "objetTouristiqueLink",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_LOCATIF, PATRIMOINE_CULTUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
     },
     "territoiresAffectes" : {
       "type" : "array",
       "additionalItems" : false,
       "items" : {
         "type" : "object",
-        "id" : "territoireLink"
+        "id" : "TERRITOIRELink"
       }
     }
   }

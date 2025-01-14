@@ -56,7 +56,7 @@
         },
         "familleCritere" : {
           "type" : "object",
-          "id" : "familleCritereLink",
+          "id" : "FamilleCritereLink",
           "additionalProperties" : false,
           "properties" : {
             "elementReferenceType" : {
@@ -257,7 +257,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -449,7 +449,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -646,7 +646,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -1055,7 +1055,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -1639,6 +1639,9 @@
               "lastModifiedDate" : {
                 "type" : "string",
                 "format" : "date-time"
+              },
+              "checksum" : {
+                "type" : "string"
               }
             }
           }
@@ -1885,6 +1888,9 @@
               "lastModifiedDate" : {
                 "type" : "string",
                 "format" : "date-time"
+              },
+              "checksum" : {
+                "type" : "string"
               }
             }
           }

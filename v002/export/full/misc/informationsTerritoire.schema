@@ -567,6 +567,9 @@
               "lastModifiedDate" : {
                 "type" : "string",
                 "format" : "date-time"
+              },
+              "checksum" : {
+                "type" : "string"
               }
             }
           }
@@ -813,6 +816,9 @@
               "lastModifiedDate" : {
                 "type" : "string",
                 "format" : "date-time"
+              },
+              "checksum" : {
+                "type" : "string"
               }
             }
           }

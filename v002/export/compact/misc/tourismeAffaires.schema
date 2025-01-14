@@ -47,6 +47,10 @@
         "id" : "salleReunion"
       }
     },
+    "devise" : {
+      "type" : "string",
+      "enum" : [ "EUR", "CHF", "XPF" ]
+    },
     "nombreSallesReunionEquipees" : {
       "type" : "integer"
     },

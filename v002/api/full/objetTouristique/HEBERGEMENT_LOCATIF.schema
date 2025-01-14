@@ -132,7 +132,7 @@
                 },
                 "familleCritere" : {
                   "type" : "object",
-                  "id" : "familleCritereLink",
+                  "id" : "FamilleCritereLink",
                   "additionalProperties" : false,
                   "properties" : {
                     "elementReferenceType" : {
@@ -367,7 +367,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -658,7 +658,7 @@
                 },
                 "familleCritere" : {
                   "type" : "object",
-                  "id" : "familleCritereLink",
+                  "id" : "FamilleCritereLink",
                   "additionalProperties" : false,
                   "properties" : {
                     "elementReferenceType" : {
@@ -953,7 +953,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -1343,7 +1343,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -1730,7 +1730,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -1964,7 +1964,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -2246,7 +2246,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -2546,7 +2546,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -2746,7 +2746,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -2938,7 +2938,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -3130,7 +3130,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -3266,12 +3266,452 @@
             }
           }
         },
+        "lieu" : {
+          "type" : "object",
+          "id" : "lieu",
+          "additionalProperties" : false,
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "nom" : {
+              "type" : "object",
+              "id" : "traductionLibelle",
+              "additionalProperties" : false,
+              "properties" : {
+                "libelleFr" : {
+                  "type" : "string"
+                },
+                "libelleEn" : {
+                  "type" : "string"
+                },
+                "libelleEs" : {
+                  "type" : "string"
+                },
+                "libelleIt" : {
+                  "type" : "string"
+                },
+                "libelleDe" : {
+                  "type" : "string"
+                },
+                "libelleNl" : {
+                  "type" : "string"
+                },
+                "libelleRu" : {
+                  "type" : "string"
+                },
+                "libelleZh" : {
+                  "type" : "string"
+                },
+                "libellePtBR" : {
+                  "type" : "string"
+                },
+                "libelleJa" : {
+                  "type" : "string"
+                },
+                "libelleKo" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "lieuObjetTouristique" : {
+          "type" : "object",
+          "id" : "objetTouristiqueLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "type" : {
+              "type" : "string",
+              "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+            },
+            "id" : {
+              "type" : "integer"
+            },
+            "nom" : {
+              "type" : "object",
+              "id" : "traductionLibelle",
+              "additionalProperties" : false,
+              "properties" : {
+                "libelleFr" : {
+                  "type" : "string"
+                },
+                "libelleEn" : {
+                  "type" : "string"
+                },
+                "libelleEs" : {
+                  "type" : "string"
+                },
+                "libelleIt" : {
+                  "type" : "string"
+                },
+                "libelleDe" : {
+                  "type" : "string"
+                },
+                "libelleNl" : {
+                  "type" : "string"
+                },
+                "libelleRu" : {
+                  "type" : "string"
+                },
+                "libelleZh" : {
+                  "type" : "string"
+                },
+                "libellePtBR" : {
+                  "type" : "string"
+                },
+                "libelleJa" : {
+                  "type" : "string"
+                },
+                "libelleKo" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "identifier" : {
+              "type" : "string"
+            },
+            "state" : {
+              "type" : "string",
+              "enum" : [ "TRASH", "NEW", "HIDDEN", "PUBLISHED", "DELETED" ]
+            },
+            "adresse" : {
+              "type" : "object",
+              "id" : "adresse",
+              "additionalProperties" : false,
+              "properties" : {
+                "nomDuLieu" : {
+                  "type" : "string"
+                },
+                "surchargeNomDuLieu" : {
+                  "type" : "boolean"
+                },
+                "adresse1" : {
+                  "type" : "string"
+                },
+                "adresse2" : {
+                  "type" : "string"
+                },
+                "adresse3" : {
+                  "type" : "string"
+                },
+                "codePostal" : {
+                  "type" : "string"
+                },
+                "bureauDistribution" : {
+                  "type" : "string"
+                },
+                "cedex" : {
+                  "type" : "string"
+                },
+                "etat" : {
+                  "type" : "string"
+                },
+                "commune" : {
+                  "type" : "object",
+                  "id" : "commune",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "id" : {
+                      "type" : "integer"
+                    },
+                    "code" : {
+                      "type" : "string"
+                    },
+                    "nom" : {
+                      "type" : "string"
+                    },
+                    "pays" : {
+                      "type" : "object",
+                      "id" : "Pays",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "elementReferenceType" : {
+                          "type" : "string",
+                          "enum" : [ "Pays" ]
+                        },
+                        "id" : {
+                          "type" : "integer"
+                        },
+                        "libelleFr" : {
+                          "type" : "string"
+                        },
+                        "libelleEn" : {
+                          "type" : "string"
+                        },
+                        "libelleEs" : {
+                          "type" : "string"
+                        },
+                        "libelleIt" : {
+                          "type" : "string"
+                        },
+                        "libelleDe" : {
+                          "type" : "string"
+                        },
+                        "libelleNl" : {
+                          "type" : "string"
+                        },
+                        "libelleRu" : {
+                          "type" : "string"
+                        },
+                        "libelleZh" : {
+                          "type" : "string"
+                        },
+                        "libellePtBR" : {
+                          "type" : "string"
+                        },
+                        "libelleJa" : {
+                          "type" : "string"
+                        },
+                        "libelleKo" : {
+                          "type" : "string"
+                        },
+                        "ordre" : {
+                          "type" : "integer"
+                        },
+                        "description" : {
+                          "type" : "string"
+                        },
+                        "familleCritere" : {
+                          "type" : "object",
+                          "id" : "FamilleCritereLink",
+                          "additionalProperties" : false,
+                          "properties" : {
+                            "elementReferenceType" : {
+                              "type" : "string",
+                              "enum" : [ "FamilleCritere" ]
+                            },
+                            "id" : {
+                              "type" : "integer"
+                            },
+                            "libelleFr" : {
+                              "type" : "string"
+                            },
+                            "libelleEn" : {
+                              "type" : "string"
+                            },
+                            "libelleEs" : {
+                              "type" : "string"
+                            },
+                            "libelleIt" : {
+                              "type" : "string"
+                            },
+                            "libelleDe" : {
+                              "type" : "string"
+                            },
+                            "libelleNl" : {
+                              "type" : "string"
+                            },
+                            "libelleRu" : {
+                              "type" : "string"
+                            },
+                            "libelleZh" : {
+                              "type" : "string"
+                            },
+                            "libellePtBR" : {
+                              "type" : "string"
+                            },
+                            "libelleJa" : {
+                              "type" : "string"
+                            },
+                            "libelleKo" : {
+                              "type" : "string"
+                            },
+                            "ordre" : {
+                              "type" : "integer"
+                            },
+                            "description" : {
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "critereDeprecie" : {
+                          "type" : "object",
+                          "additionalProperties" : false,
+                          "properties" : {
+                            "code" : {
+                              "type" : "string"
+                            },
+                            "message" : {
+                              "type" : "string"
+                            },
+                            "dateAlerte" : {
+                              "type" : "string",
+                              "format" : "date"
+                            },
+                            "dateDesactivation" : {
+                              "type" : "string",
+                              "format" : "date"
+                            },
+                            "critereSubstitutionId" : {
+                              "type" : "integer"
+                            },
+                            "champSubstitution" : {
+                              "type" : "string"
+                            },
+                            "url" : {
+                              "type" : "string"
+                            }
+                          }
+                        },
+                        "parent" : {
+                          "type" : "object",
+                          "id" : "elementReferenceLink",
+                          "additionalProperties" : false,
+                          "properties" : {
+                            "elementReferenceType" : {
+                              "type" : "string",
+                              "enum" : [ "ActiviteCategorie", "ActiviteCulturellePrestation", "ActiviteSportivePrestation", "ActiviteType", "AopAocIgp", "CommerceEtServiceType", "CommerceEtServiceTypeDetaille", "ConditionGratuite", "ContactCivilite", "ContactFonction", "DegustationLabelCharteQualite", "DegustationStatutExploitant", "DegustationTypeProduit", "DescriptifTheme", "DomaineSkiableClassification", "DomaineSkiableType", "ElementReference", "EnqueteTitre", "Environnement", "EquipementActivite", "EquipementRubrique", "FamilleCritere", "FeteEtManifestationCategorie", "FeteEtManifestationGenerique", "FeteEtManifestationPortee", "FeteEtManifestationTheme", "FeteEtManifestationType", "HebergementCollectifAgrementType", "HebergementCollectifChaineEtLabel", "HebergementCollectifClassementPrefectoral", "HebergementCollectifLabel", "HebergementCollectifType", "HebergementCollectifTypeHebergement", "HebergementCollectifTypeLabel", "HebergementLocatifAgrementType", "HebergementLocatifClassementPrefectoral", "HebergementLocatifLabel", "HebergementLocatifType", "HebergementLocatifTypeLabel", "HotellerieChaine", "HotellerieClassement", "HotellerieLabel", "HotelleriePleinAirChaine", "HotelleriePleinAirClassement", "HotelleriePleinAirLabel", "HotelleriePleinAirType", "HotelleriePleinAirTypeLabel", "HotellerieType", "HotellerieTypeLabel", "IndicationPeriode", "LabelTourismeHandicap", "Langue", "MembreSitraType", "ModeGestion", "ModePaiement", "MoyenCommunicationType", "NatureTerrain", "OuvertureComplementaire", "PatrimoineCulturelCategorie", "PatrimoineCulturelTheme", "PatrimoineCulturelType", "PatrimoineNaturelCategorie", "PatrimoineNaturelClassement", "Pays", "PrestationActivite", "PrestationConfort", "PrestationEquipement", "PrestationService", "PrestationVisiteGroupee", "PrestationVisiteIndividuelle", "ReservationType", "RestaurationCategorie", "RestaurationChaine", "RestaurationClassementGuide", "RestaurationSpecialite", "RestaurationType", "SalleDisposition", "SalleEquipeePour", "SalleEquipement", "SalleHebergement", "SalleRestauration", "SejourPackageTransport", "SejourPackageTypeHebergement", "StructureClassement", "StructureHabilitationPrestataire", "StructureType", "TarifType", "TerritoireType", "TerritoireTypeStation", "TerritoireZoneClassement", "TerritoireZoneLabel", "TourismeAdapte", "TypeClientele", "TypeHabitation", "TypologiePromoSitra" ]
+                            },
+                            "id" : {
+                              "type" : "integer"
+                            },
+                            "libelleFr" : {
+                              "type" : "string"
+                            },
+                            "libelleEn" : {
+                              "type" : "string"
+                            },
+                            "libelleEs" : {
+                              "type" : "string"
+                            },
+                            "libelleIt" : {
+                              "type" : "string"
+                            },
+                            "libelleDe" : {
+                              "type" : "string"
+                            },
+                            "libelleNl" : {
+                              "type" : "string"
+                            },
+                            "libelleRu" : {
+                              "type" : "string"
+                            },
+                            "libelleZh" : {
+                              "type" : "string"
+                            },
+                            "libellePtBR" : {
+                              "type" : "string"
+                            },
+                            "libelleJa" : {
+                              "type" : "string"
+                            },
+                            "libelleKo" : {
+                              "type" : "string"
+                            },
+                            "ordre" : {
+                              "type" : "integer"
+                            },
+                            "description" : {
+                              "type" : "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "codePostal" : {
+                      "type" : "string"
+                    },
+                    "complement" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            },
+            "geolocalisation" : {
+              "type" : "object",
+              "id" : "geolocalisation",
+              "additionalProperties" : false,
+              "properties" : {
+                "reperePlan" : {
+                  "type" : "string"
+                },
+                "altitude" : {
+                  "type" : "integer"
+                },
+                "altitudeMaxi" : {
+                  "type" : "integer"
+                },
+                "altitudeMini" : {
+                  "type" : "integer"
+                },
+                "altitudeMaxiHebergement" : {
+                  "type" : "integer"
+                },
+                "altitudeMiniHebergement" : {
+                  "type" : "integer"
+                },
+                "complement" : {
+                  "type" : "object",
+                  "id" : "traductionLibelle",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "libelleFr" : {
+                      "type" : "string"
+                    },
+                    "libelleEn" : {
+                      "type" : "string"
+                    },
+                    "libelleEs" : {
+                      "type" : "string"
+                    },
+                    "libelleIt" : {
+                      "type" : "string"
+                    },
+                    "libelleDe" : {
+                      "type" : "string"
+                    },
+                    "libelleNl" : {
+                      "type" : "string"
+                    },
+                    "libelleRu" : {
+                      "type" : "string"
+                    },
+                    "libelleZh" : {
+                      "type" : "string"
+                    },
+                    "libellePtBR" : {
+                      "type" : "string"
+                    },
+                    "libelleJa" : {
+                      "type" : "string"
+                    },
+                    "libelleKo" : {
+                      "type" : "string"
+                    }
+                  }
+                },
+                "valide" : {
+                  "type" : "boolean"
+                },
+                "geoJson" : {
+                  "type" : "object",
+                  "id" : "geoJson",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "type" : {
+                      "type" : "string"
+                    },
+                    "coordinates" : {
+                      "type" : "array",
+                      "additionalItems" : false,
+                      "items" : {
+                        "type" : "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "territoiresAffectes" : {
           "type" : "array",
           "additionalItems" : false,
           "items" : {
             "type" : "object",
-            "id" : "territoireLink",
+            "id" : "TERRITOIRELink",
             "additionalProperties" : false,
             "properties" : {
               "type" : {
@@ -3581,7 +4021,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -3879,7 +4319,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -4071,7 +4511,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -4263,7 +4703,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -4455,7 +4895,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -4695,7 +5135,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -4887,7 +5327,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -5079,7 +5519,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -5271,7 +5711,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -5463,7 +5903,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -5655,7 +6095,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -5847,7 +6287,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -6039,7 +6479,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -6231,7 +6671,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -6423,7 +6863,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -6655,7 +7095,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -6851,7 +7291,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -7043,7 +7483,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -7235,7 +7675,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -7610,7 +8050,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -7802,7 +8242,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -7994,7 +8434,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -8243,7 +8683,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -8435,7 +8875,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -8627,7 +9067,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -9010,7 +9450,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -9391,7 +9831,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -9591,7 +10031,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -9783,7 +10223,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -9975,7 +10415,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -10180,7 +10620,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -10515,7 +10955,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -10803,7 +11243,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -11042,7 +11482,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -11399,7 +11839,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -11633,7 +12073,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -11824,7 +12264,7 @@
                 },
                 "familleCritere" : {
                   "type" : "object",
-                  "id" : "familleCritereLink",
+                  "id" : "FamilleCritereLink",
                   "additionalProperties" : false,
                   "properties" : {
                     "elementReferenceType" : {
@@ -12024,7 +12464,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -12477,6 +12917,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -12727,6 +13170,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -12816,7 +13262,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -13008,7 +13454,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -13200,7 +13646,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -13392,7 +13838,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -13700,7 +14146,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -13841,6 +14287,10 @@
             }
           }
         },
+        "devise" : {
+          "type" : "string",
+          "enum" : [ "EUR", "CHF", "XPF" ]
+        },
         "nombreSallesReunionEquipees" : {
           "type" : "integer"
         },
@@ -13881,7 +14331,7 @@
       "additionalItems" : false,
       "items" : {
         "type" : "object",
-        "id" : "territoireLink",
+        "id" : "TERRITOIRELink",
         "additionalProperties" : false,
         "properties" : {
           "type" : {
@@ -14007,7 +14457,7 @@
             },
             "familleCritere" : {
               "type" : "object",
-              "id" : "familleCritereLink",
+              "id" : "FamilleCritereLink",
               "additionalProperties" : false,
               "properties" : {
                 "elementReferenceType" : {
@@ -14213,7 +14663,7 @@
             },
             "familleCritere" : {
               "type" : "object",
-              "id" : "familleCritereLink",
+              "id" : "FamilleCritereLink",
               "additionalProperties" : false,
               "properties" : {
                 "elementReferenceType" : {
@@ -14401,7 +14851,7 @@
             },
             "familleCritere" : {
               "type" : "object",
-              "id" : "familleCritereLink",
+              "id" : "FamilleCritereLink",
               "additionalProperties" : false,
               "properties" : {
                 "elementReferenceType" : {
@@ -14577,7 +15027,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -14734,7 +15184,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -14972,7 +15422,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -15221,7 +15671,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -15447,7 +15897,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -15639,7 +16089,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -15831,7 +16281,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -16023,7 +16473,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -16215,7 +16665,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -16407,7 +16857,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -16599,7 +17049,7 @@
               },
               "familleCritere" : {
                 "type" : "object",
-                "id" : "familleCritereLink",
+                "id" : "FamilleCritereLink",
                 "additionalProperties" : false,
                 "properties" : {
                   "elementReferenceType" : {
@@ -16813,7 +17263,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -17180,7 +17630,7 @@
                       },
                       "familleCritere" : {
                         "type" : "object",
-                        "id" : "familleCritereLink",
+                        "id" : "FamilleCritereLink",
                         "additionalProperties" : false,
                         "properties" : {
                           "elementReferenceType" : {
@@ -17501,7 +17951,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -17792,7 +18242,7 @@
                       },
                       "familleCritere" : {
                         "type" : "object",
-                        "id" : "familleCritereLink",
+                        "id" : "FamilleCritereLink",
                         "additionalProperties" : false,
                         "properties" : {
                           "elementReferenceType" : {
@@ -18087,7 +18537,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -18477,7 +18927,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -18864,7 +19314,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -19098,7 +19548,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -19380,7 +19830,7 @@
                           },
                           "familleCritere" : {
                             "type" : "object",
-                            "id" : "familleCritereLink",
+                            "id" : "FamilleCritereLink",
                             "additionalProperties" : false,
                             "properties" : {
                               "elementReferenceType" : {
@@ -19680,7 +20130,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -19880,7 +20330,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -20072,7 +20522,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -20264,7 +20714,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -20608,7 +21058,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -20845,7 +21295,7 @@
                 "additionalItems" : false,
                 "items" : {
                   "type" : "object",
-                  "id" : "territoireLink",
+                  "id" : "TERRITOIRELink",
                   "additionalProperties" : false,
                   "properties" : {
                     "type" : {
@@ -21155,7 +21605,7 @@
                                     },
                                     "familleCritere" : {
                                       "type" : "object",
-                                      "id" : "familleCritereLink",
+                                      "id" : "FamilleCritereLink",
                                       "additionalProperties" : false,
                                       "properties" : {
                                         "elementReferenceType" : {
@@ -21453,7 +21903,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -21645,7 +22095,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -21837,7 +22287,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -22029,7 +22479,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -22269,7 +22719,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -22461,7 +22911,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -22653,7 +23103,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -22845,7 +23295,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23037,7 +23487,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23229,7 +23679,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23421,7 +23871,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23613,7 +24063,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23805,7 +24255,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -23997,7 +24447,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -24229,7 +24679,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -24425,7 +24875,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -24617,7 +25067,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -24809,7 +25259,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -25184,7 +25634,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -25376,7 +25826,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -25568,7 +26018,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -25834,7 +26284,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -26026,7 +26476,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -26218,7 +26668,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -26601,7 +27051,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -26985,7 +27435,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -27185,7 +27635,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -27377,7 +27827,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -27569,7 +28019,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -27854,7 +28304,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -28189,7 +28639,7 @@
                                     },
                                     "familleCritere" : {
                                       "type" : "object",
-                                      "id" : "familleCritereLink",
+                                      "id" : "FamilleCritereLink",
                                       "additionalProperties" : false,
                                       "properties" : {
                                         "elementReferenceType" : {
@@ -28477,7 +28927,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -28716,7 +29166,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -29211,6 +29661,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -29461,6 +29914,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -29552,7 +30008,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -29743,7 +30199,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -29935,7 +30391,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -30127,7 +30583,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -30421,7 +30877,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -30811,7 +31267,7 @@
                               },
                               "familleCritere" : {
                                 "type" : "object",
-                                "id" : "familleCritereLink",
+                                "id" : "FamilleCritereLink",
                                 "additionalProperties" : false,
                                 "properties" : {
                                   "elementReferenceType" : {
@@ -31102,7 +31558,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -31293,7 +31749,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -31482,7 +31938,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -31687,7 +32143,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -31919,7 +32375,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -32151,7 +32607,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -32343,7 +32799,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -32539,7 +32995,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -32730,7 +33186,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -33235,7 +33691,7 @@
                                     },
                                     "familleCritere" : {
                                       "type" : "object",
-                                      "id" : "familleCritereLink",
+                                      "id" : "FamilleCritereLink",
                                       "additionalProperties" : false,
                                       "properties" : {
                                         "elementReferenceType" : {
@@ -33639,7 +34095,7 @@
                                     },
                                     "familleCritere" : {
                                       "type" : "object",
-                                      "id" : "familleCritereLink",
+                                      "id" : "FamilleCritereLink",
                                       "additionalProperties" : false,
                                       "properties" : {
                                         "elementReferenceType" : {
@@ -34043,7 +34499,7 @@
                                     },
                                     "familleCritere" : {
                                       "type" : "object",
-                                      "id" : "familleCritereLink",
+                                      "id" : "FamilleCritereLink",
                                       "additionalProperties" : false,
                                       "properties" : {
                                         "elementReferenceType" : {
@@ -34409,7 +34865,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -34600,7 +35056,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -34992,7 +35448,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -35196,7 +35652,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -35388,7 +35844,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -35580,7 +36036,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -35769,7 +36225,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -35957,7 +36413,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -36154,7 +36610,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -36353,7 +36809,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -36548,7 +37004,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -36736,7 +37192,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -36912,7 +37368,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -37069,7 +37525,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -37307,7 +37763,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -37499,7 +37955,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -37696,7 +38152,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -38055,7 +38511,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -38247,7 +38703,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -38439,7 +38895,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -38635,7 +39091,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -38841,7 +39297,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -39029,7 +39485,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -39205,7 +39661,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -39362,7 +39818,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -39600,7 +40056,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -39849,7 +40305,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -40050,7 +40506,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -40245,7 +40701,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -40421,7 +40877,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -40578,7 +41034,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -40816,7 +41272,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -41063,7 +41519,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -41259,7 +41715,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -41454,7 +41910,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -41645,7 +42101,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -41822,7 +42278,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -41979,7 +42435,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -42295,7 +42751,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -42486,7 +42942,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -42678,7 +43134,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -42881,7 +43337,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -43073,7 +43529,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -43275,7 +43731,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -43466,7 +43922,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -43658,7 +44114,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -43850,7 +44306,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -44042,7 +44498,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -44386,7 +44842,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -44578,7 +45034,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -44770,7 +45226,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -44962,7 +45418,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -45154,7 +45610,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -45356,7 +45812,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -45551,7 +46007,7 @@
                   },
                   "familleCritere" : {
                     "type" : "object",
-                    "id" : "familleCritereLink",
+                    "id" : "FamilleCritereLink",
                     "additionalProperties" : false,
                     "properties" : {
                       "elementReferenceType" : {
@@ -45752,7 +46208,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -45944,7 +46400,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -46141,7 +46597,7 @@
                         },
                         "familleCritere" : {
                           "type" : "object",
-                          "id" : "familleCritereLink",
+                          "id" : "FamilleCritereLink",
                           "additionalProperties" : false,
                           "properties" : {
                             "elementReferenceType" : {
@@ -46550,7 +47006,7 @@
                                         },
                                         "familleCritere" : {
                                           "type" : "object",
-                                          "id" : "familleCritereLink",
+                                          "id" : "FamilleCritereLink",
                                           "additionalProperties" : false,
                                           "properties" : {
                                             "elementReferenceType" : {
@@ -47134,6 +47590,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -47380,6 +47839,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -47470,7 +47932,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -47662,7 +48124,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -47854,7 +48316,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -48046,7 +48508,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -48238,7 +48700,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -48430,7 +48892,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -48622,7 +49084,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {

@@ -722,12 +722,76 @@
             }
           }
         },
+        "lieu" : {
+          "type" : "object",
+          "id" : "lieu",
+          "additionalProperties" : false,
+          "properties" : {
+            "id" : {
+              "type" : "integer"
+            },
+            "nom" : {
+              "type" : "object",
+              "id" : "traductionLibelle",
+              "additionalProperties" : false,
+              "properties" : {
+                "libelleFr" : {
+                  "type" : "string"
+                },
+                "libelleEn" : {
+                  "type" : "string"
+                },
+                "libelleEs" : {
+                  "type" : "string"
+                },
+                "libelleIt" : {
+                  "type" : "string"
+                },
+                "libelleDe" : {
+                  "type" : "string"
+                },
+                "libelleNl" : {
+                  "type" : "string"
+                },
+                "libelleRu" : {
+                  "type" : "string"
+                },
+                "libelleZh" : {
+                  "type" : "string"
+                },
+                "libellePtBR" : {
+                  "type" : "string"
+                },
+                "libelleJa" : {
+                  "type" : "string"
+                },
+                "libelleKo" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "lieuObjetTouristique" : {
+          "type" : "object",
+          "id" : "objetTouristiqueLink",
+          "additionalProperties" : false,
+          "properties" : {
+            "type" : {
+              "type" : "string",
+              "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DEGUSTATION", "DOMAINE_SKIABLE", "EQUIPEMENT", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "RESTAURATION", "SEJOUR_PACKAGE", "STRUCTURE", "TERRITOIRE" ]
+            },
+            "id" : {
+              "type" : "integer"
+            }
+          }
+        },
         "territoiresAffectes" : {
           "type" : "array",
           "additionalItems" : false,
           "items" : {
             "type" : "object",
-            "id" : "territoireLink",
+            "id" : "TERRITOIRELink",
             "additionalProperties" : false,
             "properties" : {
               "type" : {
@@ -2849,6 +2913,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -3099,6 +3166,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -3343,6 +3413,10 @@
             }
           }
         },
+        "devise" : {
+          "type" : "string",
+          "enum" : [ "EUR", "CHF", "XPF" ]
+        },
         "nombreSallesReunionEquipees" : {
           "type" : "integer"
         },
@@ -3530,7 +3604,7 @@
       "additionalItems" : false,
       "items" : {
         "type" : "object",
-        "id" : "territoireLink",
+        "id" : "TERRITOIRELink",
         "additionalProperties" : false,
         "properties" : {
           "type" : {
@@ -4681,7 +4755,7 @@
                 "additionalItems" : false,
                 "items" : {
                   "type" : "object",
-                  "id" : "territoireLink",
+                  "id" : "TERRITOIRELink",
                   "additionalProperties" : false,
                   "properties" : {
                     "type" : {
@@ -6680,6 +6754,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -6930,6 +7007,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -9937,6 +10017,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -10183,6 +10266,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }

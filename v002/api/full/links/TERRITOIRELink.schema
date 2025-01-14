@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "id" : "territoireLink",
+  "id" : "TERRITOIRELink",
   "additionalProperties" : false,
   "properties" : {
     "type" : {

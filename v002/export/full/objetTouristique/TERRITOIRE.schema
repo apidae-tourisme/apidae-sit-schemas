@@ -727,7 +727,7 @@
           "additionalItems" : false,
           "items" : {
             "type" : "object",
-            "id" : "territoireLink",
+            "id" : "TERRITOIRELink",
             "additionalProperties" : false,
             "properties" : {
               "type" : {
@@ -2112,6 +2112,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -2362,6 +2365,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -2415,7 +2421,7 @@
       "additionalItems" : false,
       "items" : {
         "type" : "object",
-        "id" : "territoireLink",
+        "id" : "TERRITOIRELink",
         "additionalProperties" : false,
         "properties" : {
           "type" : {
@@ -3005,6 +3011,9 @@
                   "lastModifiedDate" : {
                     "type" : "string",
                     "format" : "date-time"
+                  },
+                  "checksum" : {
+                    "type" : "string"
                   }
                 }
               }
@@ -3251,6 +3260,9 @@
                   "lastModifiedDate" : {
                     "type" : "string",
                     "format" : "date-time"
+                  },
+                  "checksum" : {
+                    "type" : "string"
                   }
                 }
               }
@@ -4106,7 +4118,7 @@
                 "additionalItems" : false,
                 "items" : {
                   "type" : "object",
-                  "id" : "territoireLink",
+                  "id" : "TERRITOIRELink",
                   "additionalProperties" : false,
                   "properties" : {
                     "type" : {
@@ -6105,6 +6117,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -6355,6 +6370,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -9362,6 +9380,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -9608,6 +9629,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }

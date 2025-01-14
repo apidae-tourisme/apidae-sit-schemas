@@ -40,7 +40,7 @@
     },
     "familleCritere" : {
       "type" : "object",
-      "id" : "familleCritereLink"
+      "id" : "FamilleCritereLink"
     },
     "parent" : {
       "type" : "object",

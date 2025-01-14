@@ -63,7 +63,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -255,7 +255,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -447,7 +447,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -639,7 +639,7 @@
           },
           "familleCritere" : {
             "type" : "object",
-            "id" : "familleCritereLink",
+            "id" : "FamilleCritereLink",
             "additionalProperties" : false,
             "properties" : {
               "elementReferenceType" : {
@@ -947,7 +947,7 @@
                     },
                     "familleCritere" : {
                       "type" : "object",
-                      "id" : "familleCritereLink",
+                      "id" : "FamilleCritereLink",
                       "additionalProperties" : false,
                       "properties" : {
                         "elementReferenceType" : {
@@ -1087,6 +1087,10 @@
           }
         }
       }
+    },
+    "devise" : {
+      "type" : "string",
+      "enum" : [ "EUR", "CHF", "XPF" ]
     },
     "nombreSallesReunionEquipees" : {
       "type" : "integer"

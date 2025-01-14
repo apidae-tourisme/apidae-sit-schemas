@@ -791,7 +791,7 @@
           "additionalItems" : false,
           "items" : {
             "type" : "object",
-            "id" : "territoireLink",
+            "id" : "TERRITOIRELink",
             "additionalProperties" : false,
             "properties" : {
               "type" : {
@@ -2927,6 +2927,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -3177,6 +3180,9 @@
                 "lastModifiedDate" : {
                   "type" : "string",
                   "format" : "date-time"
+                },
+                "checksum" : {
+                  "type" : "string"
                 }
               }
             }
@@ -3421,6 +3427,10 @@
             }
           }
         },
+        "devise" : {
+          "type" : "string",
+          "enum" : [ "EUR", "CHF", "XPF" ]
+        },
         "nombreSallesReunionEquipees" : {
           "type" : "integer"
         },
@@ -3461,7 +3471,7 @@
       "additionalItems" : false,
       "items" : {
         "type" : "object",
-        "id" : "territoireLink",
+        "id" : "TERRITOIRELink",
         "additionalProperties" : false,
         "properties" : {
           "type" : {
@@ -4559,7 +4569,7 @@
                 "additionalItems" : false,
                 "items" : {
                   "type" : "object",
-                  "id" : "territoireLink",
+                  "id" : "TERRITOIRELink",
                   "additionalProperties" : false,
                   "properties" : {
                     "type" : {
@@ -6558,6 +6568,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -6808,6 +6821,9 @@
                       "lastModifiedDate" : {
                         "type" : "string",
                         "format" : "date-time"
+                      },
+                      "checksum" : {
+                        "type" : "string"
                       }
                     }
                   }
@@ -9815,6 +9831,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
@@ -10061,6 +10080,9 @@
                         "lastModifiedDate" : {
                           "type" : "string",
                           "format" : "date-time"
+                        },
+                        "checksum" : {
+                          "type" : "string"
                         }
                       }
                     }
