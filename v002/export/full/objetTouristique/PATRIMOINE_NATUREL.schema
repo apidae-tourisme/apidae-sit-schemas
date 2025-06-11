@@ -874,24 +874,6 @@
             }
           }
         },
-        "equipementsAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "PrestationEquipementLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "PrestationEquipement" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
         "equipementsRemove" : {
           "type" : "array",
           "additionalItems" : false,
@@ -976,24 +958,6 @@
             }
           }
         },
-        "servicesAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "PrestationServiceLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "PrestationService" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
         "servicesRemove" : {
           "type" : "array",
           "additionalItems" : false,
@@ -1030,24 +994,6 @@
             }
           }
         },
-        "activitesAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "PrestationActiviteLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "PrestationActivite" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
         "activitesRemove" : {
           "type" : "array",
           "additionalItems" : false,
@@ -1059,24 +1005,6 @@
               "elementReferenceType" : {
                 "type" : "string",
                 "enum" : [ "PrestationActivite" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
-        "confortsAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "PrestationConfortLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "PrestationConfort" ]
               },
               "id" : {
                 "type" : "integer"
@@ -1199,24 +1127,6 @@
         "surchargeTourismesAdaptes" : {
           "type" : "boolean",
           "required" : true
-        },
-        "tourismesAdaptesAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "TourismeAdapteLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "TourismeAdapte" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
         },
         "tourismesAdaptesRemove" : {
           "type" : "array",
@@ -1455,24 +1365,6 @@
             }
           }
         },
-        "typesClienteleAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "TypeClienteleLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "TypeClientele" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
         "typesClienteleRemove" : {
           "type" : "array",
           "additionalItems" : false,
@@ -1580,24 +1472,6 @@
             }
           }
         },
-        "indicationsPeriodeAdd" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "IndicationPeriodeLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "IndicationPeriode" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
         "indicationsPeriodeRemove" : {
           "type" : "array",
           "additionalItems" : false,
@@ -1636,44 +1510,10 @@
                 "format" : "date"
               },
               "nom" : {
-                "type" : "object",
-                "id" : "traductionLibelle",
-                "additionalProperties" : false,
-                "properties" : {
-                  "libelleFr" : {
-                    "type" : "string"
-                  },
-                  "libelleEn" : {
-                    "type" : "string"
-                  },
-                  "libelleEs" : {
-                    "type" : "string"
-                  },
-                  "libelleIt" : {
-                    "type" : "string"
-                  },
-                  "libelleDe" : {
-                    "type" : "string"
-                  },
-                  "libelleNl" : {
-                    "type" : "string"
-                  },
-                  "libelleRu" : {
-                    "type" : "string"
-                  },
-                  "libelleZh" : {
-                    "type" : "string"
-                  },
-                  "libellePtBR" : {
-                    "type" : "string"
-                  },
-                  "libelleJa" : {
-                    "type" : "string"
-                  },
-                  "libelleKo" : {
-                    "type" : "string"
-                  }
-                }
+                "type" : "string"
+              },
+              "sourceHoraireId" : {
+                "type" : "integer"
               },
               "complementHoraire" : {
                 "type" : "object",
@@ -1784,6 +1624,85 @@
               },
               "identifiantTechnique" : {
                 "type" : "integer"
+              },
+              "horaires" : {
+                "type" : "array",
+                "additionalItems" : false,
+                "items" : {
+                  "type" : "object",
+                  "id" : "horaire",
+                  "additionalProperties" : false,
+                  "properties" : {
+                    "id" : {
+                      "type" : "integer"
+                    },
+                    "type" : {
+                      "type" : "object",
+                      "id" : "HoraireTypeLink",
+                      "additionalProperties" : false,
+                      "properties" : {
+                        "elementReferenceType" : {
+                          "type" : "string",
+                          "enum" : [ "HoraireType" ]
+                        },
+                        "id" : {
+                          "type" : "integer"
+                        }
+                      }
+                    },
+                    "timePeriods" : {
+                      "type" : "array",
+                      "additionalItems" : false,
+                      "items" : {
+                        "type" : "object",
+                        "id" : "timePeriod",
+                        "additionalProperties" : false,
+                        "properties" : {
+                          "id" : {
+                            "type" : "integer"
+                          },
+                          "closed" : {
+                            "type" : "boolean"
+                          },
+                          "weekdays" : {
+                            "type" : "array",
+                            "additionalItems" : false,
+                            "items" : {
+                              "type" : "string",
+                              "enum" : [ "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN", "HOL" ]
+                            }
+                          },
+                          "timeFrames" : {
+                            "type" : "array",
+                            "additionalItems" : false,
+                            "items" : {
+                              "type" : "object",
+                              "id" : "timeFrame",
+                              "additionalProperties" : false,
+                              "properties" : {
+                                "id" : {
+                                  "type" : "integer"
+                                },
+                                "startTime" : {
+                                  "type" : "string",
+                                  "format" : "time"
+                                },
+                                "endTime" : {
+                                  "type" : "string",
+                                  "format" : "time"
+                                },
+                                "recurrence" : {
+                                  "type" : "string",
+                                  "format" : "time"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -2052,24 +1971,6 @@
           }
         },
         "modesPaiement" : {
-          "type" : "array",
-          "additionalItems" : false,
-          "items" : {
-            "type" : "object",
-            "id" : "ModePaiementLink",
-            "additionalProperties" : false,
-            "properties" : {
-              "elementReferenceType" : {
-                "type" : "string",
-                "enum" : [ "ModePaiement" ]
-              },
-              "id" : {
-                "type" : "integer"
-              }
-            }
-          }
-        },
-        "modesPaiementAdd" : {
           "type" : "array",
           "additionalItems" : false,
           "items" : {
@@ -3410,6 +3311,10 @@
         "expirationAction" : {
           "type" : "string",
           "enum" : [ "SUPPRIMER", "MASQUER", "MASQUER_AUTOMATIQUEMENT" ]
+        },
+        "datePublication" : {
+          "type" : "string",
+          "format" : "date"
         }
       }
     },
@@ -4372,24 +4277,6 @@
                   }
                 }
               },
-              "equipementsAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "PrestationEquipementLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "PrestationEquipement" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "equipementsRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -4474,24 +4361,6 @@
                   }
                 }
               },
-              "servicesAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "PrestationServiceLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "PrestationService" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "servicesRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -4528,24 +4397,6 @@
                   }
                 }
               },
-              "activitesAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "PrestationActiviteLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "PrestationActivite" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "activitesRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -4565,24 +4416,6 @@
                 }
               },
               "conforts" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "PrestationConfortLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "PrestationConfort" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
-              "confortsAdd" : {
                 "type" : "array",
                 "additionalItems" : false,
                 "items" : {
@@ -4715,24 +4548,6 @@
               "surchargeTourismesAdaptes" : {
                 "type" : "boolean",
                 "required" : true
-              },
-              "tourismesAdaptesAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "TourismeAdapteLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "TourismeAdapte" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
               },
               "tourismesAdaptesRemove" : {
                 "type" : "array",
@@ -4971,24 +4786,6 @@
                   }
                 }
               },
-              "typesClienteleAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "TypeClienteleLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "TypeClientele" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "typesClienteleRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -5099,24 +4896,6 @@
                   }
                 }
               },
-              "indicationsPeriodeAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "IndicationPeriodeLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "IndicationPeriode" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "indicationsPeriodeRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -5155,44 +4934,10 @@
                       "format" : "date"
                     },
                     "nom" : {
-                      "type" : "object",
-                      "id" : "traductionLibelle",
-                      "additionalProperties" : false,
-                      "properties" : {
-                        "libelleFr" : {
-                          "type" : "string"
-                        },
-                        "libelleEn" : {
-                          "type" : "string"
-                        },
-                        "libelleEs" : {
-                          "type" : "string"
-                        },
-                        "libelleIt" : {
-                          "type" : "string"
-                        },
-                        "libelleDe" : {
-                          "type" : "string"
-                        },
-                        "libelleNl" : {
-                          "type" : "string"
-                        },
-                        "libelleRu" : {
-                          "type" : "string"
-                        },
-                        "libelleZh" : {
-                          "type" : "string"
-                        },
-                        "libellePtBR" : {
-                          "type" : "string"
-                        },
-                        "libelleJa" : {
-                          "type" : "string"
-                        },
-                        "libelleKo" : {
-                          "type" : "string"
-                        }
-                      }
+                      "type" : "string"
+                    },
+                    "sourceHoraireId" : {
+                      "type" : "integer"
                     },
                     "complementHoraire" : {
                       "type" : "object",
@@ -5303,6 +5048,85 @@
                     },
                     "identifiantTechnique" : {
                       "type" : "integer"
+                    },
+                    "horaires" : {
+                      "type" : "array",
+                      "additionalItems" : false,
+                      "items" : {
+                        "type" : "object",
+                        "id" : "horaire",
+                        "additionalProperties" : false,
+                        "properties" : {
+                          "id" : {
+                            "type" : "integer"
+                          },
+                          "type" : {
+                            "type" : "object",
+                            "id" : "HoraireTypeLink",
+                            "additionalProperties" : false,
+                            "properties" : {
+                              "elementReferenceType" : {
+                                "type" : "string",
+                                "enum" : [ "HoraireType" ]
+                              },
+                              "id" : {
+                                "type" : "integer"
+                              }
+                            }
+                          },
+                          "timePeriods" : {
+                            "type" : "array",
+                            "additionalItems" : false,
+                            "items" : {
+                              "type" : "object",
+                              "id" : "timePeriod",
+                              "additionalProperties" : false,
+                              "properties" : {
+                                "id" : {
+                                  "type" : "integer"
+                                },
+                                "closed" : {
+                                  "type" : "boolean"
+                                },
+                                "weekdays" : {
+                                  "type" : "array",
+                                  "additionalItems" : false,
+                                  "items" : {
+                                    "type" : "string",
+                                    "enum" : [ "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN", "HOL" ]
+                                  }
+                                },
+                                "timeFrames" : {
+                                  "type" : "array",
+                                  "additionalItems" : false,
+                                  "items" : {
+                                    "type" : "object",
+                                    "id" : "timeFrame",
+                                    "additionalProperties" : false,
+                                    "properties" : {
+                                      "id" : {
+                                        "type" : "integer"
+                                      },
+                                      "startTime" : {
+                                        "type" : "string",
+                                        "format" : "time"
+                                      },
+                                      "endTime" : {
+                                        "type" : "string",
+                                        "format" : "time"
+                                      },
+                                      "recurrence" : {
+                                        "type" : "string",
+                                        "format" : "time"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -5571,24 +5395,6 @@
                 }
               },
               "modesPaiement" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "ModePaiementLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "ModePaiement" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
-              "modesPaiementAdd" : {
                 "type" : "array",
                 "additionalItems" : false,
                 "items" : {
@@ -7930,24 +7736,6 @@
                   }
                 }
               },
-              "moyensLocomotionAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "SejourPackageTransportLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "SejourPackageTransport" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "moyensLocomotionRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -9799,24 +9587,6 @@
                   }
                 }
               },
-              "activitesSportivesAdd" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "ActiviteSportivePrestationLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "ActiviteSportivePrestation" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
               "activitesSportivesRemove" : {
                 "type" : "array",
                 "additionalItems" : false,
@@ -9836,24 +9606,6 @@
                 }
               },
               "activitesCulturelles" : {
-                "type" : "array",
-                "additionalItems" : false,
-                "items" : {
-                  "type" : "object",
-                  "id" : "ActiviteCulturellePrestationLink",
-                  "additionalProperties" : false,
-                  "properties" : {
-                    "elementReferenceType" : {
-                      "type" : "string",
-                      "enum" : [ "ActiviteCulturellePrestation" ]
-                    },
-                    "id" : {
-                      "type" : "integer"
-                    }
-                  }
-                }
-              },
-              "activitesCulturellesAdd" : {
                 "type" : "array",
                 "additionalItems" : false,
                 "items" : {

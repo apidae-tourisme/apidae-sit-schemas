@@ -39,14 +39,6 @@
         "id" : "ModePaiementLink"
       }
     },
-    "modesPaiementAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "ModePaiementLink"
-      }
-    },
     "modesPaiementRemove" : {
       "type" : "array",
       "additionalItems" : false,

@@ -15,14 +15,6 @@
         "id" : "ActiviteSportivePrestation"
       }
     },
-    "activitesSportivesAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "ActiviteSportivePrestation"
-      }
-    },
     "activitesSportivesRemove" : {
       "type" : "array",
       "additionalItems" : false,
@@ -32,14 +24,6 @@
       }
     },
     "activitesCulturelles" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "ActiviteCulturellePrestation"
-      }
-    },
-    "activitesCulturellesAdd" : {
       "type" : "array",
       "additionalItems" : false,
       "items" : {

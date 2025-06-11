@@ -72,14 +72,6 @@
         "id" : "SejourPackageTransport"
       }
     },
-    "moyensLocomotionAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "SejourPackageTransport"
-      }
-    },
     "moyensLocomotionRemove" : {
       "type" : "array",
       "additionalItems" : false,

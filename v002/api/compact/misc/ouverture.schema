@@ -19,14 +19,6 @@
         "id" : "IndicationPeriode"
       }
     },
-    "indicationsPeriodeAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "IndicationPeriode"
-      }
-    },
     "indicationsPeriodeRemove" : {
       "type" : "array",
       "additionalItems" : false,

@@ -1,0 +1,47 @@
+{
+  "type" : "object",
+  "id" : "timePeriod",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "closed" : {
+      "type" : "boolean"
+    },
+    "weekdays" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "string",
+        "enum" : [ "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN", "HOL" ]
+      }
+    },
+    "timeFrames" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "timeFrame",
+        "additionalProperties" : false,
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "startTime" : {
+            "type" : "string",
+            "format" : "time"
+          },
+          "endTime" : {
+            "type" : "string",
+            "format" : "time"
+          },
+          "recurrence" : {
+            "type" : "string",
+            "format" : "time"
+          }
+        }
+      }
+    }
+  }
+}
