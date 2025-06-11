@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "HoraireTypeLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "HoraireType" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

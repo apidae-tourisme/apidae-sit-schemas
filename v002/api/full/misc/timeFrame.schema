@@ -1,0 +1,22 @@
+{
+  "type" : "object",
+  "id" : "timeFrame",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "startTime" : {
+      "type" : "string",
+      "format" : "time"
+    },
+    "endTime" : {
+      "type" : "string",
+      "format" : "time"
+    },
+    "recurrence" : {
+      "type" : "string",
+      "format" : "time"
+    }
+  }
+}

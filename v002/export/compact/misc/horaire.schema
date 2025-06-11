@@ -1,0 +1,22 @@
+{
+  "type" : "object",
+  "id" : "horaire",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "type" : {
+      "type" : "object",
+      "id" : "HoraireTypeLink"
+    },
+    "timePeriods" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "timePeriod"
+      }
+    }
+  }
+}

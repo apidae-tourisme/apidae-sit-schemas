@@ -212,24 +212,6 @@
         }
       }
     },
-    "modesPaiementAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "ModePaiementLink",
-        "additionalProperties" : false,
-        "properties" : {
-          "elementReferenceType" : {
-            "type" : "string",
-            "enum" : [ "ModePaiement" ]
-          },
-          "id" : {
-            "type" : "integer"
-          }
-        }
-      }
-    },
     "modesPaiementRemove" : {
       "type" : "array",
       "additionalItems" : false,

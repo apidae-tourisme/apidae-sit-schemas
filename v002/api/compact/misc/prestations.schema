@@ -11,14 +11,6 @@
         "id" : "PrestationEquipement"
       }
     },
-    "equipementsAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "PrestationEquipement"
-      }
-    },
     "equipementsRemove" : {
       "type" : "array",
       "additionalItems" : false,
@@ -47,14 +39,6 @@
       "type" : "object",
       "id" : "traductionLibelle"
     },
-    "servicesAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "PrestationService"
-      }
-    },
     "servicesRemove" : {
       "type" : "array",
       "additionalItems" : false,
@@ -64,14 +48,6 @@
       }
     },
     "activites" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "PrestationActivite"
-      }
-    },
-    "activitesAdd" : {
       "type" : "array",
       "additionalItems" : false,
       "items" : {
@@ -90,14 +66,6 @@
     "conforts" : {
       "type" : "array",
       "description" : "Ce champ n'est utilisé que par les objets de type : HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "PrestationConfort"
-      }
-    },
-    "confortsAdd" : {
-      "type" : "array",
       "additionalItems" : false,
       "items" : {
         "type" : "object",
@@ -146,14 +114,6 @@
     "surchargeTourismesAdaptes" : {
       "type" : "boolean",
       "required" : true
-    },
-    "tourismesAdaptesAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "TourismeAdapte"
-      }
     },
     "tourismesAdaptesRemove" : {
       "type" : "array",
@@ -213,14 +173,6 @@
     "typesClientele" : {
       "type" : "array",
       "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "TypeClientele"
-      }
-    },
-    "typesClienteleAdd" : {
-      "type" : "array",
       "additionalItems" : false,
       "items" : {
         "type" : "object",

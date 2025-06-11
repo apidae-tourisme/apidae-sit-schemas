@@ -314,24 +314,6 @@
         }
       }
     },
-    "moyensLocomotionAdd" : {
-      "type" : "array",
-      "additionalItems" : false,
-      "items" : {
-        "type" : "object",
-        "id" : "SejourPackageTransportLink",
-        "additionalProperties" : false,
-        "properties" : {
-          "elementReferenceType" : {
-            "type" : "string",
-            "enum" : [ "SejourPackageTransport" ]
-          },
-          "id" : {
-            "type" : "integer"
-          }
-        }
-      }
-    },
     "moyensLocomotionRemove" : {
       "type" : "array",
       "additionalItems" : false,
