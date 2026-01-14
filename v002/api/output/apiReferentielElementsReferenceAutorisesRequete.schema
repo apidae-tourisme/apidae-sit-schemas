@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "apiReferentielElementsReferenceAutorisesRequete",
+  "additionalProperties" : false,
+  "properties" : {
+    "apiKey" : {
+      "type" : "string"
+    },
+    "projetId" : {
+      "type" : "integer"
+    },
+    "type" : {
+      "type" : "string",
+      "enum" : [ "ACTIVITE", "COMMERCE_ET_SERVICE", "DOMAINE_SKIABLE", "EQUIPEMENT", "STRUCTURE", "FETE_ET_MANIFESTATION", "HEBERGEMENT_COLLECTIF", "HEBERGEMENT_LOCATIF", "HOTELLERIE", "HOTELLERIE_PLEIN_AIR", "PATRIMOINE_CULTUREL", "PATRIMOINE_NATUREL", "DEGUSTATION", "RESTAURATION", "SEJOUR_PACKAGE", "TERRITOIRE" ]
+    },
+    "elementReferenceIds" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "field" : {
+      "type" : "string"
+    }
+  }
+}

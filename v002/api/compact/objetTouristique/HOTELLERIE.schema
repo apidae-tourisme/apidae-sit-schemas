@@ -132,6 +132,22 @@
       "type" : "object",
       "id" : "enquete"
     },
+    "distinctions" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "distinction"
+      }
+    },
+    "mediasPrives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "mediaPrive"
+      }
+    },
     "donneesPrivees" : {
       "type" : "array",
       "additionalItems" : false,

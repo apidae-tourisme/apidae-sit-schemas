@@ -1,0 +1,36 @@
+{
+  "type" : "object",
+  "id" : "distinction",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "DistinctionNom"
+    },
+    "qualification" : {
+      "type" : "object",
+      "id" : "DistinctionQualification"
+    },
+    "dateDebutValidite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateFinValidite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numero" : {
+      "type" : "string"
+    },
+    "dateDerniereVisite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "locked" : {
+      "type" : "boolean"
+    }
+  }
+}

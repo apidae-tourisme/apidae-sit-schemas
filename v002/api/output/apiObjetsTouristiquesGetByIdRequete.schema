@@ -22,6 +22,10 @@
       "items" : {
         "type" : "string"
       }
+    },
+    "dateFin" : {
+      "type" : "string",
+      "format" : "date"
     }
   }
 }

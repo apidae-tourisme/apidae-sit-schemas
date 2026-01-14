@@ -189,7 +189,7 @@
     },
     "nombrePersonnesMinimum" : {
       "type" : "integer",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, FETE_ET_MANIFESTATION, SEJOUR_PACKAGE"
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, HEBERGEMENT_LOCATIF, HOTELLERIE, HOTELLERIE_PLEIN_AIR, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION, RESTAURATION, SEJOUR_PACKAGE"
     },
     "tailleGroupeMin" : {
       "type" : "integer",

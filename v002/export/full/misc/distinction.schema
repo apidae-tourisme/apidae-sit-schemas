@@ -1,0 +1,56 @@
+{
+  "type" : "object",
+  "id" : "distinction",
+  "additionalProperties" : false,
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "nom" : {
+      "type" : "object",
+      "id" : "DistinctionNomLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "DistinctionNom" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "qualification" : {
+      "type" : "object",
+      "id" : "DistinctionQualificationLink",
+      "additionalProperties" : false,
+      "properties" : {
+        "elementReferenceType" : {
+          "type" : "string",
+          "enum" : [ "DistinctionQualification" ]
+        },
+        "id" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "dateDebutValidite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "dateFinValidite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "numero" : {
+      "type" : "string"
+    },
+    "dateDerniereVisite" : {
+      "type" : "string",
+      "format" : "date"
+    },
+    "locked" : {
+      "type" : "boolean"
+    }
+  }
+}
