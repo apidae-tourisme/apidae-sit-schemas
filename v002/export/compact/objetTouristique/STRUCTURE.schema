@@ -112,6 +112,22 @@
       "type" : "object",
       "id" : "enquete"
     },
+    "distinctions" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "distinction"
+      }
+    },
+    "mediasPrives" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "object",
+        "id" : "mediaPrive"
+      }
+    },
     "donneesPrivees" : {
       "type" : "array",
       "additionalItems" : false,
@@ -132,6 +148,269 @@
           "descriptif" : {
             "type" : "object",
             "id" : "traductionLibelle"
+          }
+        }
+      }
+    },
+    "capacites" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "classees" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "personnes" : {
+              "type" : "integer"
+            },
+            "unitesHebergement" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "declarees" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "personnes" : {
+              "type" : "integer"
+            },
+            "unitesHebergement" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "handicap" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "pmrUnitesHebergement" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "educationNationale" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "personnes" : {
+              "type" : "integer"
+            },
+            "classes" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "jeunesseEtCohesionSocialePersonnes" : {
+          "type" : "integer"
+        },
+        "typesHabitation" : {
+          "type" : "array",
+          "additionalItems" : false,
+          "items" : {
+            "type" : "object",
+            "id" : "TypeHabitationLink"
+          }
+        },
+        "hebergementLocatif" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "nombreChambres" : {
+              "type" : "integer"
+            },
+            "nombreSuites" : {
+              "type" : "integer"
+            },
+            "nombreCabines" : {
+              "type" : "integer"
+            },
+            "nombreChambresEnMezzanine" : {
+              "type" : "integer"
+            },
+            "nombreLitsDoubles" : {
+              "type" : "integer"
+            },
+            "nombreLitsSimples" : {
+              "type" : "integer"
+            },
+            "surface" : {
+              "type" : "integer"
+            },
+            "nombreSallesDeBain" : {
+              "type" : "integer"
+            },
+            "nombreSallesDEau" : {
+              "type" : "integer"
+            },
+            "nombreWC" : {
+              "type" : "integer"
+            },
+            "nombrePieces" : {
+              "type" : "integer"
+            },
+            "nombreEtages" : {
+              "type" : "integer"
+            },
+            "numeroEtage" : {
+              "type" : "string"
+            }
+          }
+        },
+        "hebergementCollectif" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "nombreChambres" : {
+              "type" : "integer"
+            },
+            "nombreAppartements" : {
+              "type" : "integer"
+            },
+            "nombreDortoirs" : {
+              "type" : "integer"
+            },
+            "nombreVillas" : {
+              "type" : "integer"
+            },
+            "capaciteAccueilPMI" : {
+              "type" : "integer"
+            },
+            "descriptifCapaciteAccueilPMI" : {
+              "type" : "object",
+              "id" : "traductionLibelle"
+            },
+            "nombreHebergementsUnePersonne" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsDeuxPersonnes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsTroisPersonnes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsQuatrePersonnes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsCinqPersonnes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsSixPersonnes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsPlusSixPersonnes" : {
+              "type" : "integer"
+            },
+            "nombreDortoirsMoyens" : {
+              "type" : "integer"
+            },
+            "nombreDortoirsGrands" : {
+              "type" : "integer"
+            },
+            "descriptifChambres" : {
+              "type" : "object",
+              "id" : "traductionLibelle"
+            }
+          }
+        },
+        "hotellerie" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "nombreChambresSimples" : {
+              "type" : "integer"
+            },
+            "nombreChambresDoubles" : {
+              "type" : "integer"
+            },
+            "nombreChambresTwin" : {
+              "type" : "integer"
+            },
+            "nombreChambresTriples" : {
+              "type" : "integer"
+            },
+            "nombreChambresQuadruples" : {
+              "type" : "integer"
+            },
+            "nombreChambresFamiliales" : {
+              "type" : "integer"
+            },
+            "nombreChambresCommunicantes" : {
+              "type" : "integer"
+            },
+            "nombreSuites" : {
+              "type" : "integer"
+            },
+            "nombreAppartements" : {
+              "type" : "integer"
+            },
+            "nombreVillas" : {
+              "type" : "integer"
+            }
+          }
+        },
+        "hotelleriePleinAir" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "superficie" : {
+              "type" : "integer"
+            },
+            "caravaneige" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "nombreEmplacementsNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassagesNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsResidentielsNus" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassages" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsLocatifs" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsPassagesLocatifs" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsResidentiels" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCaravaneiges" : {
+              "type" : "integer"
+            },
+            "nombreLocationMobilhomes" : {
+              "type" : "integer"
+            },
+            "nombreLocationBungalows" : {
+              "type" : "integer"
+            },
+            "nombreLocationTentes" : {
+              "type" : "integer"
+            },
+            "nombreLocationCaravanes" : {
+              "type" : "integer"
+            },
+            "nombreHebergementsInsolites" : {
+              "type" : "integer"
+            },
+            "capaciteHebergementsInsolites" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCampingCars" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsCaravanes" : {
+              "type" : "integer"
+            },
+            "nombreEmplacementsTentes" : {
+              "type" : "integer"
+            }
           }
         }
       }

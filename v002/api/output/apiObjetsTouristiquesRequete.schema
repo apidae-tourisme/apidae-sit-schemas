@@ -17,6 +17,13 @@
         "type" : "string"
       }
     },
+    "identifiantsIgnores" : {
+      "type" : "array",
+      "additionalItems" : false,
+      "items" : {
+        "type" : "integer"
+      }
+    },
     "listeEnregistreeId" : {
       "type" : "integer"
     },

@@ -244,6 +244,9 @@
           "type" : "string"
         }
       }
+    },
+    "lienIcal" : {
+      "type" : "string"
     }
   }
 }

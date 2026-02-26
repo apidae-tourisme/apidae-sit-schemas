@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "id" : "DistinctionCategorieLink",
+  "additionalProperties" : false,
+  "properties" : {
+    "elementReferenceType" : {
+      "type" : "string",
+      "enum" : [ "DistinctionCategorie" ]
+    },
+    "id" : {
+      "type" : "integer"
+    }
+  }
+}

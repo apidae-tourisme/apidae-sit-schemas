@@ -37,6 +37,25 @@
             "type" : "string",
             "enum" : [ "CRITERE_INTERNE", "ELEMENT_REFERENCE", "ELEMENT_REFERENCE_FICTIF" ]
           },
+          "deprecie" : {
+            "type" : "boolean",
+            "required" : true
+          },
+          "deprecieMessage" : {
+            "type" : "string"
+          },
+          "deprecieDateAlerte" : {
+            "type" : "string"
+          },
+          "deprecieDateDesactivation" : {
+            "type" : "string"
+          },
+          "deprecieCritereSubstitution" : {
+            "type" : "string"
+          },
+          "deprecieIdentifiantSubstitution" : {
+            "type" : "string"
+          },
           "elementsReference" : {
             "type" : "array",
             "additionalItems" : false,

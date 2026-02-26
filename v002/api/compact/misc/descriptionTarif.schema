@@ -9,7 +9,7 @@
     },
     "gratuit" : {
       "type" : "boolean",
-      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION"
+      "description" : "Ce champ n'est utilisé que par les objets de type : ACTIVITE, COMMERCE_ET_SERVICE, DOMAINE_SKIABLE, EQUIPEMENT, FETE_ET_MANIFESTATION, HEBERGEMENT_COLLECTIF, PATRIMOINE_CULTUREL, PATRIMOINE_NATUREL, DEGUSTATION"
     },
     "tarifsEnClair" : {
       "type" : "object",
