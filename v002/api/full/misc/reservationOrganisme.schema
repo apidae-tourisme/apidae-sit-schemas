@@ -911,6 +911,12 @@
           },
           "identifiantTemporaire" : {
             "type" : "integer"
+          },
+          "locked" : {
+            "type" : "boolean"
+          },
+          "source" : {
+            "type" : "string"
           }
         }
       }

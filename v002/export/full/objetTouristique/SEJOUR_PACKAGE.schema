@@ -236,6 +236,12 @@
               },
               "identifiantTemporaire" : {
                 "type" : "integer"
+              },
+              "locked" : {
+                "type" : "boolean"
+              },
+              "source" : {
+                "type" : "string"
               }
             }
           }
@@ -2400,6 +2406,12 @@
                     },
                     "identifiantTemporaire" : {
                       "type" : "integer"
+                    },
+                    "locked" : {
+                      "type" : "boolean"
+                    },
+                    "source" : {
+                      "type" : "string"
                     }
                   }
                 }
@@ -2683,6 +2695,12 @@
                 },
                 "identifiantTemporaire" : {
                   "type" : "integer"
+                },
+                "locked" : {
+                  "type" : "boolean"
+                },
+                "source" : {
+                  "type" : "string"
                 }
               }
             }
@@ -4372,6 +4390,12 @@
                     },
                     "identifiantTemporaire" : {
                       "type" : "integer"
+                    },
+                    "locked" : {
+                      "type" : "boolean"
+                    },
+                    "source" : {
+                      "type" : "string"
                     }
                   }
                 }
@@ -6557,6 +6581,12 @@
                           },
                           "identifiantTemporaire" : {
                             "type" : "integer"
+                          },
+                          "locked" : {
+                            "type" : "boolean"
+                          },
+                          "source" : {
+                            "type" : "string"
                           }
                         }
                       }
