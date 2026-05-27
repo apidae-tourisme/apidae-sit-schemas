@@ -123,6 +123,10 @@
           "type" : "integer"
         }
       }
+    },
+    "hasDistinctionQualification" : {
+      "type" : "boolean",
+      "required" : true
     }
   }
 }

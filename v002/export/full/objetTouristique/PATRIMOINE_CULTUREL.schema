@@ -254,6 +254,12 @@
             "siret" : {
               "type" : "string"
             },
+            "siren" : {
+              "type" : "string"
+            },
+            "tvaIntracommunautaire" : {
+              "type" : "string"
+            },
             "codeApeNaf" : {
               "type" : "string"
             },
@@ -4683,6 +4689,12 @@
                 "additionalProperties" : false,
                 "properties" : {
                   "siret" : {
+                    "type" : "string"
+                  },
+                  "siren" : {
+                    "type" : "string"
+                  },
+                  "tvaIntracommunautaire" : {
                     "type" : "string"
                   },
                   "codeApeNaf" : {

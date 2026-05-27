@@ -371,6 +371,10 @@
           }
         }
       }
+    },
+    "hasDistinctionQualification" : {
+      "type" : "boolean",
+      "required" : true
     }
   }
 }

@@ -109,6 +109,15 @@
           "type" : "integer"
         }
       }
+    },
+    "nom" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      }
     }
   }
 }

@@ -89,6 +89,15 @@
     "parent" : {
       "type" : "object",
       "id" : "elementReferenceLink"
+    },
+    "nom" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "integer"
+        }
+      }
     }
   }
 }

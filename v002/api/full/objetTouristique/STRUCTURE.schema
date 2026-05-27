@@ -602,6 +602,12 @@
             "siret" : {
               "type" : "string"
             },
+            "siren" : {
+              "type" : "string"
+            },
+            "tvaIntracommunautaire" : {
+              "type" : "string"
+            },
             "codeApeNaf" : {
               "type" : "string"
             },
@@ -8459,6 +8465,10 @@
                     }
                   }
                 }
+              },
+              "hasDistinctionQualification" : {
+                "type" : "boolean",
+                "required" : true
               }
             }
           },
@@ -8645,6 +8655,15 @@
                   },
                   "description" : {
                     "type" : "string"
+                  }
+                }
+              },
+              "nom" : {
+                "type" : "object",
+                "additionalProperties" : false,
+                "properties" : {
+                  "id" : {
+                    "type" : "integer"
                   }
                 }
               }
@@ -10218,6 +10237,12 @@
                 "additionalProperties" : false,
                 "properties" : {
                   "siret" : {
+                    "type" : "string"
+                  },
+                  "siren" : {
+                    "type" : "string"
+                  },
+                  "tvaIntracommunautaire" : {
                     "type" : "string"
                   },
                   "codeApeNaf" : {

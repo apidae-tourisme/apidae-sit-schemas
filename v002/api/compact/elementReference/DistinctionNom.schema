@@ -89,6 +89,10 @@
     "categorie" : {
       "type" : "object",
       "id" : "DistinctionCategorie"
+    },
+    "hasDistinctionQualification" : {
+      "type" : "boolean",
+      "required" : true
     }
   }
 }

@@ -379,6 +379,10 @@
               }
             }
           }
+        },
+        "hasDistinctionQualification" : {
+          "type" : "boolean",
+          "required" : true
         }
       }
     },
@@ -565,6 +569,15 @@
             },
             "description" : {
               "type" : "string"
+            }
+          }
+        },
+        "nom" : {
+          "type" : "object",
+          "additionalProperties" : false,
+          "properties" : {
+            "id" : {
+              "type" : "integer"
             }
           }
         }
