@@ -80,7 +80,7 @@
     },
     "periode" : {
       "type" : "string",
-      "enum" : [ "AUJOURDHUI", "DEMAIN", "_3_JOURS", "WEEK_END_PROCHAIN", "_8_JOURS", "_15_JOURS", "_1_MOIS", "_3_MOIS", "_6_MOIS", "A_VENIR" ]
+      "enum" : [ "AUJOURDHUI", "DEMAIN", "_3_JOURS", "WEEK_END", "WEEK_END_PROCHAIN", "_8_JOURS", "_15_JOURS", "_1_MOIS", "_3_MOIS", "_6_MOIS", "A_VENIR" ]
     },
     "ongletsInformations" : {
       "type" : "object",
