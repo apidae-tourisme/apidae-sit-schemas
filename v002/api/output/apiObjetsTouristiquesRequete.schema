@@ -113,6 +113,9 @@
         "type" : "string"
       }
     },
+    "schemaOrg" : {
+      "type" : "boolean"
+    },
     "apiKey" : {
       "type" : "string"
     },

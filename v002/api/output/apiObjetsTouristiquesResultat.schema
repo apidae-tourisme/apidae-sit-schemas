@@ -118,6 +118,9 @@
             "type" : "string"
           }
         },
+        "schemaOrg" : {
+          "type" : "boolean"
+        },
         "apiKey" : {
           "type" : "string"
         },
@@ -15751,6 +15754,13 @@
                   "additionalItems" : false,
                   "items" : {
                     "type" : "string"
+                  }
+                },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
                   }
                 },
                 "informations" : {
@@ -45795,6 +45805,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -62980,6 +62997,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -93022,6 +93046,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -110915,6 +110946,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -140957,6 +140995,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -156127,6 +156172,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -186169,6 +186221,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -204001,6 +204060,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -234043,6 +234109,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -249238,6 +249311,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -279280,6 +279360,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -297139,6 +297226,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -327181,6 +327275,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -344802,6 +344903,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -374844,6 +374952,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -391819,6 +391934,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -421861,6 +421983,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -438663,6 +438792,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -468705,6 +468841,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -486332,6 +486475,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -516374,6 +516524,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -531301,6 +531458,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -561343,6 +561507,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -578385,6 +578556,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -608427,6 +608605,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -623515,6 +623700,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -653557,6 +653749,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -663497,6 +663696,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -693539,6 +693745,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }
@@ -706275,6 +706488,13 @@
                     "type" : "string"
                   }
                 },
+                "schemaOrg" : {
+                  "type" : "object",
+                  "id" : "schemaOrg",
+                  "additionalProperties" : {
+                    "type" : "any"
+                  }
+                },
                 "informations" : {
                   "type" : "object",
                   "id" : "informations",
@@ -736317,6 +736537,13 @@
                   }
                 }
               }
+            }
+          },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
             }
           }
         }

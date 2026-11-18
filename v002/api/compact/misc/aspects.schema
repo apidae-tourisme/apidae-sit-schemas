@@ -14,6 +14,10 @@
         "type" : "string"
       }
     },
+    "schemaOrg" : {
+      "type" : "object",
+      "id" : "schemaOrg"
+    },
     "informations" : {
       "type" : "object",
       "id" : "informations"

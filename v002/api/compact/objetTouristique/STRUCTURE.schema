@@ -438,6 +438,10 @@
         "type" : "object",
         "id" : "metaDonnees"
       }
+    },
+    "schemaOrg" : {
+      "type" : "object",
+      "id" : "schemaOrg"
     }
   }
 }

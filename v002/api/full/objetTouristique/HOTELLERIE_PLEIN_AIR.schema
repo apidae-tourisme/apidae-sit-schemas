@@ -16797,6 +16797,13 @@
               "type" : "string"
             }
           },
+          "schemaOrg" : {
+            "type" : "object",
+            "id" : "schemaOrg",
+            "additionalProperties" : {
+              "type" : "any"
+            }
+          },
           "informations" : {
             "type" : "object",
             "id" : "informations",
@@ -46839,6 +46846,13 @@
             }
           }
         }
+      }
+    },
+    "schemaOrg" : {
+      "type" : "object",
+      "id" : "schemaOrg",
+      "additionalProperties" : {
+        "type" : "any"
       }
     }
   }

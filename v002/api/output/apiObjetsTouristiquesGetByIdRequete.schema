@@ -26,6 +26,9 @@
     "dateFin" : {
       "type" : "string",
       "format" : "date"
+    },
+    "schemaOrg" : {
+      "type" : "boolean"
     }
   }
 }
